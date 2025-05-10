@@ -19,12 +19,12 @@ from typing import Dict, Any
 
 TOOL_LIST: Dict[str, Dict[str, Any]] = {
     "1": {
-        "name": "people_photo_search",
+        "name": "get_photos_by_person",
         "module": "tools.people_photo",
-        "callable": "search_by_person",
-        "description": "사람 ID(또는 이름)를 받아 photo_people DB에서 해당 인물이 등장하는 사진 목록을 반환합니다.",
+        "callable": "get_photos_by_person",
+        "description": "사람 ObjectId(또는 이름)를 받아 해당 인물이 포함된 모든 사진을 반환합니다.",
         "inputs": {
-            "person_id": "str — 필수. 인물의 고유 ID 또는 이름"
+            "person_id": "str — 필수. 인물의 BSON ObjectId 또는 이름"
         },
         "outputs": {
             "photos": "List[Dict] — 사진 메타데이터 목록",
@@ -32,31 +32,29 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         },
     },
     "2": {
-        "name": "photo_tag_search",
-        "module": "tools.photo",
-        "callable": "search_by_tags",
-        "description": "태그(키워드) 리스트를 받아 사진 DB에서 일치/유사 태그를 가진 사진을 검색합니다.",
+        "name": "get_people_in_photo",
+        "module": "tools.people_photo",
+        "callable": "get_people_in_photo",
+        "description": "사진 ID를 받아 해당 사진에 등장하는 모든 사람(인물) 정보를 반환합니다.",
         "inputs": {
-            "tags": "List[str] — 필수. 검색할 태그 목록",
-            "limit": "Optional[int] — 최대 반환 개수 (기본값 50)"
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
         },
         "outputs": {
-            "photos": "List[Dict] — 사진 메타데이터 목록",
-            "count": "int — 검색된 사진 수"
+            "people": "List[Dict] — 인물 메타데이터 목록",
+            "count": "int — 검색된 인물 수"
         },
     },
     "3": {
-        "name": "place_recommender",
-        "module": "tools.recommender",
-        "callable": "recommend_places",
-        "description": "사진·태그·위치 데이터를 분석하여 음식점·카페·관광지를 추천합니다.",
+        "name": "add_person_to_photo",
+        "module": "tools.people_photo",
+        "callable": "add_person_to_photo",
+        "description": "사진‑인물 매핑을 추가하여 특정 사진에 사람을 연결합니다.",
         "inputs": {
-            "city": "str — 필수. 도시/지역명",
-            "category": "str — 음식, 카페, 관광 등",
-            "seed_places": "Optional[List[str]] — 참고할 장소 ID 목록"
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID",
+            "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
         },
         "outputs": {
-            "places": "List[Dict] — 추천 장소 목록(이름, 좌표, 설명 등 포함)"
+            "mapping": "Dict — 저장된 매핑 문서"
         },
     },
     "4": {
@@ -168,66 +166,6 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         },
         "outputs": {
             "path": "str — 다운로드된 사이트가 저장된 디렉터리"
-        },
-    },
-    "13": {
-        "name": "photo_search_by_id",
-        "module": "tools.photo_search",
-        "callable": "search_by_id",
-        "description": "사진 ID(ObjectId)를 받아 단일 사진 메타데이터를 반환합니다.",
-        "inputs": {
-            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
-        },
-        "outputs": {
-            "photo": "Dict — 사진 메타데이터 (없으면 null)"
-        },
-    },
-    "14": {
-        "name": "people_in_photo",
-        "module": "tools.people_photo",
-        "callable": "get_people_in_photo",
-        "description": "사진 ID로 해당 사진에 포함된 인물(people) 정보를 조회합니다.",
-        "inputs": {
-            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
-        },
-        "outputs": {
-            "people": "List[Dict] — 인물 메타데이터 목록"
-        },
-    },
-    "15": {
-        "name": "add_person_to_photo",
-        "module": "tools.people_photo",
-        "callable": "add_person_to_photo",
-        "description": "사진‑인물 매핑을 추가하여 사람을 사진에 연결합니다.",
-        "inputs": {
-            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID",
-            "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
-        },
-        "outputs": {
-            "mapping": "Dict — 저장된 매핑 문서"
-        },
-    },
-        "16": {
-        "name": "get_person_by_id",
-        "module": "llm.people",
-        "callable": "get_person_by_id",
-        "description": "인물 ID를 받아 해당 인물의 정보를 반환합니다.",
-        "inputs": {
-            "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
-        },
-        "outputs": {
-            "person": "Dict — 인물 메타데이터 (없으면 null)"
-        },
-    },
-    
-    "17": {
-        "name": "get_all_people",
-        "module": "llm.people",
-        "callable": "get_all_people",
-        "description": "모든 인물 정보 목록을 반환합니다.",
-        "inputs": {},  # 입력 파라미터 없음
-        "outputs": {
-            "people": "List[Dict] — 인물 메타데이터 목록"
         },
     },
 }
