@@ -1,17 +1,24 @@
 import os
 import requests
+import base64
 from dotenv import load_dotenv
 
-# .env 파일 경로: 현재 파일 기준 ../.env
+# .env 로드 (경로 주의)
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
-
-# 환경변수에서 Gemini API 키 불러오기
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-def get_tags_from_gemini(image_data_url: str) -> list:
+def get_tags_from_gemini(image_file) -> list:
+    """
+    Flask에서 받은 이미지 파일(request.files["img"])을 base64로 인코딩하고,
+    Gemini API에 태그 생성을 요청하여 리스트로 반환.
+    """
+    mime_type = image_file.mimetype  # ex: "image/jpeg"
+    encoded = base64.b64encode(image_file.read()).decode("utf-8")
+    image_data_url = f"data:{mime_type};base64,{encoded}"
+
     prompt = (
-        "이 사진을 보고 어울리는 장소나 분위기, 음식 관련 한글 태그를 3~5개 추출해줘. "
-        "예: ['카페', '데이트', '야경', '조명좋음', '혼밥'] 형식. 리스트 외 텍스트는 주지 마."
+        "이 사진을 보고 장소, 분위기, 음식 관련 태그를 한글로 3~5개 추천해줘. "
+        "예: ['카페', '데이트', '야경', '조명좋음'] 형식으로, 다른 텍스트 없이 리스트만."
     )
 
     headers = {
@@ -25,8 +32,8 @@ def get_tags_from_gemini(image_data_url: str) -> list:
                     { "text": prompt },
                     {
                         "inlineData": {
-                            "mimeType": "image/jpeg",
-                            "data": image_data_url.split(",")[1]  # base64 부분만 추출
+                            "mimeType": mime_type,
+                            "data": encoded
                         }
                     }
                 ]
@@ -41,9 +48,9 @@ def get_tags_from_gemini(image_data_url: str) -> list:
         json=payload
     )
 
-    result = response.json()
     try:
-        raw_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+        raw_text = response.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
         return eval(raw_text) if raw_text.startswith("[") else [raw_text]
-    except:
+    except Exception as e:
+        print("태그 생성 실패:", e)
         return []

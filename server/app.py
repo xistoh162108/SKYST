@@ -46,7 +46,7 @@ def get_photos_by_person():
 @app.route("/api/photos", methods=["POST"])
 def add_photo():
     data = request.get_json()
-
+    img_file = request.files["img"]
     #image_url = get_image_url(img)
     # 이미지 클라우드에 업로드 해서 img 링크 받아오는 함수
     image_url = "hello"
@@ -60,7 +60,7 @@ def add_photo():
 
     photo_id = photo_repo.add_photo(photo)
     
-    photo_tags = get_tags_from_gemini(image_data_url)
+    photo_tags = get_tags_from_gemini(img_file)
 
     for p in data["peopleId"]:
         photo_people_repo.add_photoPeople({
