@@ -15,9 +15,15 @@ def serialize_id(doc):
 def get_people():
     people = people_repo.get_person({})
     result = [{
-        "name": p["name"],
-        "personId": str(p["_id"])}for p in people]
+        "name": person["name"],
+        "personId": str(person["_id"])}for person in people]
     return jsonify(result)
+
+@app.route("/api/people", methods=["POST"])
+def add_person():
+    data = request.get_json()
+    people_repo.add_person({"_id": data["id"], "name": data["name"]})
+    return
 
 @app.route("/api/photos", methods=["GET"])
 def get_photos_by_person():
@@ -38,10 +44,11 @@ def add_photo():
     photo = {
         "image_url": data["img"],
         "description": data.get("text", ""),
-        "people": [ObjectId(p) for p in data.get("people", [])],
-        "location": data.get("location", [])
+        "people": [ObjectId(p) for p in data.get("peopleId", [])],
+        "location": data.get("location", []),
+        "travel_id": data.get("travelId")
     }
-    result = photo_repo.add_photo(photo)
+    photo_repo.add_photo(photo)
     return
 
 @app.route("/api/photos/<photo_id>", methods=["GET"])
