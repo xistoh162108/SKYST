@@ -37,6 +37,7 @@ def main():
     
     many = list(collection.find({"age": {"$gte": 20}}))
     print("Find many:", many)
+    print("hello")
     
     # —— Update (수정) ——
     update_result = collection.update_one(
