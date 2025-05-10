@@ -50,12 +50,10 @@ def add_photo():
         "travel_id": data.get("travelId")
     }
 
-    # 삽입 후 생성된 photo의 _id를 반환
     photo_id = photo_repo.add_photo(photo)
 
-    # 관계 테이블에 저장
     for p in data["peopleId"]:
-        photo_people_repo.add({
+        photo_people_repo.add_photoPeople({
             "photoId": photo_id,
             "personId": ObjectId(p)
         })
