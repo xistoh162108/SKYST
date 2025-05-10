@@ -79,15 +79,10 @@ def update_photo(photoId):
     photo_repo.update_photo({"_id": ObjectId(photoId)}, {"$set": update})
     return
 
-@app.route("/api/photos/<photo_id>", methods=["DELETE"])
-def delete_photo(photo_id):
-    try:
-        result = photo_repo.delete_photo({"_id": ObjectId(photo_id)})
-        if result.deleted_count == 0:
-            return jsonify({"error": "Photo not found"}), 404
-        return jsonify({"message": "Photo deleted"})
-    except Exception:
-        return jsonify({"error": "Invalid photoId"}), 400
+@app.route("/api/photos/<photoId>", methods=["DELETE"])
+def delete_photo(photoId):
+    photo_repo.delete_photo({"_id": ObjectId(photoId)})
+    return
 
 if __name__ == "__main__":
     app.run(debug=True)
