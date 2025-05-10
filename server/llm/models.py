@@ -598,7 +598,7 @@ class TOTExecutor:
 
         # 현재 단계 실행
         try:
-            result = self.tools.execute_tool(step['tool_id'], step['inputs'])
+            result = self.tools.execute_tool(tool_id=step['tool_id'], **step['inputs'])
         except Exception as e:
             return {
                 "error": str(e),
@@ -632,14 +632,55 @@ class TOTExecutor:
         """
 
         # 결과 분석
-        analysis = self.tot_executor.send_message(analysis_prompt)
-        
-        return {
-            "result": result,
-            "analysis": analysis,
-            "summary": analysis.get("summary", ""),
-            "next_step_input": analysis.get("next_step_input", {})
-        }
+        try:
+            analysis = self.tot_executor.send_message(analysis_prompt)
+            
+            # analysis가 문자열인 경우 JSON으로 파싱 시도
+            if isinstance(analysis, str):
+                try:
+                    analysis = json.loads(analysis)
+                except json.JSONDecodeError:
+                    # JSON 파싱 실패 시 기본값 설정
+                    analysis = {
+                        "is_sufficient": True,
+                        "reason": "응답 파싱 실패",
+                        "retry_count": 0,
+                        "next_action": "continue"
+                    }
+            
+            # 필수 키가 없는 경우 기본값 설정
+            if not isinstance(analysis, dict):
+                analysis = {
+                    "is_sufficient": True,
+                    "reason": "응답 형식 오류",
+                    "retry_count": 0,
+                    "next_action": "continue"
+                }
+            
+            # 필수 키가 없는 경우 기본값으로 채우기
+            analysis.setdefault("is_sufficient", True)
+            analysis.setdefault("reason", "응답 분석 완료")
+            analysis.setdefault("retry_count", 0)
+            analysis.setdefault("next_action", "continue")
+            
+            return {
+                "result": result,
+                "analysis": analysis,
+                "summary": analysis.get("summary", "분석 완료"),
+                "next_step_input": analysis.get("next_step_input", {})
+            }
+        except Exception as e:
+            return {
+                "error": str(e),
+                "analysis": {
+                    "is_sufficient": False,
+                    "reason": f"분석 중 오류 발생: {str(e)}",
+                    "retry_count": 0,
+                    "next_action": "stop"
+                },
+                "summary": f"오류 발생: {str(e)}",
+                "next_step_input": None
+            }
 
     def execute_plan(self, plan: Dict[str, Any]) -> Dict[str, Any]:
         """
