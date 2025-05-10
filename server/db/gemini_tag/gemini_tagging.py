@@ -44,6 +44,8 @@ def get_tags_from_gemini(image_file) -> list:
         json=payload
     )
 
+    print(response)
+
     try:
         raw_text = response.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
         return eval(raw_text) if raw_text.startswith("[") else [raw_text]

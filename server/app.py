@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from bson import ObjectId
+import json
 from db.people import PeopleRepository
 from db.photos import PhotoRepository
 from db.photo_people import PhotoPeopleRepository
@@ -27,8 +28,9 @@ def get_people():
 @app.route("/api/people", methods=["POST"])
 def add_person():
     data = request.get_json()
-    people_repo.add_person({"_id": data["id"], "name": data["name"]})
-    return
+    print(data)
+    result = people_repo.add_person({"_id": data["id"], "name": data["name"]})
+    return jsonify(result)
 
 @app.route("/api/photos", methods=["GET"])
 def get_photos_by_person():
@@ -45,27 +47,32 @@ def get_photos_by_person():
 
 @app.route("/api/photos", methods=["POST"])
 def add_photo():
-    data = request.get_json()
     img_file = request.files["img"]
-    #image_url = get_image_url(img)
-    # 이미지 클라우드에 업로드 해서 img 링크 받아오는 함수
+
+    # 문자열로 전달된 JSON 데이터 파싱
+    description = request.form.get("text", "")
+    location = json.loads(request.form.get("location", "[]"))
+    travel_id = request.form.get("travelId")
+    people_ids = json.loads(request.form.get("peopleId", "[]"))
+
+    # 예시 이미지 URL
     image_url = "hello"
 
     photo = {
         "image_url": image_url,
-        "description": data.get("text", ""),
-        "location": data.get("location", []),
-        "travel_id": data.get("travelId")
+        "description": description,
+        "location": location,
+        "travel_id": travel_id
     }
 
     photo_id = photo_repo.add_photo(photo)
-    
+
     photo_tags = get_tags_from_gemini(img_file)
 
-    for p in data["peopleId"]:
+    for p in people_ids:
         photo_people_repo.add_photoPeople({
             "photoId": photo_id,
-            "personId": ObjectId(p)
+            "personId": p
         })
 
     for t in photo_tags:
@@ -73,23 +80,30 @@ def add_photo():
             "photoId": photo_id,
             "tags": t
         })
+
     return {"photoId": str(photo_id)}, 201
+
 
 @app.route("/api/photos/<photoId>", methods=["GET"])
 def get_photo_detail(photoId):
     photo = photo_repo.get_photo({"_id": ObjectId(photoId)})
     photo = photo[0]
 
-    people = photo_people_repo.get_photoPeople({ photoId })
-    tags = photo_tags_repo.get_photoTags({ photoId })
+    people_raw = photo_people_repo.get_photoPeople({"photoId": ObjectId(photoId)})
+    people = [str(p["personId"]) for p in people_raw]
+
+    tags_raw = photo_tags_repo.get_photoTags({"photoId": ObjectId(photoId)})
+    tags = [t["tags"] for t in tags_raw]
 
     return jsonify({
         "url": photo.get("image_url", ""),
         "text": photo.get("description", ""),
         "peopleId": people,
-        tags: tags,
+        "tags": tags,
         "travelId": str(photo.get("travel_id", ""))
     })
+
+
 
 @app.route("/api/photos/<photoId>", methods=["PUT"])
 def update_photo(photoId):
