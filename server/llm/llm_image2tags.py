@@ -1,4 +1,4 @@
-from llm import GeminiLLM
+from server.llm.models import GeminiLLM
 
 class LLMAutoTags:
     def __init__(self):
