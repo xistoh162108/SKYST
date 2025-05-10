@@ -92,6 +92,8 @@ class GoogleSearchAPI:
             "--adjust-extension",
             "--page-requisites",
             "--no-parent",
+            "--user-agent=Mozilla/5.0",
+            "--no-check-certificate",
             url
         ]
         subprocess.run(cmd, check=True, cwd=target_dir)

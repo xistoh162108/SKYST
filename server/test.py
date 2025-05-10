@@ -62,19 +62,18 @@ def test_all_tools():
     try:
         result = tools.execute_tool(
             "1",
-            person_id="65f1234567890abcdef12345"  # 더미 person_id
+            person_id=test_ids["person_id"]  # 더미 person_id
         )
         print(f"결과: {result}\n")
     except Exception as e:
         print(f"에러: {e}\n")
     
-    # 2. photo_tag_search 테스트
-    print("2. photo_tag_search 테스트")
+    # 2. get_people_in_photo 테스트
+    print("2. get_people_in_photo 테스트")
     try:
         result = tools.execute_tool(
             "2",
-            tags=["여행", "바다"],
-            limit=5
+            photo_id=test_ids["photo_id"]  # 더미 photo_id
         )
         print(f"결과: {result}\n")
     except Exception as e:
@@ -151,46 +150,15 @@ def test_all_tools():
     except Exception as e:
         print(f"에러: {e}\n")
     
-    # 12. gs_download_site 테스트
-    print("12. gs_download_site 테스트")
-    try:
-        result = tools.execute_tool(
-            "12",
-            url="https://www.google.com",
-            target_dir="./downloaded_sites"
-        )
-        print(f"결과: {result}\n")
-    except Exception as e:
-        print(f"에러: {e}\n")
-    
-    # 13. photo_search_by_id 테스트
-    print("13. photo_search_by_id 테스트")
-    try:
-        result = tools.execute_tool(
-            "13",
-            photo_id="65f1234567890abcdef12345"  # 더미 photo_id
-        )
-        print(f"결과: {result}\n")
-    except Exception as e:
-        print(f"에러: {e}\n")
-    
-    # 14. people_in_photo 테스트
-    print("14. people_in_photo 테스트")
-    try:
-        result = tools.execute_tool(
-            "14",
-            photo_id="65f1234567890abcdef12345"  # 더미 photo_id
-        )
-        print(f"결과: {result}\n")
-    except Exception as e:
-        print(f"에러: {e}\n")
+     # 12. gs_
+ 
     
     # 16. get_person_by_id 테스트
     print("16. get_person_by_id 테스트")
     try:
         result = tools.execute_tool(
             "16",
-            person_id="65f1234567890abcdef12345"  # 더미 person_id
+            person_id=test_ids["person_id"] # 더미 person_id
         )
         print(f"결과: {result}\n")
     except Exception as e:

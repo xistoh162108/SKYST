@@ -166,6 +166,28 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         },
         "outputs": {
             "path": "str — 다운로드된 사이트가 저장된 디렉터리"
+       },
+    },
+     "16": {
+        "name": "get_person_by_id",
+        "module": "tools.people",
+        "callable": "get_person_by_id",
+        "description": "인물 ID를 받아 해당 인물의 정보를 반환합니다.",
+        "inputs": {
+            "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
+        },
+        "outputs": {
+            "person": "Dict — 인물 메타데이터 (없으면 null)"
+        },
+    },
+    "17": {
+        "name": "get_all_people",
+        "module": "tools.people",
+        "callable": "get_all_people",
+        "description": "모든 인물 정보 목록을 반환합니다.",
+        "inputs": {},  # 입력 파라미터 없음
+        "outputs": {
+            "people": "List[Dict] — 인물 메타데이터 목록"
         },
     },
 }
