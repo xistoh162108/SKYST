@@ -6,17 +6,17 @@ from db.photos import PhotoRepository
 from db.photo_people import PhotoPeopleRepository
 from db.photo_tags import PhotoTagsRepository
 from db.huggingface.huggingface_tag import get_tags_from_huggingface
-from server.db.travel_people import TravelRepository
 from db.travel_people import TravelPeopleRepository
 from db.travel_places import TravelPlacesRepository
+from db.travel import TravelRepository
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
 photo_people_repo = PhotoPeopleRepository()
 photo_tags_repo = PhotoTagsRepository()
-travel_repo = TravelRepository()
 travel_people_repo = TravelPeopleRepository()
 travel_places_repo = TravelPlacesRepository()
+travel_repo = TravelRepository()
 def serialize_id(doc):
     doc["_id"] = str(doc["_id"])
     return doc
@@ -152,207 +152,335 @@ def delete_photo(photoId):
     photo_repo.delete_photo({"_id": ObjectId(photoId)})
     return
 
+
+
+
+# New route: Get 5 most recent travels and their places
 @app.route("/api/travels", methods=["GET"])
-def get_travels():
-    travels_raw = travel_repo.get_travel({})
-    travels_sorted = sorted(travels_raw, key=lambda t: t.get("date", ""),
-                            reverse=True)[:5]
-    result = []
-    for tr in travels_sorted:
-        place_docs = travel_places_repo.get_travel_place({"travelId": tr["_id"]})
-        places = sorted(
-            [{"name": p.get("name", ""), "order": p.get("order", 99)} for p in place_docs],
-            key=lambda x: x["order"]
-        )
-        result.append({
-            "id": str(tr["_id"]),
-            "date" : tr.get("date", ""),
-            "name" : tr.get("name", ""),
-            "places" : places
-        })
-    return jsonify(result), 200
-    
-@app.route("/api/travels", methods=["POST"])
-def add_travel():
-    data = request.get_json()
-    if not data:
-        return jsonify({"error": "empty body"}), 400
+def get_recent_travels():
+    """
+    Returns the 5 most recent travels and their associated places.
 
-    required = ["date", "name"]
-    missing = [k for k in required if k not in data]
-    if missing:
-        return jsonify({"error": f"missing required fields: {missing}"}), 400
+    Response Body Example:
+    [
+        {
+            "id": str,
+            "date": date,
+            "name": str,
+            "places": [
+                {
+                    "name": str,
+                    "order": int
+                }
+            ]
+        }
+    ]
+    """
 
-    # 1) travels 컬렉션에 기본 문서 저장
-    travel_doc = {
-        "date": data["date"],
-        "name": data["name"]
-    }
-    travel_id = travel_repo.add_travel(travel_doc)
+    try:
+        # Fetch all travels, then sort by date descending and take the latest five
+        travels = travel_repo.get_travel({})
+        travels_sorted = sorted(
+            travels, key=lambda t: t.get("date", ""), reverse=True
+        )[:5]
 
-    # 2) travels_people 매핑 저장
-    for pid in data.get("peopleId", []):
-        travel_people_repo.add_travel_person({
-            "travelId": travel_id,
-            "personId": ObjectId(pid)
-        })
+        response = []
+        for travel in travels_sorted:
+            travel_id = travel["_id"]
 
-    # 3) travels_places 매핑 저장
-    for idx, p in enumerate(data.get("places", [])):
-        travel_places_repo.add_travel_place({
-            "travelId": travel_id,
-            "placeId": ObjectId(p["id"]),
-            "order": p.get("order", idx + 1)
-        })
+            # Retrieve places linked to this travel
+            places_raw = travel_places_repo.get_travel_place({"travelId": travel_id})
 
-    return jsonify({"travelId": str(travel_id)}), 200
+            # Build places list, preserving 'order' field if present
+            places = []
+            for idx, place in enumerate(places_raw):
+                places.append({
+                    "name": place.get("placeId", ""),
+                    "order": place.get("order", idx)
+                })
 
+            response.append({
+                "id": str(travel_id),
+                "date": travel.get("date"),
+                "name": travel.get("name", ""),
+                "places": places
+            })
+
+        return jsonify(response), 200
+    except Exception as e:
+        # Return a 400 with error details if something goes wrong
+        return jsonify({"error": str(e)}), 400
+
+
+
+# New route: Get a detailed travel record
 @app.route("/api/travels/<travelId>", methods=["GET"])
 def get_travel_detail(travelId):
     """
-    여행 상세 기록 가져오기
-    Response 예:
+    Returns detailed information for a single travel.
+
+    Response Body Example:
     {
-        "date": "2025-05-12",
+        "date": date,
         "people": [
-            { "id": "...", "name": "지민" }, ...
+            { "id": str, "name": str }
         ],
-        "name": "제주 가족 여행",
+        "name": str,
         "places": [
-            { "id": "...", "order": 1, "name": "성산 일출봉", "location": [33.45, 126.93] },
-            ...
+            {
+                "id": str,
+                "order": int,
+                "name": str,
+                "location": list
+            }
         ]
     }
     """
     try:
-        travel_oid = ObjectId(travelId)
-    except Exception:
-        return jsonify({"error": "Invalid travelId"}), 400
+        # Validate ObjectId
+        if not ObjectId.is_valid(travelId):
+            return jsonify({"error": "Invalid travelId"}), 400
 
-    travels = travel_repo.get_travel({"_id": travel_oid})
-    if not travels:
-        return jsonify({"error": "Invalid travelId"}), 400
+        # Fetch the travel document
+        travel_docs = travel_repo.get_travel({"_id": ObjectId(travelId)})
+        if not travel_docs:
+            return jsonify({"error": "Invalid travelId"}), 400
+        travel = travel_docs[0]
 
-    tr = travels[0]
+        # ---- People Section ----
+        people_links = travel_people_repo.get_travel_person({"travelId": ObjectId(travelId)})
+        people_list = []
+        for link in people_links:
+            pid = link.get("peopleId")
+            person_name = ""
+            # Attempt to resolve the person's name if we have a valid ObjectId
+            try:
+                if ObjectId.is_valid(str(pid)):
+                    person_docs = people_repo.get_person({"_id": ObjectId(pid)})
+                    if person_docs:
+                        person_name = person_docs[0].get("name", "")
+            except Exception:
+                pass  # In case pid is not an ObjectId or repository fails
+            people_list.append({
+                "id": str(pid),
+                "name": person_name
+            })
 
-    # people 목록
-    people_raw = travel_people_repo.get_travel_person({"travelId": travel_oid})
-    people_list = []
-    for pr in people_raw:
-        pid = pr["personId"]
-        person_docs = people_repo.get_person({"_id": pid})
-        name = person_docs[0]["name"] if person_docs else ""
-        people_list.append({"id": str(pid), "name": name})
+        # ---- Places Section ----
+        place_links = travel_places_repo.get_travel_place({"travelId": ObjectId(travelId)})
+        places_output = []
+        for idx, link in enumerate(place_links):
+            place_id = link.get("placeId", "")
+            order_val = link.get("order", idx)
 
-    # places 목록
-    places_raw = travel_places_repo.get_travel_place({"travelId": travel_oid})
-    places_list = []
-    for pr in places_raw:
-        places_list.append({
-            "id": str(pr["placeId"]),
-            "order": pr.get("order", 0),
-            "name": pr.get("name", ""),
-            "location": pr.get("location", [])
-        })
+            # Try to infer location via photos of this travel having non-empty 'location'
+            location_val = []
+            try:
+                photos = photo_repo.get_photo({
+                    "travel_id": ObjectId(travelId),
+                    "location": {"$ne": []}
+                })
+                # Pick first photo's location if available
+                if photos:
+                    location_val = photos[0].get("location", [])
+            except Exception:
+                pass
 
-    return jsonify({
-        "date": tr.get("date", ""),
-        "people": people_list,
-        "name": tr.get("name", ""),
-        "places": places_list
-    }), 200
+            places_output.append({
+                "id": place_id,
+                "order": order_val,
+                "name": place_id,     # using place_id as name fallback
+                "location": location_val
+            })
 
+        response = {
+            "date": travel.get("date"),
+            "people": people_list,
+            "name": travel.get("name", ""),
+            "places": places_output
+        }
+        return jsonify(response), 200
 
-# 여행 정보 수정
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+# New route: Update a travel record
 @app.route("/api/travels/<travelId>", methods=["PUT"])
 def update_travel(travelId):
     """
-    여행 정보 수정
-    Body 예:
+    Updates an existing travel record.
+
+    Expected JSON body (all fields optional):
     {
-        "date": "2025-05-13",
-        "peopleId": ["6089...", "60ab..."],
-        "name": "수정된 여행 이름",
+        "date": "YYYY-MM-DD",
+        "peopleId": ["<personId>", ...],
+        "name": "<travel name>",
         "places": [
-            { "id": "64cd...", "order": 1 },
-            { "id": "64ce...", "order": 2 }
+            {
+                "id": "<placeId>",
+                "order": <int>
+            }
         ]
     }
+
+    Returns 200 on success, 400 on invalid input.
     """
     try:
-        travel_oid = ObjectId(travelId)
-    except Exception:
-        return jsonify({"error": "Invalid travelId"}), 400
+        # Validate travelId
+        if not ObjectId.is_valid(travelId):
+            return jsonify({"error": "Invalid travelId"}), 400
 
-    data = request.get_json()
-    if not data:
-        return jsonify({"error": "empty body"}), 400
+        data = request.get_json(force=True)
+        if data is None:
+            data = {}
 
-    # build $set update dict only with provided fields
-    update_fields = {}
-    if "date" in data:
-        update_fields["date"] = data["date"]
+        # -- Update basic fields in the travel document --
+        update_doc = {}
+        if "name" in data:
+            update_doc["name"] = data["name"]
+        if "date" in data:
+            update_doc["date"] = data["date"]
+        if update_doc:
+            travel_repo.update_travel({"_id": ObjectId(travelId)}, {"$set": update_doc})
 
-    if "name" in data:
-        update_fields["name"] = data["name"]
+        # -- Update people links --
+        if "peopleId" in data:
+            # Remove existing links
+            travel_people_repo.delete_travel_person({"travelId": ObjectId(travelId)})
+            # Add new links
+            for pid in data["peopleId"]:
+                try:
+                    travel_people_repo.add_travel_person({
+                        "travelId": ObjectId(travelId),
+                        "peopleId": ObjectId(pid)
+                    })
+                except Exception:
+                    travel_people_repo.add_travel_person({
+                        "travelId": ObjectId(travelId),
+                        "peopleId": pid
+                    })
 
-    if "peopleId" in data:
-        update_fields["people"] = [ObjectId(pid) for pid in data["peopleId"]]
+        # -- Update places links --
+        if "places" in data:
+            travel_places_repo.delete_travel_place({"travelId": ObjectId(travelId)})
+            for place in data["places"]:
+                travel_places_repo.add_travel_place({
+                    "travelId": ObjectId(travelId),
+                    
+                    "placeId": place.get("id"),
+                    "order": place.get("order")
+                })
 
-    if "places" in data:
-        update_fields["places"] = [
-            {
-                "placeId": ObjectId(p["id"]),
-                "order": p.get("order", idx + 1)
-            }
-            for idx, p in enumerate(data["places"])
-        ]
+        return "", 200
 
-    if "peopleId" in data:
-        # Delete old mapping then add new
-        travel_people_repo.delete_travel_person({"travelId": travel_oid})
-        for pid in data["peopleId"]:
-            travel_people_repo.add_travel_person({"travelId": travel_oid, "personId": ObjectId(pid)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
 
-    if "places" in data:
-        travel_places_repo.delete_travel_place({"travelId": travel_oid})
-        for idx, p in enumerate(data["places"]):
-            travel_places_repo.add_travel_place({
-                "travelId": travel_oid,
-                "placeId": ObjectId(p["id"]),
-                "order": p.get("order", idx + 1)
-            })
-
-    if not update_fields:
-        return jsonify({"error": "no updatable fields"}), 400
-
-    # perform update
-    travel_repo.update_travel({"_id": travel_oid}, {"$set": update_fields})
-
-    return jsonify({"message": "updated"}), 200
-
-
-# 여행 기록 삭제
+# New route: Delete a travel record
 @app.route("/api/travels/<travelId>", methods=["DELETE"])
 def delete_travel(travelId):
     """
-    여행 기록 삭제
-    성공 시 200, travelId 오류 시 400
+    Deletes a travel record and its linked people/places documents.
+
+    Response Codes:
+        200 – Succeed
+        400 – Invalid travelId
     """
     try:
+        # Validate ObjectId
+        if not ObjectId.is_valid(travelId):
+            return jsonify({"error": "Invalid travelId"}), 400
+
         travel_oid = ObjectId(travelId)
-    except Exception:
-        return jsonify({"error": "Invalid travelId"}), 400
 
-    deleted = travel_repo.delete_travel({"_id": travel_oid})
-    if not deleted:
-        return jsonify({"error": "Invalid travelId"}), 400
+        # Remove travel document
+        travel_repo.delete_travel({"_id": travel_oid})
 
-    travel_people_repo.delete_travel_person({"travelId": travel_oid})
-    travel_places_repo.delete_travel_place({"travelId": travel_oid})
+        # Remove associated people and places links
+        travel_people_repo.delete_travel_person({"travelId": travel_oid})
+        travel_places_repo.delete_travel_place({"travelId": travel_oid})
 
-    return jsonify({"message": "deleted"}), 200
+        return "", 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+# New route: Upload a travel record
+@app.route("/api/travels/post", methods=["POST"])
+def create_travel():
+    """
+    Creates a new travel record with associated people and places.
+
+    Expected JSON body:
+    {
+        "date": "YYYY-MM-DD",
+        "peopleId": ["<personId>", ...],
+        "name": "<travel name>",
+        "places": [
+            {
+                "id": "<placeId>",
+                "order": <int>
+            }
+        ]
+    }
+
+    Returns the created travel data on success.
+    """
+    try:
+        data = request.get_json(force=True)
+
+        # Validate input
+        name = data.get("name")
+        date = data.get("date")
+        people_ids = data.get("peopleId", [])
+        places = data.get("places", [])
+
+        if not name or not date:
+            return jsonify({"error": "Both 'name' and 'date' are required."}), 400
+
+        # Insert travel document
+        travel_id = travel_repo.add_travel({
+            "name": name,
+            "date": date
+        })
+
+        # Link people to the travel
+        for pid in people_ids:
+            try:
+                travel_people_repo.add_travel_person({
+                    "travelId": travel_id,
+                    "peopleId": ObjectId(pid)
+                })
+            except Exception:
+                # If pid is not a valid ObjectId, store as raw string
+                travel_people_repo.add_travel_person({
+                    "travelId": travel_id,
+                    "peopleId": pid
+                })
+
+        # Link places to the travel
+        for place in places:
+            travel_places_repo.add_travel_place({
+                "travelId": travel_id,
+                "placeId": place.get("id"),
+                "order": place.get("order")
+            })
+
+        response = {
+            "id": str(travel_id),
+            "date": date,
+            "peopleId": people_ids,
+            "name": name,
+            "places": places
+        }
+
+        return jsonify(response), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
 
 
 if __name__ == "__main__":
     app.run(debug=True)
+

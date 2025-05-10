@@ -25,11 +25,6 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "description": "사람 ObjectId(또는 이름)를 받아 해당 인물이 포함된 모든 사진을 반환합니다.",
         "inputs": {
             "person_id": "str — 필수. 인물의 BSON ObjectId 또는 이름"
-<<<<<<< HEAD
-   
-=======
-
->>>>>>> dc3d3f2 (travel api(does not test))
         },
         "outputs": {
             "photos": "List[Dict] — 사진 메타데이터 목록",
@@ -37,10 +32,6 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         },
     },
     "2": {
-<<<<<<< HEAD
-=======
-
->>>>>>> dc3d3f2 (travel api(does not test))
         "name": "get_people_in_photo",
         "module": "tools.people_photo",
         "callable": "get_people_in_photo",
@@ -59,22 +50,12 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "callable": "add_person_to_photo",
         "description": "사진‑인물 매핑을 추가하여 특정 사진에 사람을 연결합니다.",
         "inputs": {
-<<<<<<< HEAD
             "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID",
             "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
         },
         "outputs": {
             "mapping": "Dict — 저장된 매핑 문서"
-  
         },
-=======
-            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
-        },
-        "outputs": {
-            "people": "List[Dict] — 인물 메타데이터 목록",
-            "count": "int — 검색된 인물 수"
-        }
->>>>>>> dc3d3f2 (travel api(does not test))
     },
     "4": {
         "name": "route_planner",
@@ -187,10 +168,7 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "path": "str — 다운로드된 사이트가 저장된 디렉터리"
         },
     },
-<<<<<<< HEAD
-    }
 
-=======
     "17": {
         "name": "get_all_people",
         "module": "tools.people",
@@ -316,7 +294,6 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         }
     }
 }
->>>>>>> dc3d3f2 (travel api(does not test))
 
 
 # ---------------------------------------------------------------------------
