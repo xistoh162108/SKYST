@@ -1,6 +1,5 @@
 from .db import MongoDBClient
 
-
 class PhotoPeopleRepository:
     def __init__(self, db_name: str = "skyst"):
         self.client = MongoDBClient(db_name=db_name)
@@ -17,3 +16,4 @@ class PhotoPeopleRepository:
 
     def delete_photoPeople(self, query: dict):
         return self.client.delete(self.collection_name, query)
+    
