@@ -59,9 +59,8 @@ def add_photo():
     }
 
     photo_id = photo_repo.add_photo(photo)
-    #photo_tags = getTags(image_url)
-    # 이미지 태그 추출해주는 함수
-    photo_tags = ["hello", "NUBZUKNUBZUK"]
+    
+    photo_tags = get_tags_from_gemini(image_data_url)
 
     for p in data["peopleId"]:
         photo_people_repo.add_photoPeople({
