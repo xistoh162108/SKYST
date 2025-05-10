@@ -68,6 +68,11 @@ def add_photo():
             "personId": ObjectId(p) # 안뇽
         })
 
+    for t in photo_tags:
+        photo_tags_repo.add_photoTags({
+            "photoId": photo_id,
+            "tags": t # 안뇽
+        })
     return {"photoId": str(photo_id)}, 201
 
 @app.route("/api/photos/<photoId>", methods=["GET"])
