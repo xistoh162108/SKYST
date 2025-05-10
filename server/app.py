@@ -4,13 +4,11 @@ from server.db.people import PeopleRepository
 from server.db.photos import PhotoRepository
 from server.db.photo_people import PhotoPeopleRepository
 from server.db.photo_tags import PhotoTagsRepository
-from server.db.photo_tags import PhotoTagsRepository
 
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
 photo_people_repo = PhotoPeopleRepository()
-photo_tags_repo = PhotoTagsRepository()
 photo_tags_repo = PhotoTagsRepository()
 
 def serialize_id(doc):
