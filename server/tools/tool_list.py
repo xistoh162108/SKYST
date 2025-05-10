@@ -20,6 +20,7 @@ from typing import Dict, Any
 TOOL_LIST: Dict[str, Dict[str, Any]] = {
     "1": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "name": "get_photos_by_person",
         "module": "tools.people_photo",
         "callable": "get_photos_by_person",
@@ -28,12 +29,19 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "person_id": "str — 필수. 인물의 BSON ObjectId 또는 이름"
 =======
         "name": "people_photo_search",
+=======
+        "name": "get_photos_by_person",
+>>>>>>> e0c7e6b (middle update)
         "module": "tools.people_photo",
-        "callable": "search_by_person",
-        "description": "사람 ID(또는 이름)를 받아 photo_people DB에서 해당 인물이 등장하는 사진 목록을 반환합니다.",
+        "callable": "get_photos_by_person",
+        "description": "사람 ObjectId(또는 이름)를 받아 해당 인물이 포함된 모든 사진을 반환합니다.",
         "inputs": {
+<<<<<<< HEAD
             "person_id": "str — 필수. 인물의 고유 ID 또는 이름"
 >>>>>>> 89258b7 (middle backup)
+=======
+            "person_id": "str — 필수. 인물의 BSON ObjectId 또는 이름"
+>>>>>>> e0c7e6b (middle update)
         },
         "outputs": {
             "photos": "List[Dict] — 사진 메타데이터 목록",
@@ -42,10 +50,14 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
     },
     "2": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0c7e6b (middle update)
         "name": "get_people_in_photo",
         "module": "tools.people_photo",
         "callable": "get_people_in_photo",
         "description": "사진 ID를 받아 해당 사진에 등장하는 모든 사람(인물) 정보를 반환합니다.",
+<<<<<<< HEAD
         "inputs": {
             "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
         },
@@ -70,28 +82,32 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "module": "tools.photo",
         "callable": "search_by_tags",
         "description": "태그(키워드) 리스트를 받아 사진 DB에서 일치/유사 태그를 가진 사진을 검색합니다.",
+=======
+>>>>>>> e0c7e6b (middle update)
         "inputs": {
-            "tags": "List[str] — 필수. 검색할 태그 목록",
-            "limit": "Optional[int] — 최대 반환 개수 (기본값 50)"
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
         },
         "outputs": {
-            "photos": "List[Dict] — 사진 메타데이터 목록",
-            "count": "int — 검색된 사진 수"
+            "people": "List[Dict] — 인물 메타데이터 목록",
+            "count": "int — 검색된 인물 수"
         },
     },
     "3": {
-        "name": "place_recommender",
-        "module": "tools.recommender",
-        "callable": "recommend_places",
-        "description": "사진·태그·위치 데이터를 분석하여 음식점·카페·관광지를 추천합니다.",
+        "name": "add_person_to_photo",
+        "module": "tools.people_photo",
+        "callable": "add_person_to_photo",
+        "description": "사진‑인물 매핑을 추가하여 특정 사진에 사람을 연결합니다.",
         "inputs": {
-            "city": "str — 필수. 도시/지역명",
-            "category": "str — 음식, 카페, 관광 등",
-            "seed_places": "Optional[List[str]] — 참고할 장소 ID 목록"
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID",
+            "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
         },
         "outputs": {
+<<<<<<< HEAD
             "places": "List[Dict] — 추천 장소 목록(이름, 좌표, 설명 등 포함)"
 >>>>>>> 89258b7 (middle backup)
+=======
+            "mapping": "Dict — 저장된 매핑 문서"
+>>>>>>> e0c7e6b (middle update)
         },
     },
     "4": {
@@ -206,9 +222,12 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "path": "str — 다운로드된 사이트가 저장된 디렉터리"
         },
     },
+<<<<<<< HEAD
 =======
     }
 >>>>>>> 89258b7 (middle backup)
+=======
+>>>>>>> e0c7e6b (middle update)
 }
 
 
