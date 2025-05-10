@@ -66,14 +66,18 @@ def get_photo_detail(photoId):
 def update_photo(photoId):
     data = request.get_json()
     update = {}
+    if "img" in data:
+        update["image_url"] = data["img"]
     if "text" in data:
         update["description"] = data["text"]
-    if "people" in data:
-        update["people"] = [ObjectId(p) for p in data["people"]]
+    if "peopleId" in data:
+        update["people"] = [ObjectId(p) for p in data["peopleId"]]
     if "location" in data:
         update["location"] = data["location"]
+    if "travelId" in data:
+        update["travel_id"] = data["travelId"]
     photo_repo.update_photo({"_id": ObjectId(photoId)}, {"$set": update})
-    return jsonify({"message": "photo updated"})
+    return
 
 @app.route("/api/photos/<photo_id>", methods=["DELETE"])
 def delete_photo(photo_id):
