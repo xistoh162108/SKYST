@@ -1,0 +1,119 @@
+{
+  "session_id": "20250511_052425",
+  "start_time": "2025-05-11T05:24:25.910577",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:24:30.775630",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "wine_bar",
+              "brunch_restaurant",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJ9_DxYkSjfDURLHUcw6khae0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "9 Jahamun-ro 1ga-gil, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "한옥달 레스토랑&바",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJ1QsExQejfDURYKO8kssfu9M",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "295 Dongho-ro 17-gil, Jung District, Seoul, South Korea",
+            "displayName": {
+              "text": "Brera Restaurant, Seoul",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "error_2",
+      "type": "error",
+      "timestamp": "2025-05-11T05:24:34.785599",
+      "content": {
+        "error_type": "ToolExecutionError",
+        "message": "Unknown tool ID: 8",
+        "details": {
+          "tool_id": "8",
+          "inputs": {
+            "search_results_key": "gp_search_text_results",
+            "criteria": {
+              "평점": "4.0 이상",
+              "리뷰 수": "100개 이상",
+              "가격대": "중간"
+            }
+          }
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

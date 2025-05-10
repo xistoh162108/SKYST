@@ -1,0 +1,1724 @@
+{
+  "session_id": "20250511_051917",
+  "start_time": "2025-05-11T05:19:17.542108",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:22.504351",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJvRfDh7GjfDURqvkDTkfDx7Y",
+            "types": [
+              "brunch_restaurant",
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "193 Mallijae-ro, Jung District, Seoul, South Korea",
+            "displayName": {
+              "text": "Komvaak",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJtfe9lc6YfDURx1rgqNc-Q3c",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Seoul, South Korea",
+            "displayName": {
+              "text": "레스토랑괴르츠",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:27.367042",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "1단계 검색 결과에서 나온 장소들 평점 리뷰"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 리뷰 및 평점 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "htmlTitle": "Google 지도 <b>리뷰</b> 및 <b>평점</b> 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "link": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE.Platform%3DDesktop",
+            "displayLink": "support.google.com",
+            "snippet": "내 리뷰 찾기 Google 지도에서 방문한 장소에 대한 리뷰를 작성할 수 있습니다. 예를 들어 조용한 데이트 장소인지, 또는 현재 내부 수리 중인지 등 장소에 대한 정보 ...",
+            "htmlSnippet": "내 <b>리뷰</b> 찾기 Google 지도<b>에서</b> 방문한 <b>장소</b>에 대한 <b>리뷰</b>를 작성할 수 있습니다. 예를 들어 조용한 데이트 <b>장소</b>인지, 또는 현재 내부 수리 중인지 등 <b>장소</b>에 대한 정보&nbsp;...",
+            "formattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE...",
+            "htmlFormattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&amp;co=GENIE...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWwYsd2sMRfTOMn-XpiGb1gcBuEfJADQxwdZiGx2MkYLSV72Ry9cAUx-D&s",
+                  "width": "210",
+                  "height": "239"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=535886823, app-argument=https://support.google.com/maps/answer/6230175, affiliate-data=pt=9008&ct=help-center",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=3,user-scalable=yes",
+                  "format-detection": "email=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://storage.googleapis.com/support-kms-prod/nbq3l7RcPgAp25Zx4ZiMPMAdvWnMUVU6v087"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 - Google Play 앱",
+            "htmlTitle": "Google 지도 - Google Play 앱",
+            "link": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+            "displayLink": "play.google.com",
+            "snippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아 ...",
+            "htmlSnippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아&nbsp;...",
+            "formattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "pagemap": {
+              "offer": [
+                {
+                  "price": "0",
+                  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&rdid=com.google.android.apps.maps&feature=md&offerId"
+                }
+              ],
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvNp-t1PAtqriEO0N8-zYBEl68K4p314BohtumuXyCcvvGrn3Nk654aQ&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "Google 지도 - Google Play 앱",
+                  "twitter:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+                  "appstore:developer_url": "http://maps.google.com/about/",
+                  "og:title": "Google 지도 - Google Play 앱",
+                  "twitter:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w600-h300-pc0xffffff-pd",
+                  "appstore:bundle_id": "com.google.android.apps.maps",
+                  "referrer": "origin",
+                  "twitter:site": "@GooglePlay",
+                  "appstore:store_id": "com.google.android.apps.maps",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "apple-mobile-web-app-capable": "yes",
+                  "twitter:description": "Google 지도 앱 최신 버전을 다운로드하세요.",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "control characters are not allowed at line 1 column 1 #116",
+            "htmlTitle": "control characters are not allowed at line <b>1</b> column <b>1</b> #116",
+            "link": "https://github.com/ruby/psych/issues/116",
+            "displayLink": "github.com",
+            "snippet": "Jan 11, 2013 ... - 답변을 신속하게 하면 할 수록 검색 결과 순위에서 상위를 차지합니다.\" \"step2\": \"2단계: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를 ...",
+            "htmlSnippet": "Jan 11, 2013 <b>...</b> - 답변을 신속하게 하면 할 수록 <b>검색 결과</b> 순위<b>에서</b> 상위를 차지합니다.&quot; &quot;step2&quot;: &quot;2<b>단계</b>: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를&nbsp;...",
+            "formattedUrl": "https://github.com/ruby/psych/issues/116",
+            "htmlFormattedUrl": "https://github.com/ruby/psych/issues/116",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xv781RAsfknRI1oSN6wcwOqXGcmK--Co2zlcp2QmcxGjXQ1yBCFfskOn&s",
+                  "width": "318",
+                  "height": "159"
+                }
+              ],
+              "softwaresourcecode": [
+                {
+                  "author": "ruby",
+                  "name": "psych"
+                }
+              ],
+              "metatags": [
+                {
+                  "octolytics-url": "https://collector.github.com/github/collect",
+                  "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/_view_fragments/issues/show/ruby/psych/116/issue_layout",
+                  "og:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "1200",
+                  "theme-color": "#1e2327",
+                  "og:site_name": "GitHub",
+                  "hovercard-subject-tag": "issue:9876700",
+                  "turbo-body-classes": "logged-out env-production page-responsive",
+                  "release": "c0e3e7d3af7e40b2e86994ff0937e06bda52558f",
+                  "html-safe-nonce": "4eb5e94b9c7f44f32b2e13e2f10eef34584524d64b177cff3ec0ab00cda084b6",
+                  "expected-hostname": "github.com",
+                  "og:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "twitter:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "browser-errors-url": "https://api.github.com/_private/browser/errors",
+                  "octolytics-dimension-user_login": "ruby",
+                  "hostname": "github.com",
+                  "twitter:site": "@github",
+                  "browser-stats-url": "https://api.github.com/_private/browser/stats",
+                  "route-pattern": "/_view_fragments/issues/show/:user_id/:repository/:id/issue_layout(.:format)",
+                  "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJENEEwOjMzNDM0NTo0OTlDNTBFOjY1ODhFMzA6NjdGQ0VFQzMiLCJ2aXNpdG9yX2lkIjoiNTAzMTE2NDUxNTIxNTc5Nzk1OSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+                  "github-keyboard-shortcuts": "repository,issues,copilot",
+                  "octolytics-dimension-repository_id": "320148",
+                  "octolytics-dimension-repository_network_root_nwo": "ruby/psych",
+                  "twitter:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "og:image:alt": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "og:type": "object",
+                  "og:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "visitor-hmac": "6e45dcde6939af8ee0b81a0185289de762b2e8cc56d4c82e5ec174d996e9e2c9",
+                  "og:image:height": "600",
+                  "turbo-cache-control": "no-preview",
+                  "route-action": "issue_layout",
+                  "request-id": "D4A0:334345:499C50E:6588E30:67FCEEC3",
+                  "analytics-location": "/<user-name>/<repo-name>/voltron/issues_fragments/issue_layout",
+                  "color-scheme": "light dark",
+                  "octolytics-dimension-repository_is_fork": "false",
+                  "go-import": "github.com/ruby/psych git https://github.com/ruby/psych.git",
+                  "octolytics-dimension-user_id": "210414",
+                  "octolytics-dimension-repository_public": "true",
+                  "fb:app_id": "1401488693436528",
+                  "octolytics-dimension-repository_network_root_id": "320148",
+                  "octolytics-dimension-repository_nwo": "ruby/psych",
+                  "viewport": "width=device-width",
+                  "twitter:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: &quot;emails&quot;: &quot;greeting&quot;: &quot;%{name} 님,&quot; &quot;happy_renting&quot;: &quot;즐거운 여행...",
+                  "og:author:username": "donaldpiret",
+                  "route-controller": "voltron_issues_fragments",
+                  "current-catalog-service-hash": "81bb79d38c15960b92d99bca9288a9108c7a47b18f2423d0f6438c5b7bcd2114",
+                  "og:url": "https://github.com/ruby/psych/issues/116"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "htmlTitle": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "link": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "Sep 27, 2024 ... 한글원본으로 적힌 한국인들 리뷰 혹은 최신순 리뷰 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 '저장된 장소' 목록에서 쉽게 찾을 수 있고, 일정이 ...",
+            "htmlSnippet": "Sep 27, 2024 <b>...</b> 한글원본으로 적힌 한국인<b>들 리뷰</b> 혹은 최신순 <b>리뷰</b> 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 &#39;저장된 <b>장소</b>&#39; 목록<b>에서</b> 쉽게 찾을 수 있고, 일정이&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9WhSGTIfqIIx-1JuVgheWNC-Ge0KZbQObGANZC5pN9I4ZT5wFM-Ebp0&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/Copy_of_Maldives_%289%29.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 여행작가 박은하",
+                  "og:title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMTA1MTdfODYg/MDAxNjIxMTgxNjY0NDQz.kminjsfPX_UHJ3hhuS6V1Eyoxiw4tTOgiOnEE8eyczgg.u-miUBhhVW-3Ej7MhuRmWCqizjoDQ4HjJ5TaBtlY3uwg.PNG.neweunha/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000340F8B8A53,service=blog,collection=blog",
+                  "og:description": "한국에서는 자주 사용하지 않지만, 해외여행 할 때 없어서는 안 될 필수 앱이 바로 구글맵입니다. 국내에서...",
+                  "referrer": "always",
+                  "naverblog:nickname": "여행작가 박은하",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/neweunha/223599102547",
+                  "og:article:author": "여행작가 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/SE-e929c0cb-7dd1-4344-b896-92da32d8d21b.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "htmlTitle": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "link": "https://bounce.com/ko",
+            "displayLink": "bounce.com",
+            "snippet": "이호텔에서 일하는 분들이 정말 친절해요. Show more. 뉴욕에서 Bounce에 리뷰를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. 1일 전. 짐을 매우 ...",
+            "htmlSnippet": "이호텔<b>에서</b> 일하는 분들이 정말 친절해요. Show more. 뉴욕<b>에서</b> Bounce에 <b>리뷰</b>를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. <b>1</b>일 전. 짐을 매우&nbsp;...",
+            "formattedUrl": "https://bounce.com/ko",
+            "htmlFormattedUrl": "https://bounce.com/ko",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TV2uFqBmj2pgI1kD4tuCLDRMZ6ZuOFYzLF23SuxM300iKJDefXqH6zyF&s",
+                  "width": "256",
+                  "height": "197"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "/static/thumbnail.png",
+                  "twitter:card": "summary_large_image",
+                  "og:type": "website",
+                  "theme-color": "#fff",
+                  "og:site_name": "Bounce Luggage Storage",
+                  "og:title": "Bounce: 내 주변 짐 보관소 - 수하물 및 보관함",
+                  "twitter:image": "/static/thumbnail.png",
+                  "next-head-count": "31",
+                  "referrer": "no-referrer",
+                  "twitter:site": "https://bounce.com/ko",
+                  "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+                  "og:url": "https://bounce.com/ko",
+                  "google-play-app": "app-id=com.usebounce"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://bounce.com/_next/image?url=https%3A%2F%2Fmarketing.bounce.com%2F_next%2Fstatic%2Fmedia%2Fdefault_hero_home.61d52781.png&w=1466&q=75&dpl=dpl_Cati9HfdhGmZc8majbMGq5enxxtR"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+            "htmlTitle": "[뽈레팀] 뽈레님의 <b>리뷰</b> 2024/4/17",
+            "link": "https://polle.com/Polle/posts/115",
+            "displayLink": "polle.com",
+            "snippet": "Apr 17, 2024 ... 폐점된 장소 핀 일괄 삭제 하기 전 '폐업' 필터를 통해 리스트를 보는데 폐업하지 않은 장소들이 대거 포함되어있네요 대부분 해외 식당들인데, 확인 ...",
+            "htmlSnippet": "Apr 17, 2024 <b>...</b> 폐점된 <b>장소</b> 핀 일괄 삭제 하기 전 &#39;폐업&#39; 필터를 통해 리스트를 보는데 폐업하지 않은 <b>장소</b>들이 대거 포함되어있네요 대부분 해외 식당<b>들</b>인데, 확인&nbsp;...",
+            "formattedUrl": "https://polle.com/Polle/posts/115",
+            "htmlFormattedUrl": "https://polle.com/Polle/posts/115",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalezIHdFdNOAbsvlVkOWe6Yhm2PuFVpj1vdaAwX80k8TtfoSNAOBXSrZ7&s",
+                  "width": "152",
+                  "height": "331"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg",
+                  "apple-itunes-app": "app-id=1025468765, app-argument=https://polle.com/Polle/posts/115",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "944",
+                  "theme-color": "#ffffff",
+                  "apple-mobile-web-app-title": "Polle",
+                  "al:android:package": "com.polle.Polle",
+                  "og:image:type": "image/jpeg",
+                  "al:ios:url": "polle://polle.com/Polle/posts/115",
+                  "og:description": "안녕하세요. 뽈레팀입니다 🧑🏻‍💻👩🏻‍💻  iOS 버전 5.0 업데이트와 관련해 몇 가지 추가적인 업데이트가 오늘 새벽에 진행됐구요. 지금 최신 버전으로 업데이트를 하시면 아래 기능이 추가된 버전을 바로 사용하실 수 있습니다.  1. 친구들의 평가 & 핀 보기   식당 페...",
+                  "twitter:creator": "@polle_app",
+                  "al:ios:app_store_id": "1025468765",
+                  "twitter:site": "@polle_app",
+                  "msapplication-tilecolor": "#da532c",
+                  "application-name": "Polle",
+                  "og:type": "article",
+                  "al:ios:app_name": "뽈레 Polle",
+                  "og:title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+                  "og:image:height": "2048",
+                  "al:web:url": "https://polle.com/Polle/posts/115",
+                  "al:android:url": "polle://polle.com/Polle/posts/115",
+                  "fb:app_id": "1740642462835867",
+                  "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+                  "og:url": "https://polle.com/Polle/posts/115",
+                  "al:android:app_name": "뽈레 - 발 빠른 미식 플랫폼",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법 ...",
+            "htmlTitle": "서촌 해장라면 맛집 라면점빵(맵기<b>단계</b> 선택방법, 웨이팅, 주문방법 ...",
+            "link": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo=223684773603",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Dec 6, 2024 ... 이 장소의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 1번출구에서. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목 ...",
+            "htmlSnippet": "Dec 6, 2024 <b>...</b> 이 <b>장소</b>의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 <b>1</b>번출구<b>에서</b>. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo...",
+            "htmlFormattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&amp;logNo...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Np4Es5olQl7fsBTEIiYtELPbHbrr7XK5bpkalzX5adh5owT76XMOAyRj&s",
+                  "width": "226",
+                  "height": "223"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDEyMDRfMjg3/MDAxNzMzMjkxNTYwMzU4.G3qnl9PcVDtbf1QATpIk6AyMohTu6nuu8Ghur5wy4oAg.42iSqGSN7M6yGcb0gSM0jl8foQTWU3lcz5AVaW0YABgg.JPEG/IMG_0620.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 노포주머니",
+                  "og:title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법)",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNTAyMTZfMTYg/MDAxNzM5NjgwNDEyNjY0.4rAVsl3eoKgmhAv-vhggLWDpnymxipyrL2VtJzpbyFEg.hL44yAvrda4bBzV9RChCuJ7hLd67-OlYvX614sj9MSYg.JPEG/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_000000000000003414A6C6E3,service=blog,collection=blog",
+                  "og:description": "라면점빵 아는 사람만 아는 숨겨진 동네 맛집, 해장에 최고라는 라면점빵에 다녀왔어요 친구가 자기 최애 ...",
+                  "referrer": "always",
+                  "naverblog:nickname": "노포요정",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/msds_/223684773603",
+                  "og:article:author": "노포주머니 | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMDRfMTQ2/MDAxNzMzMjk0NTAxOTY3.FyuTr8ml676NezTXHg5sTFTbRtPme6bBkm_IykXfr48g.fA3io5G_RzPPo1O-aniUOcICmT2g7Y7O3Vm8jgJNKbsg.JPEG/output_1789558168.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "온라인 리뷰의 토픽유형이 소비자가 지각하는 리뷰 유용성에 미치는 ...",
+            "htmlTitle": "온라인 <b>리뷰</b>의 토픽유형이 소비자가 지각하는 <b>리뷰</b> 유용성에 미치는 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20%EA%B9%80%ED%98%95%EC%A4%80.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "다양한 연구들에서 리뷰의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석결과, 모델 1단계에서 3단계로 진행할수록 모델의 설명력의 값이. 각 ...",
+            "htmlSnippet": "다양한 연구<b>들에서 리뷰</b>의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석<b>결과</b>, 모델 <b>1단계에서</b> 3단계로 진행할수록 모델의 설명력의 값이. 각&nbsp;...",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20김형준.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/<b>1</b>/04%20김형준.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBA9bWqPbXCgtoxjKQL2RkN4nzVAv9ZKB1QeO8WXHcuQoc3V-1te71Zvo&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///86207ed6d2dd4cce54d14fe143c873d3c682219a8b61ece070b5811b47cfa8e9"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "htmlTitle": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "link": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "displayLink": "m.ypbooks.co.kr",
+            "snippet": "Dec 25, 2024 ... 먼저 1단계 '추리의 기본'에서는 용의자, 장소, 무기의 세 가지 요소가 ... Karber. 도서리뷰 (0). 이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 ...",
+            "htmlSnippet": "Dec 25, 2024 <b>...</b> 먼저 <b>1단계</b> &#39;추리의 기본&#39;에서는 용의자, <b>장소</b>, 무기의 세 가지 요소가 ... Karber. 도서<b>리뷰</b> (0). 이 책을 읽고 어떤 느낌을 받으셨나요? <b>리뷰</b>를 남기고&nbsp;...",
+            "formattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "htmlFormattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKTbyCQ8Fsx4c7OGorpa2SMi-XabyIER88tz7rIfLxkICVXTNaWrUtiN8&s",
+                  "width": "188",
+                  "height": "268"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg",
+                  "og:type": "website",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "author": "영풍문고",
+                  "og:title": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100",
+                  "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍문고(M)",
+                  "og:url": "https://m.ypbooks.co.kr/books/202412316727158298",
+                  "og:description": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 평점? 의미 없어 ...",
+            "htmlTitle": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 <b>평점</b>? 의미 없어 ...",
+            "link": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "displayLink": "www.threads.net",
+            "snippet": "Mar 2, 2025 ... 어지간한 회사들도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접에서 강점으로 바꾸는 3단계1. 경험을 '역할'로 정리하기 \"조별 과제 ...",
+            "htmlSnippet": "Mar 2, 2025 <b>...</b> 어지간한 회사<b>들</b>도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접<b>에서</b> 강점으로 바꾸는 3<b>단계1</b>. 경험을 &#39;역할&#39;로 정리하기 &quot;조별 과제&nbsp;...",
+            "formattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "htmlFormattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRriGeYNxpmt33rqvFfeIYDWQIDlN7cXiJ4-wkIr8D3hCVgexDgV78R51IW&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DGsq5y9SELz",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "og:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DGsq5y9SELz",
+                  "color-scheme": "light",
+                  "og:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n• 단점이 내가 참고 다닐만한 수준인지\n• 장점이 단점을 상쇄할 수 있는지\n\n예를 들면?\n연봉인상률이 낮다 → 근데 워라밸이 엄청 좋다? OK\n야근이 많다 → 근데 그만큼 보상받는다? 고려해볼 만함\n\n2. 리뷰 성향 감안해서 보기\n• 잡플래닛에는 보통 불만 있는 사람들이 글을 씀\n• 평점이나 악플 많은 건 기본값이라고 생각해야 함\n\n3. 현실적인 분위기는 블라인드 검색\n잡플래닛은 공개된 플랫폼이라\n솔직한 후기엔 한계가 있으니,\n블라인드에서 검색해",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n•...",
+                  "og:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_3",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:36.738240",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJ9_DxYkSjfDURLHUcw6khae0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "9 Jahamun-ro 1ga-gil, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "한옥달 레스토랑&바",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJ1QsExQejfDURYKO8kssfu9M",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "295 Dongho-ro 17-gil, Jung District, Seoul, South Korea",
+            "displayName": {
+              "text": "Brera Restaurant, Seoul",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_4",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:41.724167",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "1단계 검색 결과에서 나온 장소들 평점 리뷰"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 리뷰 및 평점 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "htmlTitle": "Google 지도 <b>리뷰</b> 및 <b>평점</b> 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "link": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE.Platform%3DDesktop",
+            "displayLink": "support.google.com",
+            "snippet": "내 리뷰 찾기 Google 지도에서 방문한 장소에 대한 리뷰를 작성할 수 있습니다. 예를 들어 조용한 데이트 장소인지, 또는 현재 내부 수리 중인지 등 장소에 대한 정보 ...",
+            "htmlSnippet": "내 <b>리뷰</b> 찾기 Google 지도<b>에서</b> 방문한 <b>장소</b>에 대한 <b>리뷰</b>를 작성할 수 있습니다. 예를 들어 조용한 데이트 <b>장소</b>인지, 또는 현재 내부 수리 중인지 등 <b>장소</b>에 대한 정보&nbsp;...",
+            "formattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE...",
+            "htmlFormattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&amp;co=GENIE...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWwYsd2sMRfTOMn-XpiGb1gcBuEfJADQxwdZiGx2MkYLSV72Ry9cAUx-D&s",
+                  "width": "210",
+                  "height": "239"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=535886823, app-argument=https://support.google.com/maps/answer/6230175, affiliate-data=pt=9008&ct=help-center",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=3,user-scalable=yes",
+                  "format-detection": "email=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://storage.googleapis.com/support-kms-prod/nbq3l7RcPgAp25Zx4ZiMPMAdvWnMUVU6v087"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 - Google Play 앱",
+            "htmlTitle": "Google 지도 - Google Play 앱",
+            "link": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+            "displayLink": "play.google.com",
+            "snippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아 ...",
+            "htmlSnippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아&nbsp;...",
+            "formattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "pagemap": {
+              "offer": [
+                {
+                  "price": "0",
+                  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&rdid=com.google.android.apps.maps&feature=md&offerId"
+                }
+              ],
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvNp-t1PAtqriEO0N8-zYBEl68K4p314BohtumuXyCcvvGrn3Nk654aQ&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "Google 지도 - Google Play 앱",
+                  "twitter:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+                  "appstore:developer_url": "http://maps.google.com/about/",
+                  "og:title": "Google 지도 - Google Play 앱",
+                  "twitter:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w600-h300-pc0xffffff-pd",
+                  "appstore:bundle_id": "com.google.android.apps.maps",
+                  "referrer": "origin",
+                  "twitter:site": "@GooglePlay",
+                  "appstore:store_id": "com.google.android.apps.maps",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "apple-mobile-web-app-capable": "yes",
+                  "twitter:description": "Google 지도 앱 최신 버전을 다운로드하세요.",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "control characters are not allowed at line 1 column 1 #116",
+            "htmlTitle": "control characters are not allowed at line <b>1</b> column <b>1</b> #116",
+            "link": "https://github.com/ruby/psych/issues/116",
+            "displayLink": "github.com",
+            "snippet": "Jan 11, 2013 ... - 답변을 신속하게 하면 할 수록 검색 결과 순위에서 상위를 차지합니다.\" \"step2\": \"2단계: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를 ...",
+            "htmlSnippet": "Jan 11, 2013 <b>...</b> - 답변을 신속하게 하면 할 수록 <b>검색 결과</b> 순위<b>에서</b> 상위를 차지합니다.&quot; &quot;step2&quot;: &quot;2<b>단계</b>: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를&nbsp;...",
+            "formattedUrl": "https://github.com/ruby/psych/issues/116",
+            "htmlFormattedUrl": "https://github.com/ruby/psych/issues/116",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xv781RAsfknRI1oSN6wcwOqXGcmK--Co2zlcp2QmcxGjXQ1yBCFfskOn&s",
+                  "width": "318",
+                  "height": "159"
+                }
+              ],
+              "softwaresourcecode": [
+                {
+                  "author": "ruby",
+                  "name": "psych"
+                }
+              ],
+              "metatags": [
+                {
+                  "octolytics-url": "https://collector.github.com/github/collect",
+                  "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/_view_fragments/issues/show/ruby/psych/116/issue_layout",
+                  "og:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "1200",
+                  "theme-color": "#1e2327",
+                  "og:site_name": "GitHub",
+                  "hovercard-subject-tag": "issue:9876700",
+                  "turbo-body-classes": "logged-out env-production page-responsive",
+                  "release": "c0e3e7d3af7e40b2e86994ff0937e06bda52558f",
+                  "html-safe-nonce": "4eb5e94b9c7f44f32b2e13e2f10eef34584524d64b177cff3ec0ab00cda084b6",
+                  "expected-hostname": "github.com",
+                  "og:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "twitter:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "browser-errors-url": "https://api.github.com/_private/browser/errors",
+                  "octolytics-dimension-user_login": "ruby",
+                  "hostname": "github.com",
+                  "twitter:site": "@github",
+                  "browser-stats-url": "https://api.github.com/_private/browser/stats",
+                  "route-pattern": "/_view_fragments/issues/show/:user_id/:repository/:id/issue_layout(.:format)",
+                  "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJENEEwOjMzNDM0NTo0OTlDNTBFOjY1ODhFMzA6NjdGQ0VFQzMiLCJ2aXNpdG9yX2lkIjoiNTAzMTE2NDUxNTIxNTc5Nzk1OSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+                  "github-keyboard-shortcuts": "repository,issues,copilot",
+                  "octolytics-dimension-repository_id": "320148",
+                  "octolytics-dimension-repository_network_root_nwo": "ruby/psych",
+                  "twitter:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "og:image:alt": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "og:type": "object",
+                  "og:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "visitor-hmac": "6e45dcde6939af8ee0b81a0185289de762b2e8cc56d4c82e5ec174d996e9e2c9",
+                  "og:image:height": "600",
+                  "turbo-cache-control": "no-preview",
+                  "route-action": "issue_layout",
+                  "request-id": "D4A0:334345:499C50E:6588E30:67FCEEC3",
+                  "analytics-location": "/<user-name>/<repo-name>/voltron/issues_fragments/issue_layout",
+                  "color-scheme": "light dark",
+                  "octolytics-dimension-repository_is_fork": "false",
+                  "go-import": "github.com/ruby/psych git https://github.com/ruby/psych.git",
+                  "octolytics-dimension-user_id": "210414",
+                  "octolytics-dimension-repository_public": "true",
+                  "fb:app_id": "1401488693436528",
+                  "octolytics-dimension-repository_network_root_id": "320148",
+                  "octolytics-dimension-repository_nwo": "ruby/psych",
+                  "viewport": "width=device-width",
+                  "twitter:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: &quot;emails&quot;: &quot;greeting&quot;: &quot;%{name} 님,&quot; &quot;happy_renting&quot;: &quot;즐거운 여행...",
+                  "og:author:username": "donaldpiret",
+                  "route-controller": "voltron_issues_fragments",
+                  "current-catalog-service-hash": "81bb79d38c15960b92d99bca9288a9108c7a47b18f2423d0f6438c5b7bcd2114",
+                  "og:url": "https://github.com/ruby/psych/issues/116"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "htmlTitle": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "link": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "Sep 27, 2024 ... 한글원본으로 적힌 한국인들 리뷰 혹은 최신순 리뷰 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 '저장된 장소' 목록에서 쉽게 찾을 수 있고, 일정이 ...",
+            "htmlSnippet": "Sep 27, 2024 <b>...</b> 한글원본으로 적힌 한국인<b>들 리뷰</b> 혹은 최신순 <b>리뷰</b> 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 &#39;저장된 <b>장소</b>&#39; 목록<b>에서</b> 쉽게 찾을 수 있고, 일정이&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9WhSGTIfqIIx-1JuVgheWNC-Ge0KZbQObGANZC5pN9I4ZT5wFM-Ebp0&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/Copy_of_Maldives_%289%29.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 여행작가 박은하",
+                  "og:title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMTA1MTdfODYg/MDAxNjIxMTgxNjY0NDQz.kminjsfPX_UHJ3hhuS6V1Eyoxiw4tTOgiOnEE8eyczgg.u-miUBhhVW-3Ej7MhuRmWCqizjoDQ4HjJ5TaBtlY3uwg.PNG.neweunha/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000340F8B8A53,service=blog,collection=blog",
+                  "og:description": "한국에서는 자주 사용하지 않지만, 해외여행 할 때 없어서는 안 될 필수 앱이 바로 구글맵입니다. 국내에서...",
+                  "referrer": "always",
+                  "naverblog:nickname": "여행작가 박은하",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/neweunha/223599102547",
+                  "og:article:author": "여행작가 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/SE-e929c0cb-7dd1-4344-b896-92da32d8d21b.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "htmlTitle": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "link": "https://bounce.com/ko",
+            "displayLink": "bounce.com",
+            "snippet": "이호텔에서 일하는 분들이 정말 친절해요. Show more. 뉴욕에서 Bounce에 리뷰를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. 1일 전. 짐을 매우 ...",
+            "htmlSnippet": "이호텔<b>에서</b> 일하는 분들이 정말 친절해요. Show more. 뉴욕<b>에서</b> Bounce에 <b>리뷰</b>를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. <b>1</b>일 전. 짐을 매우&nbsp;...",
+            "formattedUrl": "https://bounce.com/ko",
+            "htmlFormattedUrl": "https://bounce.com/ko",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TV2uFqBmj2pgI1kD4tuCLDRMZ6ZuOFYzLF23SuxM300iKJDefXqH6zyF&s",
+                  "width": "256",
+                  "height": "197"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "/static/thumbnail.png",
+                  "twitter:card": "summary_large_image",
+                  "og:type": "website",
+                  "theme-color": "#fff",
+                  "og:site_name": "Bounce Luggage Storage",
+                  "og:title": "Bounce: 내 주변 짐 보관소 - 수하물 및 보관함",
+                  "twitter:image": "/static/thumbnail.png",
+                  "next-head-count": "31",
+                  "referrer": "no-referrer",
+                  "twitter:site": "https://bounce.com/ko",
+                  "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+                  "og:url": "https://bounce.com/ko",
+                  "google-play-app": "app-id=com.usebounce"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://bounce.com/_next/image?url=https%3A%2F%2Fmarketing.bounce.com%2F_next%2Fstatic%2Fmedia%2Fdefault_hero_home.61d52781.png&w=1466&q=75&dpl=dpl_Cati9HfdhGmZc8majbMGq5enxxtR"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+            "htmlTitle": "[뽈레팀] 뽈레님의 <b>리뷰</b> 2024/4/17",
+            "link": "https://polle.com/Polle/posts/115",
+            "displayLink": "polle.com",
+            "snippet": "Apr 17, 2024 ... 폐점된 장소 핀 일괄 삭제 하기 전 '폐업' 필터를 통해 리스트를 보는데 폐업하지 않은 장소들이 대거 포함되어있네요 대부분 해외 식당들인데, 확인 ...",
+            "htmlSnippet": "Apr 17, 2024 <b>...</b> 폐점된 <b>장소</b> 핀 일괄 삭제 하기 전 &#39;폐업&#39; 필터를 통해 리스트를 보는데 폐업하지 않은 <b>장소</b>들이 대거 포함되어있네요 대부분 해외 식당<b>들</b>인데, 확인&nbsp;...",
+            "formattedUrl": "https://polle.com/Polle/posts/115",
+            "htmlFormattedUrl": "https://polle.com/Polle/posts/115",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalezIHdFdNOAbsvlVkOWe6Yhm2PuFVpj1vdaAwX80k8TtfoSNAOBXSrZ7&s",
+                  "width": "152",
+                  "height": "331"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg",
+                  "apple-itunes-app": "app-id=1025468765, app-argument=https://polle.com/Polle/posts/115",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "944",
+                  "theme-color": "#ffffff",
+                  "apple-mobile-web-app-title": "Polle",
+                  "al:android:package": "com.polle.Polle",
+                  "og:image:type": "image/jpeg",
+                  "al:ios:url": "polle://polle.com/Polle/posts/115",
+                  "og:description": "안녕하세요. 뽈레팀입니다 🧑🏻‍💻👩🏻‍💻  iOS 버전 5.0 업데이트와 관련해 몇 가지 추가적인 업데이트가 오늘 새벽에 진행됐구요. 지금 최신 버전으로 업데이트를 하시면 아래 기능이 추가된 버전을 바로 사용하실 수 있습니다.  1. 친구들의 평가 & 핀 보기   식당 페...",
+                  "twitter:creator": "@polle_app",
+                  "al:ios:app_store_id": "1025468765",
+                  "twitter:site": "@polle_app",
+                  "msapplication-tilecolor": "#da532c",
+                  "application-name": "Polle",
+                  "og:type": "article",
+                  "al:ios:app_name": "뽈레 Polle",
+                  "og:title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+                  "og:image:height": "2048",
+                  "al:web:url": "https://polle.com/Polle/posts/115",
+                  "al:android:url": "polle://polle.com/Polle/posts/115",
+                  "fb:app_id": "1740642462835867",
+                  "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+                  "og:url": "https://polle.com/Polle/posts/115",
+                  "al:android:app_name": "뽈레 - 발 빠른 미식 플랫폼",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법 ...",
+            "htmlTitle": "서촌 해장라면 맛집 라면점빵(맵기<b>단계</b> 선택방법, 웨이팅, 주문방법 ...",
+            "link": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo=223684773603",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Dec 6, 2024 ... 이 장소의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 1번출구에서. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목 ...",
+            "htmlSnippet": "Dec 6, 2024 <b>...</b> 이 <b>장소</b>의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 <b>1</b>번출구<b>에서</b>. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo...",
+            "htmlFormattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&amp;logNo...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Np4Es5olQl7fsBTEIiYtELPbHbrr7XK5bpkalzX5adh5owT76XMOAyRj&s",
+                  "width": "226",
+                  "height": "223"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDEyMDRfMjg3/MDAxNzMzMjkxNTYwMzU4.G3qnl9PcVDtbf1QATpIk6AyMohTu6nuu8Ghur5wy4oAg.42iSqGSN7M6yGcb0gSM0jl8foQTWU3lcz5AVaW0YABgg.JPEG/IMG_0620.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 노포주머니",
+                  "og:title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법)",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNTAyMTZfMTYg/MDAxNzM5NjgwNDEyNjY0.4rAVsl3eoKgmhAv-vhggLWDpnymxipyrL2VtJzpbyFEg.hL44yAvrda4bBzV9RChCuJ7hLd67-OlYvX614sj9MSYg.JPEG/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_000000000000003414A6C6E3,service=blog,collection=blog",
+                  "og:description": "라면점빵 아는 사람만 아는 숨겨진 동네 맛집, 해장에 최고라는 라면점빵에 다녀왔어요 친구가 자기 최애 ...",
+                  "referrer": "always",
+                  "naverblog:nickname": "노포요정",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/msds_/223684773603",
+                  "og:article:author": "노포주머니 | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMDRfMTQ2/MDAxNzMzMjk0NTAxOTY3.FyuTr8ml676NezTXHg5sTFTbRtPme6bBkm_IykXfr48g.fA3io5G_RzPPo1O-aniUOcICmT2g7Y7O3Vm8jgJNKbsg.JPEG/output_1789558168.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "온라인 리뷰의 토픽유형이 소비자가 지각하는 리뷰 유용성에 미치는 ...",
+            "htmlTitle": "온라인 <b>리뷰</b>의 토픽유형이 소비자가 지각하는 <b>리뷰</b> 유용성에 미치는 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20%EA%B9%80%ED%98%95%EC%A4%80.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "다양한 연구들에서 리뷰의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석결과, 모델 1단계에서 3단계로 진행할수록 모델의 설명력의 값이. 각 ...",
+            "htmlSnippet": "다양한 연구<b>들에서 리뷰</b>의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석<b>결과</b>, 모델 <b>1단계에서</b> 3단계로 진행할수록 모델의 설명력의 값이. 각&nbsp;...",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20김형준.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/<b>1</b>/04%20김형준.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBA9bWqPbXCgtoxjKQL2RkN4nzVAv9ZKB1QeO8WXHcuQoc3V-1te71Zvo&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///86207ed6d2dd4cce54d14fe143c873d3c682219a8b61ece070b5811b47cfa8e9"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "htmlTitle": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "link": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "displayLink": "m.ypbooks.co.kr",
+            "snippet": "Dec 25, 2024 ... 먼저 1단계 '추리의 기본'에서는 용의자, 장소, 무기의 세 가지 요소가 ... Karber. 도서리뷰 (0). 이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 ...",
+            "htmlSnippet": "Dec 25, 2024 <b>...</b> 먼저 <b>1단계</b> &#39;추리의 기본&#39;에서는 용의자, <b>장소</b>, 무기의 세 가지 요소가 ... Karber. 도서<b>리뷰</b> (0). 이 책을 읽고 어떤 느낌을 받으셨나요? <b>리뷰</b>를 남기고&nbsp;...",
+            "formattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "htmlFormattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKTbyCQ8Fsx4c7OGorpa2SMi-XabyIER88tz7rIfLxkICVXTNaWrUtiN8&s",
+                  "width": "188",
+                  "height": "268"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg",
+                  "og:type": "website",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "author": "영풍문고",
+                  "og:title": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100",
+                  "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍문고(M)",
+                  "og:url": "https://m.ypbooks.co.kr/books/202412316727158298",
+                  "og:description": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 평점? 의미 없어 ...",
+            "htmlTitle": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 <b>평점</b>? 의미 없어 ...",
+            "link": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "displayLink": "www.threads.net",
+            "snippet": "Mar 2, 2025 ... 어지간한 회사들도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접에서 강점으로 바꾸는 3단계1. 경험을 '역할'로 정리하기 \"조별 과제 ...",
+            "htmlSnippet": "Mar 2, 2025 <b>...</b> 어지간한 회사<b>들</b>도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접<b>에서</b> 강점으로 바꾸는 3<b>단계1</b>. 경험을 &#39;역할&#39;로 정리하기 &quot;조별 과제&nbsp;...",
+            "formattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "htmlFormattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRriGeYNxpmt33rqvFfeIYDWQIDlN7cXiJ4-wkIr8D3hCVgexDgV78R51IW&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DGsq5y9SELz",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "og:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DGsq5y9SELz",
+                  "color-scheme": "light",
+                  "og:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n• 단점이 내가 참고 다닐만한 수준인지\n• 장점이 단점을 상쇄할 수 있는지\n\n예를 들면?\n연봉인상률이 낮다 → 근데 워라밸이 엄청 좋다? OK\n야근이 많다 → 근데 그만큼 보상받는다? 고려해볼 만함\n\n2. 리뷰 성향 감안해서 보기\n• 잡플래닛에는 보통 불만 있는 사람들이 글을 씀\n• 평점이나 악플 많은 건 기본값이라고 생각해야 함\n\n3. 현실적인 분위기는 블라인드 검색\n잡플래닛은 공개된 플랫폼이라\n솔직한 후기엔 한계가 있으니,\n블라인드에서 검색해",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n•...",
+                  "og:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_5",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:50.904278",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJvRfDh7GjfDURqvkDTkfDx7Y",
+            "types": [
+              "brunch_restaurant",
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "193 Mallijae-ro, Jung District, Seoul, South Korea",
+            "displayName": {
+              "text": "Komvaak",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJtfe9lc6YfDURx1rgqNc-Q3c",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Seoul, South Korea",
+            "displayName": {
+              "text": "레스토랑괴르츠",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_6",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:19:56.042242",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "1단계 검색 결과에서 나온 장소들 평점 리뷰"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 리뷰 및 평점 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "htmlTitle": "Google 지도 <b>리뷰</b> 및 <b>평점</b> 추가, 수정, 삭제하기 - 컴퓨터 - 지도 고객센터",
+            "link": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE.Platform%3DDesktop",
+            "displayLink": "support.google.com",
+            "snippet": "내 리뷰 찾기 Google 지도에서 방문한 장소에 대한 리뷰를 작성할 수 있습니다. 예를 들어 조용한 데이트 장소인지, 또는 현재 내부 수리 중인지 등 장소에 대한 정보 ...",
+            "htmlSnippet": "내 <b>리뷰</b> 찾기 Google 지도<b>에서</b> 방문한 <b>장소</b>에 대한 <b>리뷰</b>를 작성할 수 있습니다. 예를 들어 조용한 데이트 <b>장소</b>인지, 또는 현재 내부 수리 중인지 등 <b>장소</b>에 대한 정보&nbsp;...",
+            "formattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&co=GENIE...",
+            "htmlFormattedUrl": "https://support.google.com/maps/answer/6230175?hl=ko&amp;co=GENIE...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWwYsd2sMRfTOMn-XpiGb1gcBuEfJADQxwdZiGx2MkYLSV72Ry9cAUx-D&s",
+                  "width": "210",
+                  "height": "239"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=535886823, app-argument=https://support.google.com/maps/answer/6230175, affiliate-data=pt=9008&ct=help-center",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=3,user-scalable=yes",
+                  "format-detection": "email=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://storage.googleapis.com/support-kms-prod/nbq3l7RcPgAp25Zx4ZiMPMAdvWnMUVU6v087"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "Google 지도 - Google Play 앱",
+            "htmlTitle": "Google 지도 - Google Play 앱",
+            "link": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+            "displayLink": "play.google.com",
+            "snippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아 ...",
+            "htmlSnippet": "Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아&nbsp;...",
+            "formattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.google.android...",
+            "pagemap": {
+              "offer": [
+                {
+                  "price": "0",
+                  "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&rdid=com.google.android.apps.maps&feature=md&offerId"
+                }
+              ],
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvNp-t1PAtqriEO0N8-zYBEl68K4p314BohtumuXyCcvvGrn3Nk654aQ&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "Google 지도 - Google Play 앱",
+                  "twitter:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko",
+                  "appstore:developer_url": "http://maps.google.com/about/",
+                  "og:title": "Google 지도 - Google Play 앱",
+                  "twitter:image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w600-h300-pc0xffffff-pd",
+                  "appstore:bundle_id": "com.google.android.apps.maps",
+                  "referrer": "origin",
+                  "twitter:site": "@GooglePlay",
+                  "appstore:store_id": "com.google.android.apps.maps",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "apple-mobile-web-app-capable": "yes",
+                  "twitter:description": "Google 지도 앱 최신 버전을 다운로드하세요.",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=ko"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "control characters are not allowed at line 1 column 1 #116",
+            "htmlTitle": "control characters are not allowed at line <b>1</b> column <b>1</b> #116",
+            "link": "https://github.com/ruby/psych/issues/116",
+            "displayLink": "github.com",
+            "snippet": "Jan 11, 2013 ... - 답변을 신속하게 하면 할 수록 검색 결과 순위에서 상위를 차지합니다.\" \"step2\": \"2단계: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를 ...",
+            "htmlSnippet": "Jan 11, 2013 <b>...</b> - 답변을 신속하게 하면 할 수록 <b>검색 결과</b> 순위<b>에서</b> 상위를 차지합니다.&quot; &quot;step2&quot;: &quot;2<b>단계</b>: 호스트에게서 예약 가능이 확인되면 게스트는 예약 절차를&nbsp;...",
+            "formattedUrl": "https://github.com/ruby/psych/issues/116",
+            "htmlFormattedUrl": "https://github.com/ruby/psych/issues/116",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xv781RAsfknRI1oSN6wcwOqXGcmK--Co2zlcp2QmcxGjXQ1yBCFfskOn&s",
+                  "width": "318",
+                  "height": "159"
+                }
+              ],
+              "softwaresourcecode": [
+                {
+                  "author": "ruby",
+                  "name": "psych"
+                }
+              ],
+              "metatags": [
+                {
+                  "octolytics-url": "https://collector.github.com/github/collect",
+                  "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/_view_fragments/issues/show/ruby/psych/116/issue_layout",
+                  "og:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "1200",
+                  "theme-color": "#1e2327",
+                  "og:site_name": "GitHub",
+                  "hovercard-subject-tag": "issue:9876700",
+                  "turbo-body-classes": "logged-out env-production page-responsive",
+                  "release": "c0e3e7d3af7e40b2e86994ff0937e06bda52558f",
+                  "html-safe-nonce": "4eb5e94b9c7f44f32b2e13e2f10eef34584524d64b177cff3ec0ab00cda084b6",
+                  "expected-hostname": "github.com",
+                  "og:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "twitter:image": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116",
+                  "browser-errors-url": "https://api.github.com/_private/browser/errors",
+                  "octolytics-dimension-user_login": "ruby",
+                  "hostname": "github.com",
+                  "twitter:site": "@github",
+                  "browser-stats-url": "https://api.github.com/_private/browser/stats",
+                  "route-pattern": "/_view_fragments/issues/show/:user_id/:repository/:id/issue_layout(.:format)",
+                  "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJENEEwOjMzNDM0NTo0OTlDNTBFOjY1ODhFMzA6NjdGQ0VFQzMiLCJ2aXNpdG9yX2lkIjoiNTAzMTE2NDUxNTIxNTc5Nzk1OSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+                  "github-keyboard-shortcuts": "repository,issues,copilot",
+                  "octolytics-dimension-repository_id": "320148",
+                  "octolytics-dimension-repository_network_root_nwo": "ruby/psych",
+                  "twitter:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "og:image:alt": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: \"emails\": \"greeting\": \"%{name} 님,\" \"happy_renting\": \"즐거운 여행되세요!\" \"best_regards\": \"행복하세요.\" \"roomorama_tea...",
+                  "og:type": "object",
+                  "og:title": "control characters are not allowed at line 1 column 1 · Issue #116 · ruby/psych",
+                  "visitor-hmac": "6e45dcde6939af8ee0b81a0185289de762b2e8cc56d4c82e5ec174d996e9e2c9",
+                  "og:image:height": "600",
+                  "turbo-cache-control": "no-preview",
+                  "route-action": "issue_layout",
+                  "request-id": "D4A0:334345:499C50E:6588E30:67FCEEC3",
+                  "analytics-location": "/<user-name>/<repo-name>/voltron/issues_fragments/issue_layout",
+                  "color-scheme": "light dark",
+                  "octolytics-dimension-repository_is_fork": "false",
+                  "go-import": "github.com/ruby/psych git https://github.com/ruby/psych.git",
+                  "octolytics-dimension-user_id": "210414",
+                  "octolytics-dimension-repository_public": "true",
+                  "fb:app_id": "1401488693436528",
+                  "octolytics-dimension-repository_network_root_id": "320148",
+                  "octolytics-dimension-repository_nwo": "ruby/psych",
+                  "viewport": "width=device-width",
+                  "twitter:description": "Getting this error while parsing the following yaml file. yaml lint tells me it is valid ko: &quot;emails&quot;: &quot;greeting&quot;: &quot;%{name} 님,&quot; &quot;happy_renting&quot;: &quot;즐거운 여행...",
+                  "og:author:username": "donaldpiret",
+                  "route-controller": "voltron_issues_fragments",
+                  "current-catalog-service-hash": "81bb79d38c15960b92d99bca9288a9108c7a47b18f2423d0f6438c5b7bcd2114",
+                  "og:url": "https://github.com/ruby/psych/issues/116"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://opengraph.githubassets.com/4c93ac94d91d4a768ff38e4d662397c186260baa742fff7a05f6a2524beccffd/ruby/psych/issues/116"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "htmlTitle": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁 : 네이버 블로그",
+            "link": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "Sep 27, 2024 ... 한글원본으로 적힌 한국인들 리뷰 혹은 최신순 리뷰 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 '저장된 장소' 목록에서 쉽게 찾을 수 있고, 일정이 ...",
+            "htmlSnippet": "Sep 27, 2024 <b>...</b> 한글원본으로 적힌 한국인<b>들 리뷰</b> 혹은 최신순 <b>리뷰</b> 등으로 한번 더 확인해보는것이 좋아요. ... 나중에 &#39;저장된 <b>장소</b>&#39; 목록<b>에서</b> 쉽게 찾을 수 있고, 일정이&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/neweunha/223599102547?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9WhSGTIfqIIx-1JuVgheWNC-Ge0KZbQObGANZC5pN9I4ZT5wFM-Ebp0&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/Copy_of_Maldives_%289%29.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 여행작가 박은하",
+                  "og:title": "첫 해외여행 세계지도 여행지도 구글맵 200% 활용 꿀팁",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMTA1MTdfODYg/MDAxNjIxMTgxNjY0NDQz.kminjsfPX_UHJ3hhuS6V1Eyoxiw4tTOgiOnEE8eyczgg.u-miUBhhVW-3Ej7MhuRmWCqizjoDQ4HjJ5TaBtlY3uwg.PNG.neweunha/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000340F8B8A53,service=blog,collection=blog",
+                  "og:description": "한국에서는 자주 사용하지 않지만, 해외여행 할 때 없어서는 안 될 필수 앱이 바로 구글맵입니다. 국내에서...",
+                  "referrer": "always",
+                  "naverblog:nickname": "여행작가 박은하",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/neweunha/223599102547",
+                  "og:article:author": "여행작가 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDA5MjdfMTQx/MDAxNzI3NDQ4NjA1MTU2.q3QDf12NKixPHXO3WbRQbAskYRoB-cpGU2J_xUJ2HaYg.Hx_B3r_0BEu0-lgmcvYDocrGn_PVqF1qq_8313ysSOsg.JPEG/SE-e929c0cb-7dd1-4344-b896-92da32d8d21b.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "htmlTitle": "내 주변 짐 보관소 - 수하물 및 보관함 - Bounce",
+            "link": "https://bounce.com/ko",
+            "displayLink": "bounce.com",
+            "snippet": "이호텔에서 일하는 분들이 정말 친절해요. Show more. 뉴욕에서 Bounce에 리뷰를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. 1일 전. 짐을 매우 ...",
+            "htmlSnippet": "이호텔<b>에서</b> 일하는 분들이 정말 친절해요. Show more. 뉴욕<b>에서</b> Bounce에 <b>리뷰</b>를 남긴 고객 Christina R.의 사진. Christina R. 뉴욕 Bounce. <b>1</b>일 전. 짐을 매우&nbsp;...",
+            "formattedUrl": "https://bounce.com/ko",
+            "htmlFormattedUrl": "https://bounce.com/ko",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TV2uFqBmj2pgI1kD4tuCLDRMZ6ZuOFYzLF23SuxM300iKJDefXqH6zyF&s",
+                  "width": "256",
+                  "height": "197"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "/static/thumbnail.png",
+                  "twitter:card": "summary_large_image",
+                  "og:type": "website",
+                  "theme-color": "#fff",
+                  "og:site_name": "Bounce Luggage Storage",
+                  "og:title": "Bounce: 내 주변 짐 보관소 - 수하물 및 보관함",
+                  "twitter:image": "/static/thumbnail.png",
+                  "next-head-count": "31",
+                  "referrer": "no-referrer",
+                  "twitter:site": "https://bounce.com/ko",
+                  "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+                  "og:url": "https://bounce.com/ko",
+                  "google-play-app": "app-id=com.usebounce"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://bounce.com/_next/image?url=https%3A%2F%2Fmarketing.bounce.com%2F_next%2Fstatic%2Fmedia%2Fdefault_hero_home.61d52781.png&w=1466&q=75&dpl=dpl_Cati9HfdhGmZc8majbMGq5enxxtR"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+            "htmlTitle": "[뽈레팀] 뽈레님의 <b>리뷰</b> 2024/4/17",
+            "link": "https://polle.com/Polle/posts/115",
+            "displayLink": "polle.com",
+            "snippet": "Apr 17, 2024 ... 폐점된 장소 핀 일괄 삭제 하기 전 '폐업' 필터를 통해 리스트를 보는데 폐업하지 않은 장소들이 대거 포함되어있네요 대부분 해외 식당들인데, 확인 ...",
+            "htmlSnippet": "Apr 17, 2024 <b>...</b> 폐점된 <b>장소</b> 핀 일괄 삭제 하기 전 &#39;폐업&#39; 필터를 통해 리스트를 보는데 폐업하지 않은 <b>장소</b>들이 대거 포함되어있네요 대부분 해외 식당<b>들</b>인데, 확인&nbsp;...",
+            "formattedUrl": "https://polle.com/Polle/posts/115",
+            "htmlFormattedUrl": "https://polle.com/Polle/posts/115",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalezIHdFdNOAbsvlVkOWe6Yhm2PuFVpj1vdaAwX80k8TtfoSNAOBXSrZ7&s",
+                  "width": "152",
+                  "height": "331"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg",
+                  "apple-itunes-app": "app-id=1025468765, app-argument=https://polle.com/Polle/posts/115",
+                  "twitter:card": "summary_large_image",
+                  "og:image:width": "944",
+                  "theme-color": "#ffffff",
+                  "apple-mobile-web-app-title": "Polle",
+                  "al:android:package": "com.polle.Polle",
+                  "og:image:type": "image/jpeg",
+                  "al:ios:url": "polle://polle.com/Polle/posts/115",
+                  "og:description": "안녕하세요. 뽈레팀입니다 🧑🏻‍💻👩🏻‍💻  iOS 버전 5.0 업데이트와 관련해 몇 가지 추가적인 업데이트가 오늘 새벽에 진행됐구요. 지금 최신 버전으로 업데이트를 하시면 아래 기능이 추가된 버전을 바로 사용하실 수 있습니다.  1. 친구들의 평가 & 핀 보기   식당 페...",
+                  "twitter:creator": "@polle_app",
+                  "al:ios:app_store_id": "1025468765",
+                  "twitter:site": "@polle_app",
+                  "msapplication-tilecolor": "#da532c",
+                  "application-name": "Polle",
+                  "og:type": "article",
+                  "al:ios:app_name": "뽈레 Polle",
+                  "og:title": "[뽈레팀] 뽈레님의 리뷰 2024/4/17",
+                  "og:image:height": "2048",
+                  "al:web:url": "https://polle.com/Polle/posts/115",
+                  "al:android:url": "polle://polle.com/Polle/posts/115",
+                  "fb:app_id": "1740642462835867",
+                  "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+                  "og:url": "https://polle.com/Polle/posts/115",
+                  "al:android:app_name": "뽈레 - 발 빠른 미식 플랫폼",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://d2uja84sd90jmv.cloudfront.net/posts/ICt87JxBYfz-aW2Ao-k8AA/ms.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법 ...",
+            "htmlTitle": "서촌 해장라면 맛집 라면점빵(맵기<b>단계</b> 선택방법, 웨이팅, 주문방법 ...",
+            "link": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo=223684773603",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Dec 6, 2024 ... 이 장소의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 1번출구에서. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목 ...",
+            "htmlSnippet": "Dec 6, 2024 <b>...</b> 이 <b>장소</b>의 다른 글. ​. 01. 가는길 및 주차. 경복궁역 <b>1</b>번출구<b>에서</b>. 도보 4분으로 가까운 편이에요. ​. “세종마을음식문화거리”라는. 시장같은 좁은 골목&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&logNo...",
+            "htmlFormattedUrl": "https://m.blog.naver.com/PostView.naver?blogId=msds_&amp;logNo...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Np4Es5olQl7fsBTEIiYtELPbHbrr7XK5bpkalzX5adh5owT76XMOAyRj&s",
+                  "width": "226",
+                  "height": "223"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDEyMDRfMjg3/MDAxNzMzMjkxNTYwMzU4.G3qnl9PcVDtbf1QATpIk6AyMohTu6nuu8Ghur5wy4oAg.42iSqGSN7M6yGcb0gSM0jl8foQTWU3lcz5AVaW0YABgg.JPEG/IMG_0620.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 노포주머니",
+                  "og:title": "서촌 해장라면 맛집 라면점빵(맵기단계 선택방법, 웨이팅, 주문방법)",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNTAyMTZfMTYg/MDAxNzM5NjgwNDEyNjY0.4rAVsl3eoKgmhAv-vhggLWDpnymxipyrL2VtJzpbyFEg.hL44yAvrda4bBzV9RChCuJ7hLd67-OlYvX614sj9MSYg.JPEG/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_000000000000003414A6C6E3,service=blog,collection=blog",
+                  "og:description": "라면점빵 아는 사람만 아는 숨겨진 동네 맛집, 해장에 최고라는 라면점빵에 다녀왔어요 친구가 자기 최애 ...",
+                  "referrer": "always",
+                  "naverblog:nickname": "노포요정",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/msds_/223684773603",
+                  "og:article:author": "노포주머니 | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDEyMDRfMTQ2/MDAxNzMzMjk0NTAxOTY3.FyuTr8ml676NezTXHg5sTFTbRtPme6bBkm_IykXfr48g.fA3io5G_RzPPo1O-aniUOcICmT2g7Y7O3Vm8jgJNKbsg.JPEG/output_1789558168.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "온라인 리뷰의 토픽유형이 소비자가 지각하는 리뷰 유용성에 미치는 ...",
+            "htmlTitle": "온라인 <b>리뷰</b>의 토픽유형이 소비자가 지각하는 <b>리뷰</b> 유용성에 미치는 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20%EA%B9%80%ED%98%95%EC%A4%80.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "다양한 연구들에서 리뷰의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석결과, 모델 1단계에서 3단계로 진행할수록 모델의 설명력의 값이. 각 ...",
+            "htmlSnippet": "다양한 연구<b>들에서 리뷰</b>의 방향성과 요약된 평가를 나타내는 변수로 활용돼. 왔다 ... 분석<b>결과</b>, 모델 <b>1단계에서</b> 3단계로 진행할수록 모델의 설명력의 값이. 각&nbsp;...",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/1/04%20김형준.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/214533/<b>1</b>/04%20김형준.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBA9bWqPbXCgtoxjKQL2RkN4nzVAv9ZKB1QeO8WXHcuQoc3V-1te71Zvo&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///86207ed6d2dd4cce54d14fe143c873d3c682219a8b61ece070b5811b47cfa8e9"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "htmlTitle": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍 ...",
+            "link": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "displayLink": "m.ypbooks.co.kr",
+            "snippet": "Dec 25, 2024 ... 먼저 1단계 '추리의 기본'에서는 용의자, 장소, 무기의 세 가지 요소가 ... Karber. 도서리뷰 (0). 이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 ...",
+            "htmlSnippet": "Dec 25, 2024 <b>...</b> 먼저 <b>1단계</b> &#39;추리의 기본&#39;에서는 용의자, <b>장소</b>, 무기의 세 가지 요소가 ... Karber. 도서<b>리뷰</b> (0). 이 책을 읽고 어떤 느낌을 받으셨나요? <b>리뷰</b>를 남기고&nbsp;...",
+            "formattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "htmlFormattedUrl": "https://m.ypbooks.co.kr/books/202412316727158298",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKTbyCQ8Fsx4c7OGorpa2SMi-XabyIER88tz7rIfLxkICVXTNaWrUtiN8&s",
+                  "width": "188",
+                  "height": "268"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg",
+                  "og:type": "website",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "author": "영풍문고",
+                  "og:title": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100",
+                  "title": "크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100 - 영풍문고(M)",
+                  "og:url": "https://m.ypbooks.co.kr/books/202412316727158298",
+                  "og:description": "M-크라임 퍼즐 3 - 문장 속에 숨겨진 범인을 찾는 두뇌 게임 100"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cdn.ypbooks.co.kr/image/product/202501/3530f686-17c4-4dca-bb86-7216e2e5395d_350.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 평점? 의미 없어 ...",
+            "htmlTitle": "나만의 잡플래닛 활용법 솔직히 요즘 잡플래닛 <b>평점</b>? 의미 없어 ...",
+            "link": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "displayLink": "www.threads.net",
+            "snippet": "Mar 2, 2025 ... 어지간한 회사들도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접에서 강점으로 바꾸는 3단계1. 경험을 '역할'로 정리하기 \"조별 과제 ...",
+            "htmlSnippet": "Mar 2, 2025 <b>...</b> 어지간한 회사<b>들</b>도 3.0은 맞추려고 돈 주고 악성 후기를 지우거나 ... 면접<b>에서</b> 강점으로 바꾸는 3<b>단계1</b>. 경험을 &#39;역할&#39;로 정리하기 &quot;조별 과제&nbsp;...",
+            "formattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "htmlFormattedUrl": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRriGeYNxpmt33rqvFfeIYDWQIDlN7cXiJ4-wkIr8D3hCVgexDgV78R51IW&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DGsq5y9SELz",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "og:title": "공젼ㅣ콘텐츠 마케터 (@feb.26th_) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DGsq5y9SELz",
+                  "color-scheme": "light",
+                  "og:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n• 단점이 내가 참고 다닐만한 수준인지\n• 장점이 단점을 상쇄할 수 있는지\n\n예를 들면?\n연봉인상률이 낮다 → 근데 워라밸이 엄청 좋다? OK\n야근이 많다 → 근데 그만큼 보상받는다? 고려해볼 만함\n\n2. 리뷰 성향 감안해서 보기\n• 잡플래닛에는 보통 불만 있는 사람들이 글을 씀\n• 평점이나 악플 많은 건 기본값이라고 생각해야 함\n\n3. 현실적인 분위기는 블라인드 검색\n잡플래닛은 공개된 플랫폼이라\n솔직한 후기엔 한계가 있으니,\n블라인드에서 검색해",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "공젼ㅣ콘텐츠 마케터 (@feb.26th_). 1 Like. 나만의 잡플래닛 활용법\n\n솔직히 요즘 잡플래닛 평점? 의미 없어.\n어지간한 회사들도 3.0은 맞추려고\n돈 주고 악성 후기를 지우거나\n내부 직원들 동원해서 좋은 리뷰로 밀어내기 함\n(내가 다닌 회사들도 이 정도는 했음..)\n\n그래서 나는 점수보다 ‘내용’에 집중해!\n1. 장점 & 단점 분석\n•...",
+                  "og:url": "https://www.threads.net/@feb.26th_/post/DGsq5y9SELz/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%99%9C%EC%9A%A9%EB%B2%95%EC%86%94%EC%A7%81%ED%9E%88-%EC%9A%94%EC%A6%98-%EC%9E%A1%ED%94%8C%EB%9E%98%EB%8B%9B-%ED%8F%89%EC%A0%90-%EC%9D%98%EB%AF%B8-%EC%97%86%EC%96%B4%EC%96%B4%EC%A7%80%EA%B0%84%ED%95%9C-%ED%9A%8C%EC%82%AC%EB%93%A4%EB%8F%84-30%EC%9D%80-%EB%A7%9E%EC%B6%94%EB%A0%A4%EA%B3%A0%EB%8F%88-%EC%A3%BC%EA%B3%A0-%EC%95%85%EC%84%B1-%ED%9B%84%EA%B8%B0%EB%A5%BC-%EC%A7%80%EC%9A%B0%EA%B1%B0%EB%82%98%EB%82%B4%EB%B6%80-%EC%A7%81%EC%9B%90%EB%93%A4-%EB%8F%99%EC%9B%90%ED%95%B4%EC%84%9C-%EC%A2%8B%EC%9D%80",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/feb.26th_/profile_pic.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    }
+  ]
+}

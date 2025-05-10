@@ -265,6 +265,43 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "steps": "List[Dict] — 단계별 실행 결과",
             "final_summary": "str — 전체 실행 결과 요약"
         },
+    },
+    "24": {
+        "name": "summarize_text",
+        "description": "주어진 텍스트를 요약합니다.",
+        "inputs": {
+            "text": "str — 요약할 텍스트"
+        },
+        "outputs": {
+            "summary": "str — 텍스트의 요약",
+            "key_points": "List[str] — 핵심 포인트 목록",
+            "length_ratio": "float — 요약 길이 / 원문 길이 비율"
+        }
+    },
+    "25": {
+        "name": "generate_response",
+        "description": "커스텀 LLM을 사용하여 프롬프트에 대한 응답을 생성합니다.",
+        "inputs": {
+            "prompt": "str — 사용자 프롬프트",
+            "system_prompt": "Optional[str] — 시스템 프롬프트",
+            "temperature": "Optional[float] — 생성 온도 (0.0 ~ 1.0)"
+        },
+        "outputs": {
+            "response": "str — 생성된 응답"
+        }
+    },
+    "26": {
+        "name": "generate_with_context",
+        "description": "컨텍스트가 포함된 프롬프트에 대한 응답을 생성합니다.",
+        "inputs": {
+            "prompt": "str — 사용자 프롬프트",
+            "context": "str — 컨텍스트 정보",
+            "system_prompt": "Optional[str] — 시스템 프롬프트",
+            "temperature": "Optional[float] — 생성 온도 (0.0 ~ 1.0)"
+        },
+        "outputs": {
+            "response": "str — 생성된 응답"
+        }
     }
 }
 

@@ -1,8 +1,7 @@
-
 from __future__ import annotations
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from tools.tools import Tools
+    from tools.tool import Tools
 import os
 import sys
 import json
@@ -19,7 +18,7 @@ import google.generativeai as genai
 from llm.utils.prompt import InstructionConfig
 from llm.utils.output_parsers import JSONOutputParser
 from llm.utils.chatbot import ChatBot
-
+from tools.notes import AgentNotes
 class inputChecker:
     def __init__(self, api_key: str):
         """
@@ -792,12 +791,13 @@ class TOTExecutor:
                 "next_step_input": None
             }
 
-    def execute_plan(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+    def execute_plan(self, plan: Dict[str, Any], user_query: str = None) -> Dict[str, Any]:
         """
         전체 실행 계획을 순차적으로 실행합니다.
 
         Args:
             plan (Dict[str, Any]): 실행 계획
+            user_query (str, optional): 사용자 요청 (최종 요약에 사용)
 
         Returns:
             Dict[str, Any]: 전체 실행 결과
@@ -818,7 +818,7 @@ class TOTExecutor:
                 # 결과 분석
                 if step_result.get('error'):
                     return {
-                        "steps": results,  # 여기에 steps 키 추가
+                        "steps": results,
                         "error": step_result['error'],
                         "final_summary": f"오류 발생: {step_result['error']}"
                     }
@@ -842,7 +842,329 @@ class TOTExecutor:
             elif analysis['next_action'] == 'stop':
                 break
 
+        final_summary = "\n".join([r['summary'] for r in results])
+    
+        # 여기가 문제가 된 부분입니다. user_query 매개변수를 사용해야 합니다.
+        final_answer = None
+        if hasattr(self.tools, 'notes') and self.tools.enable_notes:
+            # user_query 매개변수가 있을 때만 generate_answer_from_notes 호출
+            if user_query:
+                final_answer = self.generate_answer_from_notes(user_query, plan, results)
+        
         return {
-            "steps": results,  # 여기에 steps 키 추가
-            "final_summary": "\n".join([r['summary'] for r in results])
+            "steps": results,
+            "final_summary": final_summary,
+            "final_answer": final_answer,
+            "user_query": user_query
         }
+
+    def generate_answer_from_notes(self, user_query: str, plan: Dict[str, Any], results: List[Dict[str, Any]]) -> str:
+        """
+        노트를 기반으로 사용자 쿼리에 대한 최종 답변을 생성합니다.
+
+        Args:
+            user_query (str): 사용자 요청
+            plan (Dict[str, Any]): 실행 계획
+            results (List[Dict[str, Any]]): 실행 결과
+
+        Returns:
+            str: 최종 답변
+        """
+        # 노트가 없거나 활성화되지 않은 경우
+        if not hasattr(self.tools, 'notes') or not self.tools.enable_notes:
+            return "노트 기능이 활성화되어 있지 않아 세부 정보를 제공할 수 없습니다."
+        
+        try:
+            # 최종 답변 생성을 위한 LLM 설정
+            answer_generator = ChatBot(
+                model_name="gemini-2.0-flash",
+                temperature=0.7,
+                max_output_tokens=2048,
+                api_key=self.api_key
+            )
+            
+            # TOT 실행 관련 노트 수집
+            tot_execution_notes = self.tools.notes.get_tot_execution_notes()
+            
+            # 도구 실행 관련 노트 수집
+            tool_notes = []
+            for step in plan['steps']:
+                tool_id = step.get('tool_id')
+                if tool_id:
+                    tool_execution_notes = self.tools.notes.get_tool_execution_notes(tool_id)
+                    tool_notes.extend(tool_execution_notes)
+            
+            # 모델 응답 관련 노트 수집
+            model_notes = []
+            model_names = ["tot_maker", "tot_executor", "text_summarizer", "custom_llm"]
+            for model_name in model_names:
+                model_response_notes = self.tools.notes.get_model_response_notes(model_name)
+                model_notes.extend(model_response_notes)
+            
+            # 세션 요약 정보 가져오기
+            session_summary = self.tools.notes.get_session_summary()
+            
+            # 프롬프트 생성
+            system_prompt = """당신은 사용자의 질문에 대한 최종 답변을 생성하는 AI 어시스턴트입니다.
+            제공된 노트와 실행 결과를 바탕으로 사용자의 질문에 직접적이고 명확하게 답변해주세요.
+            
+            답변 작성 시 다음 사항을 고려하세요:
+            1. 사용자의 원래 질문에 초점을 맞추세요.
+            2. 노트에서 가져온 정보를 바탕으로 정확하고 유용한 답변을 제공하세요.
+            3. 기술적인 세부 사항보다는 사용자가 원하는 정보를 중심으로 답변하세요.
+            4. 너무 길거나 복잡한 답변은 피하고 핵심 정보를 명확하게 전달하세요.
+            5. 정보가 부족한 경우 정직하게, 하지만 도움이 되도록 답변하세요.
+            """
+            
+            # 노트 요약 생성
+            note_summary = f"""
+            === 실행 계획 요약 ===
+            총 단계 수: {len(plan['steps'])}
+            단계별 도구:
+            """
+            
+            for i, step in enumerate(plan['steps'], 1):
+                note_summary += f"  {i}. {step.get('tool_name', 'Unknown')} - {step.get('description', 'No description')}\n"
+            
+            note_summary += f"""
+            === 실행 결과 요약 ===
+            총 실행 단계 수: {len(results)}
+            """
+            
+            for i, result in enumerate(results, 1):
+                summary = result.get('summary', '요약 없음')
+                note_summary += f"  {i}. {summary}\n"
+            
+            note_summary += f"""
+            === 세션 요약 ===
+            총 노트 수: {session_summary.get('total_notes', 0)}
+            도구 실행 수: {len(session_summary.get('tool_executions', {}))}
+            모델 응답 수: {len(session_summary.get('model_responses', {}))}
+            오류 수: {len(session_summary.get('errors', []))}
+            """
+            
+            # 실행 결과 정보 추가
+            execution_results = "=== 실행 결과 상세 정보 ===\n"
+            for i, result in enumerate(results, 1):
+                if 'result' in result:
+                    result_str = str(result['result'])
+                    # 결과가 길면 요약
+                    if len(result_str) > 300:
+                        result_str = result_str[:300] + "... (생략)"
+                    execution_results += f"단계 {i} 결과: {result_str}\n"
+            
+            # 최종 프롬프트 조합
+            prompt = f"""
+            사용자 질문: {user_query}
+            
+            {note_summary}
+            
+            {execution_results}
+            
+            위 정보를 바탕으로 사용자의 질문에 답변해주세요.
+            """
+            
+            # 챗봇 시작
+            answer_generator.start_chat()
+            
+            # 답변 생성
+            answer = answer_generator.send_message(user_input = user_query, system_prompt = system_prompt, prompt = prompt)
+            
+            # 답변이 없는 경우 기본 메시지 반환
+            if not answer:
+                return "죄송합니다. 노트 정보를 기반으로 답변을 생성하는 데 문제가 발생했습니다."
+            
+            return answer
+            
+        except Exception as e:
+            return f"노트 기반 답변 생성 중 오류가 발생했습니다: {str(e)}"
+
+class TextSummarizer:
+    def __init__(self, api_key: str):
+        """
+        텍스트 요약 모델 초기화
+
+        Args:
+            api_key (str): Google API 키
+        """
+        self.api_key = api_key
+        genai.configure(api_key=self.api_key)
+
+        # JSON 출력 파서 생성
+        self.json_parser = JSONOutputParser()
+
+        # 텍스트 요약 시스템 프롬프트 설정
+        self.summarizer_config = InstructionConfig(
+            instruction="""당신은 텍스트 요약 전문가입니다. 주어진 텍스트를 분석하고 핵심 내용을 추출하여 
+            간결하고 명확한 요약을 생성해야 합니다.
+
+            요약 시 다음 규칙을 따라주세요:
+            1. 핵심 주제와 주요 내용을 포함
+            2. 불필요한 세부사항은 제외
+            3. 원문의 의미를 왜곡하지 않도록 주의
+            4. 객관적이고 중립적인 어조 유지
+            5. 요약은 원문의 20-30% 길이로 작성
+
+            JSON 형식으로 응답하세요.
+            """,
+            output_parser=self.json_parser,
+            output_format={
+                "summary": "str — 텍스트의 요약",
+                "key_points": ["str — 핵심 포인트 1", "str — 핵심 포인트 2", "..."],
+                "length_ratio": "float — 요약 길이 / 원문 길이 비율"
+            },
+            examples=[
+                {
+                    "input": "인공지능(AI)은 컴퓨터 시스템이 인간의 지능을 모방하여 학습하고, 추론하고, 문제를 해결할 수 있도록 하는 기술입니다. 머신러닝은 AI의 한 분야로, 데이터로부터 학습하여 패턴을 인식하고 예측을 수행합니다. 딥러닝은 머신러닝의 하위 분야로, 인공 신경망을 사용하여 복잡한 패턴을 학습합니다. 최근에는 자연어 처리, 컴퓨터 비전, 강화학습 등 다양한 분야에서 AI 기술이 발전하고 있습니다.",
+                    "output": {
+                        "summary": "인공지능(AI)은 인간 지능을 모방하는 컴퓨터 시스템으로, 머신러닝과 딥러닝을 포함합니다. 최근 다양한 분야에서 발전하고 있습니다.",
+                        "key_points": [
+                            "AI는 인간 지능 모방 기술",
+                            "머신러닝은 데이터 기반 학습",
+                            "딥러닝은 신경망 기반 학습",
+                            "다양한 분야에서 발전 중"
+                        ],
+                        "length_ratio": 0.25
+                    }
+                }
+            ]
+        )
+
+        self.summarizer = ChatBot(
+            model_name="gemini-2.0-flash",
+            temperature=0.3,  # 일관된 요약을 위해 낮은 온도 설정
+            max_output_tokens=1024,
+            instruction_config=self.summarizer_config,
+            api_key=self.api_key
+        )
+
+    def summarize(self, text: str) -> Dict[str, Any]:
+        """
+        텍스트를 요약합니다.
+
+        Args:
+            text (str): 요약할 텍스트
+
+        Returns:
+            Dict[str, Any]: 요약 결과
+        """
+        if not self.summarizer.is_running():
+            self.summarizer.start_chat()
+
+        response = self.summarizer.send_message(text)
+
+        if not isinstance(response, dict):
+            try:
+                response = json.loads(response)
+            except:
+                return {
+                    "error": "응답 형식 오류",
+                    "message": "죄송합니다. 요약 처리 중 오류가 발생했습니다."
+                }
+
+        return response
+
+
+class CustomLLM:
+    def __init__(self, api_key: str):
+        """
+        커스텀 LLM 모델 초기화
+
+        Args:
+            api_key (str): Google API 키
+        """
+        self.api_key = api_key
+        genai.configure(api_key=self.api_key)
+
+        # 기본 시스템 프롬프트
+        self.default_system_prompt = """당신은 유용한 AI 어시스턴트입니다.
+        사용자의 요청에 대해 정확하고 도움이 되는 응답을 제공해주세요."""
+
+        self.llm = ChatBot(
+            model_name="gemini-2.0-flash",
+            temperature=0.7,
+            max_output_tokens=1024,
+            api_key=self.api_key
+        )
+
+    def set_system_prompt(self, 
+                         persona: str = None, 
+                         role: str = None, 
+                         conditions: List[str] = None) -> str:
+        """
+        시스템 프롬프트를 설정합니다.
+
+        Args:
+            persona (str, optional): AI의 페르소나
+            role (str, optional): AI의 역할
+            conditions (List[str], optional): 추가 조건들
+
+        Returns:
+            str: 설정된 시스템 프롬프트
+        """
+        system_prompt = "당신은 "
+        
+        if persona:
+            system_prompt += f"{persona}입니다. "
+        
+        if role:
+            system_prompt += f"당신의 역할은 {role}입니다. "
+        
+        if conditions:
+            system_prompt += "\n다음 조건들을 따라주세요:\n"
+            for condition in conditions:
+                system_prompt += f"- {condition}\n"
+        
+        return system_prompt
+
+    def generate_response(self, 
+                         prompt: str, 
+                         system_prompt: str = None,
+                         temperature: float = 0.7) -> str:
+        """
+        프롬프트에 대한 응답을 생성합니다.
+
+        Args:
+            prompt (str): 사용자 프롬프트
+            system_prompt (str, optional): 시스템 프롬프트
+            temperature (float, optional): 생성 온도 (0.0 ~ 1.0)
+
+        Returns:
+            str: 생성된 응답
+        """
+        if not self.llm.is_running():
+            self.llm.start_chat()
+
+        # 시스템 프롬프트 설정
+        if system_prompt:
+            self.llm.set_system_prompt(system_prompt)
+        else:
+            self.llm.set_system_prompt(self.default_system_prompt)
+
+        # 온도 설정
+        self.llm.set_temperature(temperature)
+
+        # 응답 생성
+        response = self.llm.send_message(prompt)
+
+        return response
+
+    def generate_with_context(self,
+                            prompt: str,
+                            context: str,
+                            system_prompt: str = None,
+                            temperature: float = 0.7) -> str:
+        """
+        컨텍스트가 포함된 프롬프트에 대한 응답을 생성합니다.
+
+        Args:
+            prompt (str): 사용자 프롬프트
+            context (str): 컨텍스트 정보
+            system_prompt (str, optional): 시스템 프롬프트
+            temperature (float, optional): 생성 온도 (0.0 ~ 1.0)
+
+        Returns:
+            str: 생성된 응답
+        """
+        full_prompt = f"컨텍스트:\n{context}\n\n질문:\n{prompt}"
+        return self.generate_response(full_prompt, system_prompt, temperature)

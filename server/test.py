@@ -1,5 +1,5 @@
 # server/test.py
-from tools.tools import Tools
+from server.tools.tool import Tools
 from db.people import PeopleRepository
 from db.photos import PhotoRepository
 from db.photo_people import PhotoPeopleRepository

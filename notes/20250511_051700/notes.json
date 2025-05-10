@@ -1,0 +1,197 @@
+{
+  "session_id": "20250511_051700",
+  "start_time": "2025-05-11T05:17:00.006356",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:17:04.635788",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "wine_bar",
+              "brunch_restaurant",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJq6qqqoGefDURZ6dyLgCZf7o",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "6-1 Mokdongdong-ro 14-gil, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Gentle Dining",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:17:06.582616",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJ0wVOI5SdfDUR3E6hrlj65Lg",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "food",
+              "point_of_interest",
+              "store",
+              "establishment"
+            ],
+            "formattedAddress": "318 Gangseo-ro, Gangseo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Another Side",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJoeWbrsGYfDUR1u7e0FV_-CY",
+            "types": [
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "147-1 Wausan-ro, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Gabie",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJi1N05ISefDURZDyi47CGkzw",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "food",
+              "point_of_interest",
+              "store",
+              "establishment"
+            ],
+            "formattedAddress": "293 Mokdongdong-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Tom N Toms Coffee",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJPz5188SjfDURkViUpa5T1Ac",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "food",
+              "point_of_interest",
+              "store",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Jongno District, Cheonggyecheon-ro, 155 1,2,3층",
+            "displayName": {
+              "text": "Burnt Seoul",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJv-bHllyffDURRNn259iMOmA",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "food",
+              "point_of_interest",
+              "store",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Yangcheon District, Mokdongdong-ro, 309 1 층",
+            "displayName": {
+              "text": "루시카토 베이크카페&플러버브런치카페 행복한백화점",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    }
+  ]
+}
