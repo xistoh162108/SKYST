@@ -4,7 +4,7 @@ from .db import MongoDBClient
 class PhotoTagsRepository:
     def __init__(self, db_name: str = "skyst"):
         self.client = MongoDBClient(db_name=db_name)
-        self.collection_name = "photo_tags"
+        self.collection_name = "photoTags"
 
     def add_photoTags(self, data: dict):
         return self.client.create(self.collection_name, data)

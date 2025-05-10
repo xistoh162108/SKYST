@@ -1,10 +1,11 @@
 from .db import MongoDBClient
-
+from server.tools.people_photo import PeoplePhoto
 
 class PhotoPeopleRepository:
     def __init__(self, db_name: str = "skyst"):
         self.client = MongoDBClient(db_name=db_name)
         self.collection_name = "photo_people"
+        self.service = PeoplePhotoService()
 
     def add_photoPeople(self, data: dict):
         return self.client.create(self.collection_name, data)
@@ -17,3 +18,4 @@ class PhotoPeopleRepository:
 
     def delete_photoPeople(self, query: dict):
         return self.client.delete(self.collection_name, query)
+    

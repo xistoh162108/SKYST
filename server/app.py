@@ -45,19 +45,27 @@ def get_photos_by_person():
 @app.route("/api/photos", methods=["POST"])
 def add_photo():
     data = request.get_json()
+
+    #image_url = get_image_url(img)
+    # 이미지 클라우드에 업로드 해서 img 링크 받아오는 함수
+    image_url = "hello"
+
     photo = {
-        "image_url": data["img"],
+        "image_url": image_url,
         "description": data.get("text", ""),
         "location": data.get("location", []),
         "travel_id": data.get("travelId")
     }
 
     photo_id = photo_repo.add_photo(photo)
+    #photo_tags = getTags(image_url)
+    # 이미지 태그 추출해주는 함수
+    photo_tags = ["hello", "NUBZUKNUBZUK"]
 
     for p in data["peopleId"]:
         photo_people_repo.add_photoPeople({
             "photoId": photo_id,
-            "personId": ObjectId(p)
+            "personId": ObjectId(p) # 안뇽
         })
 
     return {"photoId": str(photo_id)}, 201
@@ -66,10 +74,15 @@ def add_photo():
 def get_photo_detail(photoId):
     photo = photo_repo.get_photo({"_id": ObjectId(photoId)})
     photo = photo[0]
+
+    people = photo_people_repo.get_photoPeople({ photoId })
+    tags = photo_tags_repo.get_photoTags({ photoId })
+
     return jsonify({
         "url": photo.get("image_url", ""),
         "text": photo.get("description", ""),
-        "peopleId": [str(p) for p in photo.get("people", [])],
+        "peopleId": people,
+        tags: tags,
         "travelId": str(photo.get("travel_id", ""))
     })
 
@@ -82,11 +95,32 @@ def update_photo(photoId):
     if "text" in data:
         update["description"] = data["text"]
     if "peopleId" in data:
-        update["people"] = [ObjectId(p) for p in data["peopleId"]]
+        photo_people_repo.delete_photoPeople({
+            photoId: photoId
+        })
+
+        for p in data["peopleId"]:
+            photo_people_repo.add_photoPeople({
+                "photoId": photoId,
+                "peopleId": ObjectId(p)
+            })
+        
     if "location" in data:
         update["location"] = data["location"]
     if "travelId" in data:
         update["travel_id"] = data["travelId"]
+    if "tags" in data:
+        photo_tags_repo.delete_photoTags({
+            photoId: photoId
+        })
+
+        for pt in data["tags"]:
+            photo_tags_repo.add_photoTags({
+                "photoId": photoId,
+                "tags": ObjectId(pt)
+            })
+        
+
     photo_repo.update_photo({"_id": ObjectId(photoId)}, {"$set": update})
     return
 
