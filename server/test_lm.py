@@ -2,6 +2,7 @@
 
 from tools.google_places_api import GooglePlacesAPI
 from tools.google_search_api import GoogleSearchAPI
+from server.llm.models import GeminiLLM
 
 def main():
     api = GooglePlacesAPI()
@@ -81,6 +82,18 @@ def main():
             print("사이트 다운로드 오류:", e)
     print()
  
+    # 11) Gemini 멀티모달 테스트 (이미지 입력)
+    print("=== 11) Gemini 멀티모달 테스트 (이미지 설명) ===")
+    try:
+        gemini = GeminiLLM()
+        description = gemini.generate_response(
+            prompt="이 이미지에 대해 설명해줘.",
+            image_path="test_assets/Eastern Bluebird.jpg"
+        )
+        print(description)
+    except Exception as e:
+        print("Gemini 이미지 테스트 오류:", e)
+    print()
 
 if __name__ == "__main__":
     main()
