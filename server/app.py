@@ -9,6 +9,9 @@ from db.huggingface.huggingface_tag import get_tags_from_huggingface
 from db.travel_people import TravelPeopleRepository
 from db.travel_places import TravelPlacesRepository
 from db.travel import TravelRepository
+import os
+from tools.tool import Tools
+from llm.models import TOTPlanner, TOTExecutor
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
@@ -480,7 +483,90 @@ def create_travel():
         return jsonify({"error": str(e)}), 400
 
 
+# ---------------------------------------------------------------------------
+# New route: Recommend places based on a prompt and selected people
+@app.route("/api/recommend", methods=["POST"])
+def recommend_places():
+    """
+    Generates place recommendations using a TOT pipeline.
+
+    Query Parameters (POST form or query‑string):
+        prompt (str)      – The natural‑language prompt.
+        peopleId (list)   – Repeated peopleId parameters or a comma‑separated string.
+
+    Success Response (200):
+    {
+        "places": [
+            {
+                "id": str,
+                "order": int,
+                "name": str,
+                "location": list
+            }
+        ]
+    }
+
+    Error Response (400) – malformed peopleId or internal failure.
+    """
+    # --- 1) Retrieve parameters ------------------------------------------------
+    prompt = request.args.get("prompt") or request.form.get("prompt", "")
+    people_ids = request.args.getlist("peopleId") or request.form.getlist("peopleId")
+
+    # Fallback to JSON body if provided
+    if not prompt or not people_ids:
+        data = request.get_json(silent=True) or {}
+        prompt = prompt or data.get("prompt", "")
+        people_ids = people_ids or data.get("peopleId", [])
+
+    # Basic validation
+    if not prompt:
+        return jsonify({"error": "prompt is required"}), 400
+    if isinstance(people_ids, str):
+        people_ids = [pid.strip() for pid in people_ids.split(",") if pid.strip()]
+    if not isinstance(people_ids, list):
+        return jsonify({"error": "Invalid peopleId"}), 400
+
+    # --- 2) Build TOT pipeline -------------------------------------------------
+    try:
+        tools = Tools(
+            photo_repo=photo_repo,
+            people_repo=people_repo,
+            photo_people_repo=photo_people_repo
+        )
+        planner = TOTPlanner(api_key=os.getenv("GOOGLE_API_KEY", ""), tools=tools)
+        executor = TOTExecutor(api_key=os.getenv("GOOGLE_SEARCH_CX", ""), tools=tools)
+
+        # Build and execute a single TOT plan
+        steps = planner.build_full_plan(prompt)
+        plan = {"steps": steps}
+        results = executor.execute_plan(plan, prompt)
+
+        # --- 3) Extract recommended places ------------------------------------
+        recommended_places = []
+        # Try to locate a "places" list either in step results or final summary
+        for step in results.get("steps", []):
+            res = step.get("result", {})
+            if isinstance(res, dict) and "places" in res:
+                recommended_places = res["places"]
+                break
+        if not recommended_places and isinstance(results.get("final_summary"), dict):
+            recommended_places = results["final_summary"].get("places", [])
+
+        # Normalise output shape
+        formatted = []
+        for idx, place in enumerate(recommended_places):
+            formatted.append({
+                "id": str(place.get("id", "")),
+                "order": int(place.get("order", idx)),
+                "name": place.get("name", ""),
+                "location": place.get("location", [])
+            })
+
+        return jsonify({"places": formatted}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     app.run(debug=True)
-
