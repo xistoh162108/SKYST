@@ -1,5 +1,5 @@
 from tools.tools import Tools
-from llm.models import TOTMaker, TOTExecutor
+from llm.models import TOTPlanner, TOTExecutor
 from db import PeopleRepository, PhotoRepository, PhotoPeopleRepository
 import json
 
@@ -78,17 +78,13 @@ def test_tot_pipeline():
         photo_people_repo=photo_people_repo
     )
 
-    # TOT 메이커와 실행기 초기화
-    tot_maker = TOTMaker(api_key="your_api_key", tools=tools)
+    # TOT Planner(계획)와 실행기 초기화
+    planner = TOTPlanner(api_key="your_api_key", tools=tools)
     tot_executor = TOTExecutor(api_key="your_api_key", tools=tools)
 
     # 테스트할 쿼리 목록
     test_queries = [
-        "서울에서 맛있는 카페 추천해줘",
-        f"{person_id}가 나온 사진을 찾아줘",
-        "바다가 있는 사진을 찾아줘",
-        "서울 반나절 코스 추천해줘",
-        f"{photo_id}에 있는 사람들의 정보를 알려줘"
+        "서울에서 지민이랑 갈만한 맛있는 카페 추천해줘",
     ]
 
     # 각 쿼리에 대한 TOT 생성 및 실행
@@ -98,27 +94,31 @@ def test_tot_pipeline():
         print("="*50)
         
         try:
-            # 1. TOT 생성
-            print("\n1. TOT 생성 중...")
-            plan = tot_maker.process_query(query)
-            print("\n생성된 실행 계획:")
-            print(json.dumps(plan, indent=2, ensure_ascii=False))
-            
-            # 2. TOT 실행
-            print("\n2. TOT 실행 중...")
-            results = tot_executor.execute_plan(plan)
-            
-            # 3. 실행 결과 출력
-            print("\n실행 결과:")
-            print("\n각 단계별 결과:")
-            for idx, step_result in enumerate(results['steps'], 1):
-                print(f"\n단계 {idx}:")
-                print(f"결과: {json.dumps(step_result['result'], indent=2, ensure_ascii=False)}")
-                print(f"분석: {json.dumps(step_result['analysis'], indent=2, ensure_ascii=False)}")
-                print(f"요약: {step_result['summary']}")
-            
-            print("\n최종 요약:")
-            print(results['final_summary'])
+            for plan_idx in range(1, 4):   # 3개의 서로 다른 계획
+                print(f"\n--- 계획 {plan_idx} / 3 ---")
+
+                # 1. 전체 계획 생성
+                print("\n1. TOT 계획 생성 중...")
+                steps = planner.build_full_plan(query)
+                full_plan = {"steps": steps}
+                print("\n생성된 실행 계획:")
+                print(json.dumps(full_plan, indent=2, ensure_ascii=False))
+
+                # 2. TOT 실행
+                print("\n2. TOT 실행 중...")
+                results = tot_executor.execute_plan(full_plan)
+
+                # 3. 실행 결과 출력
+                print("\n실행 결과:")
+                print("\n각 단계별 결과:")
+                for idx, step_result in enumerate(results['steps'], 1):
+                    print(f"\n단계 {idx}:")
+                    print(f"결과: {json.dumps(step_result['result'], indent=2, ensure_ascii=False)}")
+                    print(f"분석: {json.dumps(step_result['analysis'], indent=2, ensure_ascii=False)}")
+                    print(f"요약: {step_result['summary']}")
+
+                print("\n최종 요약:")
+                print(results['final_summary'])
             
         except Exception as e:
             print(f"오류 발생: {str(e)}")

@@ -1,9 +1,13 @@
+
+from __future__ import annotations
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from tools.tools import Tools
 import os
 import sys
 import json
 from typing import Dict, Any, List, Optional
 from datetime import datetime
-from tools.tools import Tools
 
 # 프로젝트 루트 디렉토리를 파이썬 경로에 추가
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -424,61 +428,101 @@ class TOTMaker:
         # JSON 출력 파서 생성
         self.json_parser = JSONOutputParser()
 
-        # TOT 메이커 시스템 프롬프트 설정
+        # TOT 메이커 시스템 프롬프트 설정 (Step 1)
         self.tot_maker_config = InstructionConfig(
-            instruction="""당신은 사용자의 요청을 달성하기 위한 실행 계획을 수립하는 TOT(Tree of Thoughts) 메이커입니다.
-            주어진 도구 목록을 분석하고, 사용자의 요청을 달성하기 위해 필요한 도구들을 순서대로 실행하는 계획을 생성해야 합니다.
+            instruction="""
+당신은 Iterative TOT(Tree‑of‑Thoughts) 메이커입니다.  
+목적(PURPOSE)과 현재까지 작성된 계획(CURRENT_PLAN)을 참고해 **다음에 실행할 한 단계만** 제안하거나, 더 이상 필요 없으면 finished=true 로 표시합니다.
 
-            각 단계는 다음 정보를 포함해야 합니다:
-            - step_id: 단계 번호
-            - tool_id: 사용할 도구의 ID
-            - tool_name: 도구의 이름
-            - description: 이 단계에서 수행할 작업 설명
-            - inputs: 도구에 전달할 입력 파라미터
-            - expected_output: 예상되는 출력 결과
+● 워크플로
+  1) 입력으로 항상   PURPOSE, CURRENT_PLAN  을 받습니다.  
+  2) 목적을 달성하기 위해 **가장 적절한 다음 단계(next_step)** 를 도구 목록에서 골라 작성합니다.  
+  3) 추가 단계가 더 필요하면 finished=false 로 반환합니다.  
+     필요 없으면 finished=true, next_step=null 으로 반환합니다.  
+  4) 각 호출마다 당신은 plan_notes 필드에 ‘왜 이런 단계를 선택했는지’ 를 간단히 메모합니다.
 
-            JSON 형식으로 응답하세요.
-            """,
+● 특별 규칙 (Person Name Trigger)
+  – CURRENT_PLAN이나 PURPOSE 안에 **사람 이름**(ex: 지민) 이 등장하면:  
+    ① tool 2 `get_people_in_photo` 또는 tool 1 `get_photos_by_person` 로 그 사람의 사진 / 태그 정보를 수집  
+    ② 태그(음식, 장소 등)를 분석해 Google Places API(5/6/7)나 Google Search API(9) 단계로 이어집니다.
+
+JSON 으로만 응답하세요.
+""",
             output_parser=self.json_parser,
             output_format={
-                "steps": [
-                    {
-                        "step_id": "int — 단계 번호",
-                        "tool_id": "str — 사용할 도구 ID",
-                        "tool_name": "str — 도구 이름",
-                        "description": "str — 수행할 작업 설명",
-                        "inputs": "Dict — 도구 입력 파라미터",
-                        "expected_output": "str — 예상 출력 설명"
-                    }
-                ]
+                "finished": "bool — 계획 완료 여부",
+                "next_step": {
+                    "step_id": "int — 다음 단계 번호",
+                    "tool_id": "str — 도구 ID",
+                    "tool_name": "str — 도구 이름",
+                    "description": "str — 수행할 작업 설명",
+                    "inputs": "Dict — 도구 입력 파라미터",
+                    "expected_output": "str — 예상 출력"
+                },
+                "plan_notes": "str — 선택 이유 및 메모"
             },
             examples=[
+                # ① 첫 호출 – 아직 계획이 없음
                 {
-                    "input": "서울에서 맛있는 카페 추천해줘",
+                    "input": {
+                        "PURPOSE": "서울 반나절 여행 코스 추천",
+                        "CURRENT_PLAN": []
+                    },
                     "output": {
-                        "steps": [
+                        "finished": False,
+                        "next_step": {
+                            "step_id": 1,
+                            "tool_id": "5",
+                            "tool_name": "gp_search_text",
+                            "description": "‘서울 반나절 여행 코스’를 검색해 블로그/기사 후보를 수집",
+                            "inputs": { "text_query": "서울 반나절 여행 코스", "page_size": 5 },
+                            "expected_output": "관련 장소·코스 리스트"
+                        },
+                        "plan_notes": "먼저 최신 블로그·여행기사에서 코스 후보를 확보"
+                    }
+                },
+                # ② 두 번째 호출 – plan 메모가 하나 있다
+                {
+                    "input": {
+                        "PURPOSE": "서울 반나절 여행 코스 추천",
+                        "CURRENT_PLAN": [
                             {
                                 "step_id": 1,
                                 "tool_id": "5",
                                 "tool_name": "gp_search_text",
-                                "description": "서울의 카페를 검색합니다",
-                                "inputs": {
-                                    "text_query": "서울 맛있는 카페",
-                                    "page_size": 5
-                                },
-                                "expected_output": "검색된 카페 목록"
-                            },
-                            {
-                                "step_id": 2,
-                                "tool_id": "6",
-                                "tool_name": "gp_get_place_details",
-                                "description": "첫 번째 카페의 상세 정보를 조회합니다",
-                                "inputs": {
-                                    "place_id": "검색 결과의 첫 번째 place_id"
-                                },
-                                "expected_output": "카페의 상세 정보"
+                                "description": "...",
+                                "status": "done",
+                                "result_key": "places_raw"
                             }
                         ]
+                    },
+                    "output": {
+                        "finished": False,
+                        "next_step": {
+                            "step_id": 2,
+                            "tool_id": "7",
+                            "tool_name": "gp_search_nearby",
+                            "description": "상위 장소들의 위경도 기반으로 주변 볼거리/카페 탐색",
+                            "inputs": { "latitude": 37.5665, "longitude": 126.9780, "radius": 1000 },
+                            "expected_output": "도보 이동 가능한 인근 장소"
+                        },
+                        "plan_notes": "장소 간 이동 시간을 최소화하기 위해 근처 옵션을 탐색"
+                    }
+                },
+                # ③ 최종 호출 – 더 이상 단계 필요 없음
+                {
+                    "input": {
+                        "PURPOSE": "서울 반나절 여행 코스 추천",
+                        "CURRENT_PLAN": [
+                            { "step_id": 1, "tool_id": "5", "status": "done" },
+                            { "step_id": 2, "tool_id": "7", "status": "done" },
+                            { "step_id": 3, "tool_id": "4", "status": "done" }
+                        ]
+                    },
+                    "output": {
+                        "finished": True,
+                        "next_step": None,
+                        "plan_notes": "경로 최적화까지 완료되어 추가 단계 불필요"
                     }
                 }
             ]
@@ -492,36 +536,36 @@ class TOTMaker:
             api_key=self.api_key
         )
 
-    def process_query(self, user_message: str) -> Dict[str, Any]:
+    def process_query(self, user_message: str, current_plan: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
         """
         사용자 쿼리를 처리하여 실행 계획을 생성합니다.
 
         Args:
             user_message (str): 사용자 메시지
+            current_plan (Optional[List[Dict[str, Any]]]): 현재까지의 계획 단계 목록
 
         Returns:
             Dict[str, Any]: 생성된 실행 계획
         """
+        # Step 2: Allow passing CURRENT_PLAN
+        if current_plan is None:
+            current_plan = []
+
         # 챗봇이 실행 중이 아니면 시작
         if not self.tot_maker.is_running():
             self.tot_maker.start_chat()
 
-        # 도구 목록 가져오기
+        # 도구 목록 가져오기 (도구 목록을 prompt에 추가하려면 필요)
         tool_list = self.tools.get_tool_list()
-        
-        # 도구 목록을 문자열로 변환
-        tool_info = "사용 가능한 도구 목록:\n"
-        for tool_id, tool in tool_list.items():
-            tool_info += f"\n도구 ID: {tool_id}\n"
-            tool_info += f"이름: {tool['name']}\n"
-            tool_info += f"설명: {tool['description']}\n"
-            tool_info += f"입력: {tool['inputs']}\n"
-            tool_info += f"출력: {tool['outputs']}\n"
-            tool_info += "---\n"
+        # 도구 목록 문자열 생성 (옵션: 필요시 prompt에 추가)
+        # tool_info = ...
 
-        # 사용자 메시지와 도구 목록을 함께 전달
-        full_message = f"{tool_info}\n\n사용자 요청: {user_message}"
-        
+        plan_json = json.dumps(current_plan, ensure_ascii=False, indent=2)
+        full_message = (
+            f"PURPOSE: {user_message}\n"
+            f"CURRENT_PLAN: {plan_json}"
+        )
+
         # 사용자 메시지 처리
         response = self.tot_maker.send_message(full_message)
 
@@ -536,6 +580,60 @@ class TOTMaker:
                 }
 
         return response
+
+
+# ---------------------------------------------------------------------------
+# Helper: iterative planner that keeps calling TOTMaker until plan completes
+# ---------------------------------------------------------------------------
+class TOTPlanner:
+    """
+    Wrapper that repeatedly invokes TOTMaker (iterative Tree‑of‑Thoughts planner)
+    until `finished: True` is returned, assembling a full ordered steps list.
+    """
+
+    def __init__(self, api_key: str, tools: "Tools"):
+        self.tot_maker = TOTMaker(api_key, tools)
+
+    def build_full_plan(self, purpose: str) -> List[Dict[str, Any]]:
+        """
+        Generate a complete multi‑step plan for the given purpose.
+
+        Args:
+            purpose: High‑level user request (e.g., '서울 반나절 여행 코스 추천')
+
+        Returns:
+            List[Dict[str, Any]]: fully assembled steps array
+        """
+        current_plan: List[Dict[str, Any]] = []
+        step_id_counter: int = 1
+
+        while True:
+            response = self.tot_maker.process_query(
+                user_message=purpose,
+                current_plan=current_plan
+            )
+
+            # Basic validation
+            if not isinstance(response, dict) or "finished" not in response:
+                raise ValueError("TOTMaker response missing 'finished' flag")
+
+            # Planning completed
+            if response["finished"] is True:
+                break
+
+            # Expect next_step when finished == False
+            next_step = response.get("next_step")
+            if not next_step:
+                raise ValueError("finished==False but 'next_step' is None")
+
+            # Ensure sequential step_id
+            next_step["step_id"] = step_id_counter
+            step_id_counter += 1
+
+            # Append to plan
+            current_plan.append(next_step)
+
+        return current_plan
 
 class TOTExecutor:
     def __init__(self, api_key: str, tools: Tools):
