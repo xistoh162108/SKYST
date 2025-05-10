@@ -1,4 +1,4 @@
-from server.db.people import PeopleRepository
+from db.people import PeopleRepository
 from bson import ObjectId
 from typing import Optional, Dict, List
 
