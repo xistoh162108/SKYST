@@ -4,11 +4,13 @@ from server.db.people import PeopleRepository
 from server.db.photos import PhotoRepository
 from server.db.photo_people import PhotoPeopleRepository
 from server.db.photo_tags import PhotoTagsRepository
+from server.db.photo_tags import PhotoTagsRepository
 
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
 photo_people_repo = PhotoPeopleRepository()
+photo_tags_repo = PhotoTagsRepository()
 photo_tags_repo = PhotoTagsRepository()
 
 def serialize_id(doc):
@@ -65,13 +67,7 @@ def add_photo():
     for p in data["peopleId"]:
         photo_people_repo.add_photoPeople({
             "photoId": photo_id,
-            "peopleId": ObjectId(p) # 안뇽
-        })
-
-    for pt in photo_tags:
-        photo_tags_repo.add_photoTags({
-            "photoId": photo_id,
-            "tags": pt
+            "personId": ObjectId(p) # 안뇽
         })
 
     return {"photoId": str(photo_id)}, 201

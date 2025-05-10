@@ -1,1 +1,7 @@
 flask
+pymongo
+mongodb-community@7.0
+google-generativeai
+langchain 
+langchain-google-genai 
+python-dotenv
