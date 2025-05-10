@@ -8,10 +8,6 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def get_tags_from_gemini(image_file) -> list:
-    """
-    Flask에서 받은 이미지 파일(request.files["img"])을 base64로 인코딩하고,
-    Gemini API에 태그 생성을 요청하여 리스트로 반환.
-    """
     mime_type = image_file.mimetype  # ex: "image/jpeg"
     encoded = base64.b64encode(image_file.read()).decode("utf-8")
     image_data_url = f"data:{mime_type};base64,{encoded}"
