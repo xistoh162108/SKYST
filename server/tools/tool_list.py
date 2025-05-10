@@ -190,6 +190,82 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "people": "List[Dict] — 인물 메타데이터 목록"
         },
     },
+    "18": {
+        "name": "search_photo_by_id",
+        "module": "tools.photos",
+        "callable": "search_photo_by_id",
+        "description": "사진 ID를 받아 해당 사진의 메타데이터를 반환합니다.",
+        "inputs": {
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
+        },
+        "outputs": {
+            "photo": "Dict — 사진 메타데이터 (없으면 null)"
+        },
+    },
+    # -------------------------------------------------------------
+    # 추가된 LLM 기반 툴 정의 (ID 19‒23)
+    # -------------------------------------------------------------------
+    "19": {
+        "name": "input_checker",
+        "module": "llm.models",
+        "callable": "inputChecker.process_query",
+        "description": "사용자 입력이 여행·장소 추천 도메인에 맞는지 판단합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "is_valid": "bool — 입력 적합 여부 (true/false)"
+        },
+    },
+    "20": {
+        "name": "query_maker",
+        "module": "llm.models",
+        "callable": "queryMaker.process_query",
+        "description": "사용자 요청을 다양한 측면에서 검색할 수 있는 쿼리 목록을 생성합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "queries": "List[str] — 생성된 검색 쿼리 목록"
+        },
+    },
+    "21": {
+        "name": "filter_generator",
+        "module": "llm.models",
+        "callable": "filterGenerator.process_query",
+        "description": "사용자 메시지에서 핵심 키워드(최대 3개)를 추출합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "filter_words": "List[str] — 추출된 필터 단어"
+        },
+    },
+    "22": {
+        "name": "tot_maker",
+        "module": "llm.models",
+        "callable": "TOTMaker.process_query",
+        "description": "사용 가능한 도구를 활용하여 Tree‑of‑Thoughts 실행 계획을 생성합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "steps": "List[Dict] — 단계별 도구 사용 계획"
+        },
+    },
+    "23": {
+        "name": "tot_executor",
+        "module": "llm.models",
+        "callable": "TOTExecutor.execute_plan",
+        "description": "Tree‑of‑Thoughts 실행 계획을 단계별로 실행하고 결과를 반환합니다.",
+        "inputs": {
+            "plan": "Dict — 필수. TOTMaker가 생성한 실행 계획"
+        },
+        "outputs": {
+            "steps": "List[Dict] — 단계별 실행 결과",
+            "final_summary": "str — 전체 실행 결과 요약"
+        },
+    }
 }
 
 

@@ -9,6 +9,7 @@ from tools.people_photo import (
 )
 from tools.people import get_person_by_id, get_all_people
 from tools.photos import search_photo_by_id
+from llm.models import *
 
 class Tools:
     def __init__(self, photo_people_repo, photo_repo, people_repo):
@@ -17,7 +18,12 @@ class Tools:
         self.photo_people_repo = photo_people_repo
         self.photo_repo = photo_repo
         self.people_repo = people_repo
-
+        self.api_key = os.getenv("GOOGLE_API_KEY", "")  # 환경변수 또는 다른 방식으로 API 키 주입
+        self.input_checker   = inputChecker(self.api_key)
+        self.query_maker     = queryMaker(self.api_key)
+        self.filter_generator = filterGenerator(self.api_key)
+        self.tot_maker       = TOTMaker(self.api_key, self)
+        self.tot_executor    = TOTExecutor(self.api_key, self)
         self.tool_mapping = {
             "1": lambda person_id: get_photos_by_person(self.photo_people_repo, person_id),
             "2": lambda photo_id: get_people_in_photo(self.photo_people_repo, photo_id),
@@ -31,6 +37,12 @@ class Tools:
             "11": self.google_search_api.get_page_content,
             "16": lambda person_id: get_person_by_id(self.people_repo, person_id),
             "17": lambda: get_all_people(self.people_repo),
+            "18": lambda photo_id: search_photo_by_id(self.photo_repo, photo_id),
+            "19": lambda user_message: self.input_checker.process_query(user_message),
+            "20": lambda user_message: self.query_maker.process_query(user_message),
+            "21": lambda user_message: self.filter_generator.process_query(user_message),
+            "22": lambda user_message: self.tot_maker.process_query(user_message),
+            "23": lambda plan: self.tot_executor.execute_plan(plan),
         }
 
     def get_tool_info(self, tool_id: str) -> Optional[Dict[str, Any]]:
