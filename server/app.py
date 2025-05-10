@@ -71,7 +71,7 @@ def add_photo():
     for t in photo_tags:
         photo_tags_repo.add_photoTags({
             "photoId": photo_id,
-            "tags": t # 안뇽
+            "tags": t
         })
     return {"photoId": str(photo_id)}, 201
 
