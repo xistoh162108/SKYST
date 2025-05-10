@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify
 from bson import ObjectId
 from server.db.people import PeopleRepository
 from server.db.photos import PhotoRepository
+from server.db.photos_people import PhotosPeopleRepository
 
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
+photo_people_repo = PhotosPeopleRepository()
 
 def serialize_id(doc):
     doc["_id"] = str(doc["_id"])
@@ -44,12 +46,21 @@ def add_photo():
     photo = {
         "image_url": data["img"],
         "description": data.get("text", ""),
-        "people": [ObjectId(p) for p in data.get("peopleId", [])],
         "location": data.get("location", []),
         "travel_id": data.get("travelId")
     }
-    photo_repo.add_photo(photo)
-    return
+
+    # 삽입 후 생성된 photo의 _id를 반환
+    photo_id = photo_repo.add_photo(photo)
+
+    # 관계 테이블에 저장
+    for person_id in data["peopleId"]:
+        photo_people_repo.add({
+            "photoId": photo_id,
+            "peopleId": ObjectId(person_id)
+        })
+
+    return {"photoId": str(photo_id)}, 201
 
 @app.route("/api/photos/<photoId>", methods=["GET"])
 def get_photo_detail(photoId):

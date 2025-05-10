@@ -55,7 +55,8 @@ class MongoDBClient:
 
     def create(self, collection_name: str, data: dict):
         """단일 문서 삽입(Create)"""
-        return self.db[collection_name].insert_one(data)
+        result = self.db[collection_name].insert_one(data)
+        return result.inserted_id  # 핵심 수정
 
     def read(self, collection_name: str, query: dict):
         """문서 조회(Read)"""
