@@ -1,0 +1,543 @@
+{
+  "session_id": "20250511_063607",
+  "start_time": "2025-05-11T06:36:07.055988",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T06:36:14.231234",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "대전 데이트 코스",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJjZ4wDYpLZTUR0TS1V5DdZeg",
+            "types": [
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "31 Hanbat-daero 371beon-gil, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "Date 0411 Cafe",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T06:36:16.683894",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "거길동"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "[길동 고기집] 쫄깃함의 끝판왕 당산오돌! : 네이버 블로그",
+            "htmlTitle": "[<b>길동</b> 고기집] 쫄깃함의 끝판왕 당산오돌! : 네이버 블로그",
+            "link": "https://blog.naver.com/willytop4/221569885341?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "Jun 24, 2019 ... ... 길동역도 먹을 곳이 꽤 많이 있거든요ㅎㅎㅎ. 요샌 당산오돌이라는 가게가 꽤 많이 보이는거 같아요. 건대나 어디나 자주 보여서 궁금하기도 했고. 저희 ...",
+            "htmlSnippet": "Jun 24, 2019 <b>...</b> ... <b>길동</b>역도 먹을 곳이 꽤 많이 있거든요ㅎㅎㅎ. 요샌 당산오돌이라는 가게가 꽤 많이 보이는<b>거</b> 같아요. 건대나 어디나 자주 보여서 궁금하기도 했고. 저희&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/willytop4/221569885341?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/willytop4/221569885341?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZXQTPVRiWSOBfHCYwYpalki_t7xq97FGXYkfX8zlH3mh6LgmxFJ914Q&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAxOTA2MjNfMzcg/MDAxNTYxMzAxMzc1Njky.m8F8io9eQ8-nHfLQugcJPFQo3IrAJJT27bXfAdzC7r0g.tJrvJmD4-OMoVMGTc-6uPkb1_Iu5XOZsOxDZZ-UYarIg.JPEG.willytop4/%BA%ED%B7%CE%B1%D7%BD%E6%B3%D7%C0%CF.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 고훈의 아이 원츄★",
+                  "og:title": "[길동 고기집] 쫄깃함의 끝판왕 당산오돌!",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/20200301_89/willytop4_15829973243581Dh2k_PNG/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000339698249D,service=blog,collection=blog",
+                  "og:description": "[길동 고기집] 쫄깃함의 끝판왕 당산오돌! 길동은 예전에 여자친구와의 단골 데이트 장소였어요 천호를 주...",
+                  "referrer": "always",
+                  "naverblog:nickname": "고훈",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/willytop4/221569885341",
+                  "og:article:author": "고훈의 아.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://blogthumb.pstatic.net/MjAxOTA2MjNfMzcg/MDAxNTYxMzAxMzc1Njky.m8F8io9eQ8-nHfLQugcJPFQo3IrAJJT27bXfAdzC7r0g.tJrvJmD4-OMoVMGTc-6uPkb1_Iu5XOZsOxDZZ-UYarIg.JPEG.willytop4/%BA%ED%B7%CE%B1%D7%BD%E6%B3%D7%C0%CF.jpg?type=w2"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "조길동(조윤제) | 성공한 스타트업 대표의 토요일(이고 싶었던 것 ...",
+            "htmlTitle": "조<b>길동</b>(조윤제) | 성공한 스타트업 대표의 토요일(이고 싶었던 것 ...",
+            "link": "https://www.instagram.com/jogildong/p/CsMTHkuvfgL/",
+            "displayLink": "www.instagram.com",
+            "snippet": "May 13, 2023 ... 272 likes, 5 comments - jogildong on May 13, 2023: \"성공한 스타트업 대표의 토요일(이고 싶었던 것)\".",
+            "htmlSnippet": "May 13, 2023 <b>...</b> 272 likes, 5 comments - jogildong on May 13, 2023: &quot;성공한 스타트업 대표의 토요일(이고 싶었던 것)&quot;.",
+            "formattedUrl": "https://www.instagram.com/jogildong/p/CsMTHkuvfgL/",
+            "htmlFormattedUrl": "https://www.instagram.com/jogildong/p/CsMTHkuvfgL/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaaVNS3-LEKCmqgncFzP575iTXlg5kwcWuSv0a0gkYu7PA9iPlb20p3Q&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/346847349_1461117394696835_5086821414715084737_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_ohc=JhLmCiQE7XAQ7kNvwEv73ta&_nc_oc=Adluou8F376ht1rcG-IBpRkBDV-H-PYFthQ1FaZI5-SZYDZ1LmALoChE5Uc-umBkvDE&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=JinLZ9m0Cn6e60X5aiuetQ&oh=00_AfIVous-3H5NCqWLMvvXNr9ciOeQtib8d8_hAAf4WvQxlQ&oe=6822EB98",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "application-title": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=3101938326710384651",
+                  "og:description": "272 likes, 5 comments - jogildong on May 13, 2023: \"성공한 스타트업 대표의 토요일(이고 싶었던 것)\".",
+                  "twitter:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/346847349_1461117394696835_5086821414715084737_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_ohc=JhLmCiQE7XAQ7kNvwEv73ta&_nc_oc=Adluou8F376ht1rcG-IBpRkBDV-H-PYFthQ1FaZI5-SZYDZ1LmALoChE5Uc-umBkvDE&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=JinLZ9m0Cn6e60X5aiuetQ&oh=00_AfIVous-3H5NCqWLMvvXNr9ciOeQtib8d8_hAAf4WvQxlQ&oe=6822EB98",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "1541839897",
+                  "og:type": "article",
+                  "twitter:title": "조길동(조윤제) (@jogildong) • Instagram photos and videos",
+                  "al:ios:app_name": "Instagram",
+                  "og:title": "조길동(조윤제) on Instagram: \"성공한 스타트업 대표의 토요일(이고 싶었던 것)\"",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/CsMTHkuvfgL/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/CsMTHkuvfgL/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3101938321677332140"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "길동 마장동고기집 : 소주 맥주 2천원 술쟁이들 모여라 : 네이버 블로그",
+            "htmlTitle": "<b>길동</b> 마장동고기집 : 소주 맥주 2천원 술쟁이들 모여라 : 네이버 블로그",
+            "link": "https://blog.naver.com/kshjbe/223541534839",
+            "displayLink": "blog.naver.com",
+            "snippet": "Aug 9, 2024 ... 요즘 고깃집에서 소주랑 맥주를 2천원에 판매하는 곳이 꽤 많아지고 있는 것 같다. 강동에도 몇 군데 있는데 길동역 쪽에 또 하나의 가게가 생겨서 ...",
+            "htmlSnippet": "Aug 9, 2024 <b>...</b> 요즘 고깃집에서 소주랑 맥주를 2천원에 판매하는 곳이 꽤 많아지고 있는 것 같다. 강동에도 몇 군데 있는데 <b>길동</b>역 쪽에 또 하나의 가게가 생겨서&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/kshjbe/223541534839",
+            "htmlFormattedUrl": "https://blog.naver.com/kshjbe/223541534839",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-E5SQHLEwwPKdG-5oUagIqjiJBZ8tKd89Wfazu27qo_r4cE5ltjNPSbs&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDA4MDlfNTMg/MDAxNzIzMTMyOTU1ODQ4.Adwf03PcNSH_amzzlJOGRYp7VzdZu2rA88iE_bAMCj0g.XJ15MAO7Db8mVzZ9R4LZIqgHOJ9lrXzupCyW9rFS5ywg.JPEG/KakaoTalk_20240809_004920745_23.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 장뽀리뷰",
+                  "og:title": "길동 마장동고기집 : 소주 맥주 2천원 술쟁이들 모여라",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNTA0MDFfNDIg/MDAxNzQzNDg4NTE2MDI3.IjG7xOtrKsJTPwmRYEjNBYaW_N5kJYjBNh1VFcH4vekg.PATLFx_Z8WWcODAaIsXKLIDelEM8SpQgoVIml9XHudEg.PNG/KakaoTalk_20250401_142406192.png/KakaoTalk_20250401_142406192.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000340C1D2077,service=blog,collection=blog",
+                  "og:description": "요즘 고깃집에서 소주랑 맥주를 2천원에 판매하는 곳이 꽤 많아지고 있는 것 같다. 강동에도 몇 군데 있는...",
+                  "referrer": "always",
+                  "naverblog:nickname": "장뽀리",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/kshjbe/223541534839",
+                  "og:article:author": "장뽀리뷰 | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://blogthumb.pstatic.net/MjAyNDA4MDlfNTMg/MDAxNzIzMTMyOTU1ODQ4.Adwf03PcNSH_amzzlJOGRYp7VzdZu2rA88iE_bAMCj0g.XJ15MAO7Db8mVzZ9R4LZIqgHOJ9lrXzupCyW9rFS5ywg.JPEG/KakaoTalk_20240809_004920745_23.jpg?type=w2"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "허길동 on Instagram: \"올해도 건강한거 좋은거 잘챙겨 먹자 친구들 ...",
+            "htmlTitle": "허<b>길동</b> on Instagram: &quot;올해도 건강한거 좋은<b>거</b> 잘챙겨 먹자 친구들 ...",
+            "link": "https://www.instagram.com/p/DEtOX4xzWwb/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Jan 11, 2025 ... 53 likes, 0 comments - justkyeong on January 11, 2025: \"올해도 건강한거 좋은거 잘챙겨 먹자 친구들❣️ @omoonrice @jsy.o_o @sutangseo @rmiiii_ ...",
+            "htmlSnippet": "Jan 11, 2025 <b>...</b> 53 likes, 0 comments - justkyeong on January 11, 2025: &quot;올해도 건강한거 좋은<b>거</b> 잘챙겨 먹자 친구들❣️ @omoonrice @jsy.o_o @sutangseo @rmiiii_&nbsp;...",
+            "formattedUrl": "https://www.instagram.com/p/DEtOX4xzWwb/",
+            "htmlFormattedUrl": "https://www.instagram.com/p/DEtOX4xzWwb/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6pfMXtVA_E0hIZPofb0B1Ube4LMS5fbt3OuIGHnCFDAhF4ZM2UduqiLr6&s",
+                  "width": "201",
+                  "height": "251"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/473554485_3644472412509643_6021598743212221729_n.jpg?stp=c144.0.432.432a_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_ohc=YfCmLSPqQ0EQ7kNvwFGwcgv&_nc_oc=Adlezwj6pstHbjW3sQ6MBxOjPTVVgMkt-6WWljHKUhl0tRLCn-KpofMGIX4oH2EoEew&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=ogRRR1U3hidhiFccUlTyhw&oh=00_AfKWK_MADu5J2YpXnvUaN2NBBI-gj0at1-kOmspyEXvXNA&oe=6820CA6C",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "application-title": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=3543551695974657051",
+                  "og:description": "53 likes, 0 comments - justkyeong on January 11, 2025: \"올해도 건강한거 좋은거 잘챙겨 먹자 친구들❣️\n\n@omoonrice \n@jsy.o_o \n@sutangseo \n@rmiiii_ \n\n#르오뇽\n#어니언스프#무조건주문\n#육고기없는프렌치식당\n#2025년친구모임\".",
+                  "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/473554485_3644472412509643_6021598743212221729_n.jpg?stp=c144.0.432.432a_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_ohc=YfCmLSPqQ0EQ7kNvwFGwcgv&_nc_oc=Adlezwj6pstHbjW3sQ6MBxOjPTVVgMkt-6WWljHKUhl0tRLCn-KpofMGIX4oH2EoEew&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=ogRRR1U3hidhiFccUlTyhw&oh=00_AfKWK_MADu5J2YpXnvUaN2NBBI-gj0at1-kOmspyEXvXNA&oe=6820CA6C",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "559655678",
+                  "og:type": "article",
+                  "twitter:title": "허길동 (@justkyeong) • Instagram photos and videos",
+                  "al:ios:app_name": "Instagram",
+                  "og:title": "허길동 on Instagram: \"올해도 건강한거 좋은거 잘챙겨 먹자 친구들❣️\n\n@omoonrice \n@jsy.o_o \n@sutangseo \n@rmiiii_ \n\n#르오뇽\n#어니언스프#무조건주문\n#육고기없는프렌치식당\n#2025년친구모임\"",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/DEtOX4xzWwb/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/DEtOX4xzWwb/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/DEtOX4xzWwb/1/image.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "아~ 길동오빠는 내요리다뺏아먹을거같은디이~ 붙여줘야쓰나~흠 ...",
+            "htmlTitle": "아~ <b>길동</b>오빠는 내요리다뺏아먹을<b>거</b>같은디이~ 붙여줘야쓰나~흠 ...",
+            "link": "https://www.threads.com/@n_npsk/post/DHuc9tnSem7/%EC%95%84-%EA%B8%B8%EB%8F%99%EC%98%A4%EB%B9%A0%EB%8A%94-%EB%82%B4%EC%9A%94%EB%A6%AC%EB%8B%A4%EB%BA%8F%EC%95%84%EB%A8%B9%EC%9D%84%EA%B1%B0%EA%B0%99%EC%9D%80%EB%94%94%EC%9D%B4-%EB%B6%99%EC%97%AC%EC%A4%98%EC%95%BC%EC%93%B0%EB%82%98%ED%9D%A0",
+            "displayLink": "www.threads.com",
+            "snippet": "Mar 27, 2025 ... 박선경 (@n_npsk). 1 Reply. 14 Views. 아~ 길동오빠는 내요리다뺏아먹을거같은디이~ 붙여줘야쓰나~흠~~~ ‍♀️ .",
+            "htmlSnippet": "Mar 27, 2025 <b>...</b> 박선경 (@n_npsk). 1 Reply. 14 Views. 아~ <b>길동</b>오빠는 내요리다뺏아먹을<b>거</b>같은디이~ 붙여줘야쓰나~흠~~~    ‍♀️  .",
+            "formattedUrl": "https://www.threads.com/.../아-길동오빠는-내요리다뺏아먹을거같은디이-...",
+            "htmlFormattedUrl": "https://www.threads.com/.../아-<b>길동</b>오빠는-내요리다뺏아먹을<b>거</b>같은디이-...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xN59UUVN5jZh2ZmtktaB5HWYEwbtGwsXq3B1YOof1QG8eygXFZYq6C0&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DHuc9tnSem7",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/n_npsk/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "박선경 (@n_npsk) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "박선경 (@n_npsk) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DHuc9tnSem7",
+                  "color-scheme": "light",
+                  "og:description": "박선경 (@n_npsk). 1 Reply. 14 Views. 아~ 길동오빠는 내요리다뺏아먹을거같은디이~ 붙여줘야쓰나~흠~~~🤷🏻‍♀️🤭.",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/n_npsk/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@n_npsk/post/DHuc9tnSem7/%EC%95%84-%EA%B8%B8%EB%8F%99%EC%98%A4%EB%B9%A0%EB%8A%94-%EB%82%B4%EC%9A%94%EB%A6%AC%EB%8B%A4%EB%BA%8F%EC%95%84%EB%A8%B9%EC%9D%84%EA%B1%B0%EA%B0%99%EC%9D%80%EB%94%94%EC%9D%B4-%EB%B6%99%EC%97%AC%EC%A4%98%EC%95%BC%EC%93%B0%EB%82%98%ED%9D%A0",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "박선경 (@n_npsk). 1 Reply. 14 Views. 아~ 길동오빠는 내요리다뺏아먹을거같은디이~ 붙여줘야쓰나~흠~~~🤷🏻‍♀️🤭.",
+                  "og:url": "https://www.threads.com/@n_npsk/post/DHuc9tnSem7/%EC%95%84-%EA%B8%B8%EB%8F%99%EC%98%A4%EB%B9%A0%EB%8A%94-%EB%82%B4%EC%9A%94%EB%A6%AC%EB%8B%A4%EB%BA%8F%EC%95%84%EB%A8%B9%EC%9D%84%EA%B1%B0%EA%B0%99%EC%9D%80%EB%94%94%EC%9D%B4-%EB%B6%99%EC%97%AC%EC%A4%98%EC%95%BC%EC%93%B0%EB%82%98%ED%9D%A0",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/n_npsk/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "강길동 | <단짝인듯 짐짝같은 길동이네> 가족끼리 그러는 거 아니야 ...",
+            "htmlTitle": "강길동 | &lt;단짝인듯 짐짝같은 <b>길동</b>이네&gt;   가족끼리 그러는 <b>거</b> 아니야 ...",
+            "link": "https://www.instagram.com/kanggildong_/p/CabyCBgvk_B/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Feb 26, 2022 ... 1129 likes, 65 comments - kanggildong_ on February 26, 2022: \"<단짝인듯 짐짝같은 길동이네>⠀ 가족끼리 그러는 거 아니야⠀ .⠀ .⠀ .",
+            "htmlSnippet": "Feb 26, 2022 <b>...</b> 1129 likes, 65 comments - kanggildong_ on February 26, 2022: &quot;&lt;단짝인듯 짐짝같은 <b>길동</b>이네&gt;⠀ 가족끼리 그러는 <b>거</b> 아니야⠀ .⠀ .⠀ .",
+            "formattedUrl": "https://www.instagram.com/kanggildong_/p/CabyCBgvk_B/",
+            "htmlFormattedUrl": "https://www.instagram.com/kanggildong_/p/CabyCBgvk_B/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtomxm7Osyv7u0xQixV5WSZQQzbsKt6PBu0hzlhgAdZfQWF5w9MI156QB&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/274789866_379478963551472_2464153862224284625_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&_nc_ohc=J-Yh3uzauywQ7kNvwGPExBN&_nc_oc=AdlD1kvpJLHkE2qvXjSrgys9rzc1M0gwJKNcX53H2dU2yGTaRb5nnxn-yenkH2QTY-w&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=mhCmWPyWjSQZkV6OyT3lvw&oh=00_AfHmr7zEOOjSv1xYRonr9JO8fiqBTbmh9r3at1LO0rYi-A&oe=681BA8A5",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=2782037236219006913",
+                  "og:description": "1,129 likes, 65 comments - kanggildong_ on February 26, 2022: \"<단짝인듯 짐짝같은 길동이네>⠀\n가족끼리 그러는 거 아니야⠀\n.⠀\n.⠀\n.⠀\n#망상 #머쓱코쓱\".",
+                  "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/274789866_379478963551472_2464153862224284625_n.jpg?stp=c216.0.648.648a_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&_nc_ohc=J-Yh3uzauywQ7kNvwGPExBN&_nc_oc=AdlD1kvpJLHkE2qvXjSrgys9rzc1M0gwJKNcX53H2dU2yGTaRb5nnxn-yenkH2QTY-w&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=mhCmWPyWjSQZkV6OyT3lvw&oh=00_AfHmr7zEOOjSv1xYRonr9JO8fiqBTbmh9r3at1LO0rYi-A&oe=681BA8A5",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "29607037413",
+                  "og:type": "article",
+                  "twitter:title": "강길동 (@kanggildong_) • Instagram photo",
+                  "al:ios:app_name": "Instagram",
+                  "app-title": "Instagram",
+                  "og:title": "강길동 on Instagram: \"<단짝인듯 짐짝같은 길동이네>⠀\n가족끼리 그러는 거 아니야⠀\n.⠀\n.⠀\n.⠀\n#망상 #머쓱코쓱\"",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/CabyCBgvk_B/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/CabyCBgvk_B/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2782037236219006913"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "온라인가나다 상세보기(문의) | 국립국어원",
+            "htmlTitle": "온라인가나다 상세보기(문의) | 국립국어원",
+            "link": "https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&qna_seq=278486&pageIndex=1&searchCondition=&searchKeyword=",
+            "displayLink": "www.korean.go.kr",
+            "snippet": "즉 말씀하신 구성에서 '것'이나 '거'를 쓰는 것은 적절하나 '꺼'처럼 쓰는 것은 적절한 표준어가 아닙니다. 이 점 참고하시기 바랍니다. 한편 '길동' 뒤에 '것/거'를 쓰는 ...",
+            "htmlSnippet": "즉 말씀하신 구성에서 &#39;것&#39;이나 &#39;<b>거</b>&#39;를 쓰는 것은 적절하나 &#39;꺼&#39;처럼 쓰는 것은 적절한 표준어가 아닙니다. 이 점 참고하시기 바랍니다. 한편 &#39;<b>길동</b>&#39; 뒤에 &#39;것/<b>거</b>&#39;를 쓰는&nbsp;...",
+            "formattedUrl": "https://www.korean.go.kr/front/.../onlineQnaView.do?mn_id...",
+            "htmlFormattedUrl": "https://www.korean.go.kr/front/.../onlineQnaView.do?mn_id...",
+            "pagemap": {
+              "metatags": [
+                {
+                  "viewport": "width=device-width, initial-scale=1.0",
+                  "format-detection": "telephone=no"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "길동이 선물 받은거 인증보이네~~멋있는 재동이",
+            "htmlTitle": "<b>길동</b>이 선물 받은<b>거</b> 인증보이네~~멋있는 재동이",
+            "link": "https://www.threads.com/@shxodnr12/post/DJLsJbpTWq6/%EA%B8%B8%EB%8F%99%EC%9D%B4-%EC%84%A0%EB%AC%BC-%EB%B0%9B%EC%9D%80%EA%B1%B0-%EC%9D%B8%EC%A6%9D%EB%B3%B4%EC%9D%B4%EB%84%A4%EB%A9%8B%EC%9E%88%EB%8A%94-%EC%9E%AC%EB%8F%99%EC%9D%B4",
+            "displayLink": "www.threads.com",
+            "snippet": "8 days ago ... 노태욱 (@shxodnr12). 길동이 선물 받은거 인증보이네~~멋있는 재동이.",
+            "htmlSnippet": "8 days ago <b>...</b> 노태욱 (@shxodnr12). <b>길동</b>이 선물 받은<b>거</b> 인증보이네~~멋있는 재동이.",
+            "formattedUrl": "https://www.threads.com/.../길동이-선물-받은거-인증보이네멋있는-재동...",
+            "htmlFormattedUrl": "https://www.threads.com/.../<b>길동</b>이-선물-받은<b>거</b>-인증보이네멋있는-재동...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAtDjjp7bcmeMOUkqIYIEo65LJj0xXKHnd1rTb4NCwpYSuBGYWI7Hpb42&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DJLsJbpTWq6",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/shxodnr12/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "노태욱 (@shxodnr12) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "노태욱 (@shxodnr12) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DJLsJbpTWq6",
+                  "color-scheme": "light",
+                  "og:description": "노태욱 (@shxodnr12). 길동이 선물 받은거 인증보이네~~멋있는 재동이.",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/shxodnr12/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@shxodnr12/post/DJLsJbpTWq6/%EA%B8%B8%EB%8F%99%EC%9D%B4-%EC%84%A0%EB%AC%BC-%EB%B0%9B%EC%9D%80%EA%B1%B0-%EC%9D%B8%EC%A6%9D%EB%B3%B4%EC%9D%B4%EB%84%A4%EB%A9%8B%EC%9E%88%EB%8A%94-%EC%9E%AC%EB%8F%99%EC%9D%B4",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "노태욱 (@shxodnr12). 길동이 선물 받은거 인증보이네~~멋있는 재동이.",
+                  "og:url": "https://www.threads.com/@shxodnr12/post/DJLsJbpTWq6/%EA%B8%B8%EB%8F%99%EC%9D%B4-%EC%84%A0%EB%AC%BC-%EB%B0%9B%EC%9D%80%EA%B1%B0-%EC%9D%B8%EC%A6%9D%EB%B3%B4%EC%9D%B4%EB%84%A4%EB%A9%8B%EC%9E%88%EB%8A%94-%EC%9E%AC%EB%8F%99%EC%9D%B4",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/shxodnr12/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "HYOLYNコミュニティの投稿 - 내가바로 횽길동!!!! 금요일 행복하게 ...",
+            "htmlTitle": "HYOLYNコミュニティの投稿 - 내가바로 횽<b>길동</b>!!!!   금요일   행복하게 ...",
+            "link": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+            "displayLink": "weverse.io",
+            "snippet": "내가바로 횽길동!!!! 금요일 행복하게 보내기… 사랑해요 내 사랑들 - ヒョリン.",
+            "htmlSnippet": "내가바로 횽<b>길동</b>!!!!   금요일   행복하게 보내기… 사랑해요 내 사랑들   - ヒョリン.",
+            "formattedUrl": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+            "htmlFormattedUrl": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8Bb2KSXB1ridV8hnDCmVgFEsZL8AEVHCD7xzYZBYQfLBbKSXexT0X5s&s",
+                  "width": "194",
+                  "height": "259"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://phinf.wevpstatic.net/MjAyMzA1MTJfMyAg/MDAxNjgzOTAwOTgzMDg3.d9KoQRAOzJi771PM_5vmbngw3tW-jpldRyGqQbIQvLwg.5HQEfRGzPTBPuBAa1x4285Vz1BIqOdPjyG01fChdzbwg.JPEG/image.jpg?type=w1414",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "HYOLYNコミュニティの投稿 - 내가바로 횽길동!!!!🖤\n금요일🌰 행",
+                  "weibo:webpage:description": "내가바로 횽길동!!!!🖤\n금요일🌰 행복하게 보내기…\n사랑해요 내 사랑들💋 - ヒョリン",
+                  "twitter:url": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+                  "og:title": "HYOLYNコミュニティの投稿 - 내가바로 횽길동!!!!🖤\n금요일🌰 행",
+                  "weibo:webpage:url": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+                  "title": "HYOLYNコミュニティの投稿 - 내가바로 횽길동!!!!🖤\n금요일🌰 행복하게 보내기…\n사랑해요 내 사랑들💋 - ヒョリン",
+                  "og:description": "내가바로 횽길동!!!!🖤\n금요일🌰 행복하게 보내기…\n사랑해요 내 사랑들💋 - ヒョリン",
+                  "twitter:creator": "@weverseofficial",
+                  "twitter:image": "https://phinf.wevpstatic.net/MjAyMzA1MTJfMyAg/MDAxNjgzOTAwOTgzMDg3.d9KoQRAOzJi771PM_5vmbngw3tW-jpldRyGqQbIQvLwg.5HQEfRGzPTBPuBAa1x4285Vz1BIqOdPjyG01fChdzbwg.JPEG/image.jpg?type=w1414",
+                  "weibo:webpage:image": "https://phinf.wevpstatic.net/MjAyMzA1MTJfMyAg/MDAxNjgzOTAwOTgzMDg3.d9KoQRAOzJi771PM_5vmbngw3tW-jpldRyGqQbIQvLwg.5HQEfRGzPTBPuBAa1x4285Vz1BIqOdPjyG01fChdzbwg.JPEG/image.jpg?type=w1414",
+                  "weibo:webpage:title": "HYOLYNコミュニティの投稿 - 내가바로 횽길동!!!!🖤\n금요일🌰 행",
+                  "twitter:site": "@weverseofficial",
+                  "viewport": "width=device-width, initial-scale=1.0",
+                  "twitter:description": "내가바로 횽길동!!!!🖤\n금요일🌰 행복하게 보내기…\n사랑해요 내 사랑들💋 - ヒョリン",
+                  "og:url": "https://weverse.io/hyolyn/artist/3-118935804?hl=ja",
+                  "weibo:type": "webpage"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://phinf.wevpstatic.net/MjAyMzA1MTJfMyAg/MDAxNjgzOTAwOTgzMDg3.d9KoQRAOzJi771PM_5vmbngw3tW-jpldRyGqQbIQvLwg.5HQEfRGzPTBPuBAa1x4285Vz1BIqOdPjyG01fChdzbwg.JPEG/image.jpg?type=w1414"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "길동이는 자기가 더 귀여운거 아는듯...",
+            "htmlTitle": "<b>길동</b>이는 자기가 더 귀여운<b>거</b> 아는듯...",
+            "link": "https://www.threads.net/@parsnip_fairy/post/DGsZPzzAUrw",
+            "displayLink": "www.threads.net",
+            "snippet": "Mar 2, 2025 ... 누나 : 헤헤… 움직이는 카피바라 길동이가 좋아하겠지? 길동 : (노관심) · 길동이는 자기가 더 귀여운거 아는듯...",
+            "htmlSnippet": "Mar 2, 2025 <b>...</b> 누나 : 헤헤… 움직이는 카피바라 <b>길동</b>이가 좋아하겠지? <b>길동</b> : (노관심) &middot; <b>길동</b>이는 자기가 더 귀여운<b>거</b> 아는듯...",
+            "formattedUrl": "https://www.threads.net/@parsnip_fairy/post/DGsZPzzAUrw",
+            "htmlFormattedUrl": "https://www.threads.net/@parsnip_fairy/post/DGsZPzzAUrw",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXrBlAIq6t9cKUgBDiFxgGZC2IOPfQ--pOeCRVN1qYMcl6TTYNStrJjgU6&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DGsZPzzAUrw",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/parsnip_fairy/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "도라지요정 (@parsnip_fairy) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "og:title": "도라지요정 (@parsnip_fairy) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DGsZPzzAUrw",
+                  "color-scheme": "light",
+                  "og:description": "도라지요정 (@parsnip_fairy). 길동이는 자기가 더 귀여운거 아는듯...",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/parsnip_fairy/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.net/@parsnip_fairy/post/DGsZPzzAUrw/%EA%B8%B8%EB%8F%99%EC%9D%B4%EB%8A%94-%EC%9E%90%EA%B8%B0%EA%B0%80-%EB%8D%94-%EA%B7%80%EC%97%AC%EC%9A%B4%EA%B1%B0-%EC%95%84%EB%8A%94%EB%93%AF",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "도라지요정 (@parsnip_fairy). 길동이는 자기가 더 귀여운거 아는듯...",
+                  "og:url": "https://www.threads.net/@parsnip_fairy/post/DGsZPzzAUrw/%EA%B8%B8%EB%8F%99%EC%9D%B4%EB%8A%94-%EC%9E%90%EA%B8%B0%EA%B0%80-%EB%8D%94-%EA%B7%80%EC%97%AC%EC%9A%B4%EA%B1%B0-%EC%95%84%EB%8A%94%EB%93%AF",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/parsnip_fairy/profile_pic.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "error_3",
+      "type": "error",
+      "timestamp": "2025-05-11T06:36:18.918096",
+      "content": {
+        "error_type": "ToolExecutionError",
+        "message": "Missing required inputs for tool 6: ['place_id']",
+        "details": {
+          "tool_id": "6",
+          "inputs": {
+            "place_ids": "gp_search_text 결과에서 추출한 장소 ID 목록"
+          }
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

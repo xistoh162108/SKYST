@@ -25,7 +25,11 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "description": "사람 ObjectId(또는 이름)를 받아 해당 인물이 포함된 모든 사진을 반환합니다.",
         "inputs": {
             "person_id": "str — 필수. 인물의 BSON ObjectId 또는 이름"
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> dc3d3f2 (travel api(does not test))
         },
         "outputs": {
             "photos": "List[Dict] — 사진 메타데이터 목록",
@@ -33,6 +37,10 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         },
     },
     "2": {
+<<<<<<< HEAD
+=======
+
+>>>>>>> dc3d3f2 (travel api(does not test))
         "name": "get_people_in_photo",
         "module": "tools.people_photo",
         "callable": "get_people_in_photo",
@@ -43,7 +51,7 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "outputs": {
             "people": "List[Dict] — 인물 메타데이터 목록",
             "count": "int — 검색된 인물 수"
-        },
+        }
     },
     "3": {
         "name": "add_person_to_photo",
@@ -51,6 +59,7 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
         "callable": "add_person_to_photo",
         "description": "사진‑인물 매핑을 추가하여 특정 사진에 사람을 연결합니다.",
         "inputs": {
+<<<<<<< HEAD
             "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID",
             "person_id": "str — 필수. BSON ObjectId 형식의 인물 ID"
         },
@@ -58,6 +67,14 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "mapping": "Dict — 저장된 매핑 문서"
   
         },
+=======
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
+        },
+        "outputs": {
+            "people": "List[Dict] — 인물 메타데이터 목록",
+            "count": "int — 검색된 인물 수"
+        }
+>>>>>>> dc3d3f2 (travel api(does not test))
     },
     "4": {
         "name": "route_planner",
@@ -170,8 +187,136 @@ TOOL_LIST: Dict[str, Dict[str, Any]] = {
             "path": "str — 다운로드된 사이트가 저장된 디렉터리"
         },
     },
+<<<<<<< HEAD
     }
 
+=======
+    "17": {
+        "name": "get_all_people",
+        "module": "tools.people",
+        "callable": "get_all_people",
+        "description": "모든 인물 정보 목록을 반환합니다.",
+        "inputs": {},  # 입력 파라미터 없음
+        "outputs": {
+            "people": "List[Dict] — 인물 메타데이터 목록"
+        },
+    },
+    
+    "18": {
+        "name": "search_photo_by_id",
+        "module": "tools.photos",
+        "callable": "search_photo_by_id",
+        "description": "사진 ID를 받아 해당 사진의 메타데이터를 반환합니다.",
+        "inputs": {
+            "photo_id": "str — 필수. BSON ObjectId 형식의 사진 ID"
+        },
+        "outputs": {
+            "photo": "Dict — 사진 메타데이터 (없으면 null)"
+        },
+    },
+    # -------------------------------------------------------------
+    # 추가된 LLM 기반 툴 정의 (ID 19‒23)
+    # -------------------------------------------------------------------
+    "19": {
+        "name": "input_checker",
+        "module": "llm.models",
+        "callable": "inputChecker.process_query",
+        "description": "사용자 입력이 여행·장소 추천 도메인에 맞는지 판단합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "is_valid": "bool — 입력 적합 여부 (true/false)"
+        },
+    },
+    "20": {
+        "name": "query_maker",
+        "module": "llm.models",
+        "callable": "queryMaker.process_query",
+        "description": "사용자 요청을 다양한 측면에서 검색할 수 있는 쿼리 목록을 생성합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "queries": "List[str] — 생성된 검색 쿼리 목록"
+        },
+    },
+    "21": {
+        "name": "filter_generator",
+        "module": "llm.models",
+        "callable": "filterGenerator.process_query",
+        "description": "사용자 메시지에서 핵심 키워드(최대 3개)를 추출합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "filter_words": "List[str] — 추출된 필터 단어"
+        },
+    },
+    "22": {
+        "name": "tot_maker",
+        "module": "llm.models",
+        "callable": "TOTMaker.process_query",
+        "description": "사용 가능한 도구를 활용하여 Tree‑of‑Thoughts 실행 계획을 생성합니다.",
+        "inputs": {
+            "user_message": "str — 필수. 사용자 메시지"
+        },
+        "outputs": {
+            "steps": "List[Dict] — 단계별 도구 사용 계획"
+        },
+    },
+    "23": {
+        "name": "tot_executor",
+        "module": "llm.models",
+        "callable": "TOTExecutor.execute_plan",
+        "description": "Tree‑of‑Thoughts 실행 계획을 단계별로 실행하고 결과를 반환합니다.",
+        "inputs": {
+            "plan": "Dict — 필수. TOTMaker가 생성한 실행 계획"
+        },
+        "outputs": {
+            "steps": "List[Dict] — 단계별 실행 결과",
+            "final_summary": "str — 전체 실행 결과 요약"
+        },
+    },
+    "24": {
+        "name": "summarize_text",
+        "description": "주어진 텍스트를 요약합니다.",
+        "inputs": {
+            "text": "str — 요약할 텍스트"
+        },
+        "outputs": {
+            "summary": "str — 텍스트의 요약",
+            "key_points": "List[str] — 핵심 포인트 목록",
+            "length_ratio": "float — 요약 길이 / 원문 길이 비율"
+        }
+    },
+    "25": {
+        "name": "generate_response",
+        "description": "커스텀 LLM을 사용하여 프롬프트에 대한 응답을 생성합니다.",
+        "inputs": {
+            "prompt": "str — 사용자 프롬프트",
+            "system_prompt": "Optional[str] — 시스템 프롬프트",
+            "temperature": "Optional[float] — 생성 온도 (0.0 ~ 1.0)"
+        },
+        "outputs": {
+            "response": "str — 생성된 응답"
+        }
+    },
+    "26": {
+        "name": "generate_with_context",
+        "description": "컨텍스트가 포함된 프롬프트에 대한 응답을 생성합니다.",
+        "inputs": {
+            "prompt": "str — 사용자 프롬프트",
+            "context": "str — 컨텍스트 정보",
+            "system_prompt": "Optional[str] — 시스템 프롬프트",
+            "temperature": "Optional[float] — 생성 온도 (0.0 ~ 1.0)"
+        },
+        "outputs": {
+            "response": "str — 생성된 응답"
+        }
+    }
+}
+>>>>>>> dc3d3f2 (travel api(does not test))
 
 
 # ---------------------------------------------------------------------------

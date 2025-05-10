@@ -6,13 +6,17 @@ from db.photos import PhotoRepository
 from db.photo_people import PhotoPeopleRepository
 from db.photo_tags import PhotoTagsRepository
 from db.huggingface.huggingface_tag import get_tags_from_huggingface
-
+from server.db.travel_people import TravelRepository
+from db.travel_people import TravelPeopleRepository
+from db.travel_places import TravelPlacesRepository
 app = Flask(__name__)
 people_repo = PeopleRepository()
 photo_repo = PhotoRepository()
 photo_people_repo = PhotoPeopleRepository()
 photo_tags_repo = PhotoTagsRepository()
-
+travel_repo = TravelRepository()
+travel_people_repo = TravelPeopleRepository()
+travel_places_repo = TravelPlacesRepository()
 def serialize_id(doc):
     doc["_id"] = str(doc["_id"])
     return doc
@@ -148,167 +152,207 @@ def delete_photo(photoId):
     photo_repo.delete_photo({"_id": ObjectId(photoId)})
     return
 
-@app.route(";/api/recommend", methods=["POST"])
-def recommend_photos():
-    from flask import Flask, request, jsonify
-from tools.tool import Tools
-from llm.models import TOTPlanner, TOTExecutor
-from db import PeopleRepository, PhotoRepository, PhotoPeopleRepository
-import json
-import traceback
-import os
-
-app = Flask(__name__)
-
-# 데이터베이스 레포지토리 초기화
-people_repo = PeopleRepository()
-photo_repo = PhotoRepository()
-photo_people_repo = PhotoPeopleRepository()
-
-# Tools 인스턴스 생성
-tools = Tools(
-    photo_repo=photo_repo,
-    people_repo=people_repo,
-    photo_people_repo=photo_people_repo,
-    enable_notes=True  # 노트 기능 활성화
-)
-
-# 환경 변수에서 API 키 가져오기
-api_key = os.getenv("GOOGLE_API_KEY", "")
-
-# TOT Planner와 Executor 초기화
-tot_planner = TOTPlanner(api_key=api_key, tools=tools)
-tot_executor = TOTExecutor(api_key=api_key, tools=tools)
-
-@app.route('/api/recommend', methods=['POST'])
-def recommend():
-    """
-    사용자 쿼리를 받아 TOT 계획을 생성하고 실행하여 추천 결과를 제공하는 API
+@app.route("/api/travels", methods=["GET"])
+def get_travels():
+    travels_raw = travel_repo.get_travel({})
+    travels_sorted = sorted(travels_raw, key=lambda t: t.get("date", ""),
+                            reverse=True)[:5]
+    result = []
+    for tr in travels_sorted:
+        place_docs = travel_places_repo.get_travel_place({"travelId": tr["_id"]})
+        places = sorted(
+            [{"name": p.get("name", ""), "order": p.get("order", 99)} for p in place_docs],
+            key=lambda x: x["order"]
+        )
+        result.append({
+            "id": str(tr["_id"]),
+            "date" : tr.get("date", ""),
+            "name" : tr.get("name", ""),
+            "places" : places
+        })
+    return jsonify(result), 200
     
-    Request JSON:
-    {
-        "query": "사용자 질문/요청",
-        "max_plans": 1  // 선택사항: 생성할 최대 계획 수 (기본값: 1)
+@app.route("/api/travels", methods=["POST"])
+def add_travel():
+    data = request.get_json()
+    if not data:
+        return jsonify({"error": "empty body"}), 400
+
+    required = ["date", "name"]
+    missing = [k for k in required if k not in data]
+    if missing:
+        return jsonify({"error": f"missing required fields: {missing}"}), 400
+
+    # 1) travels 컬렉션에 기본 문서 저장
+    travel_doc = {
+        "date": data["date"],
+        "name": data["name"]
     }
-    
-    Response JSON:
+    travel_id = travel_repo.add_travel(travel_doc)
+
+    # 2) travels_people 매핑 저장
+    for pid in data.get("peopleId", []):
+        travel_people_repo.add_travel_person({
+            "travelId": travel_id,
+            "personId": ObjectId(pid)
+        })
+
+    # 3) travels_places 매핑 저장
+    for idx, p in enumerate(data.get("places", [])):
+        travel_places_repo.add_travel_place({
+            "travelId": travel_id,
+            "placeId": ObjectId(p["id"]),
+            "order": p.get("order", idx + 1)
+        })
+
+    return jsonify({"travelId": str(travel_id)}), 200
+
+@app.route("/api/travels/<travelId>", methods=["GET"])
+def get_travel_detail(travelId):
+    """
+    여행 상세 기록 가져오기
+    Response 예:
     {
-        "success": true/false,
-        "query": "원래 사용자 쿼리",
-        "answer": "최종 답변",
-        "details": {
-            "plan": {...},  // 실행된 계획
-            "summary": "실행 요약",
-            "steps": [...],  // 각 단계별 결과
-            "replan_count": 0  // 재계획 시도 횟수
-        },
-        "error": "오류 메시지 (실패 시)"
+        "date": "2025-05-12",
+        "people": [
+            { "id": "...", "name": "지민" }, ...
+        ],
+        "name": "제주 가족 여행",
+        "places": [
+            { "id": "...", "order": 1, "name": "성산 일출봉", "location": [33.45, 126.93] },
+            ...
+        ]
     }
     """
     try:
-        # 요청 데이터 가져오기
-        data = request.json
-        
-        if not data or 'query' not in data:
-            return jsonify({
-                "success": False,
-                "error": "쿼리가 제공되지 않았습니다."
-            }), 400
-            
-        query = data['query']
-        max_plans = data.get('max_plans', 1)  # 기본값은 1개 계획
-        
-        # 입력 검증
-        if not isinstance(query, str) or len(query.strip()) == 0:
-            return jsonify({
-                "success": False,
-                "error": "유효한 쿼리가 아닙니다."
-            }), 400
-            
-        if not isinstance(max_plans, int) or max_plans < 1:
-            max_plans = 1
-            
-        # TOT 계획 생성 및 실행
-        best_result = None
-        best_score = -1
-        all_plans = []
-        
-        for plan_idx in range(max_plans):
-            try:
-                # 계획 생성
-                steps = tot_planner.build_full_plan(query)
-                full_plan = {"steps": steps}
-                all_plans.append(full_plan)
-                
-                # 계획 실행
-                results = tot_executor.execute_plan(full_plan, query)
-                
-                # 계획 점수 계산 (성공적인 단계 비율)
-                successful_steps = sum(1 for step in results.get('steps', []) 
-                                     if step.get('analysis', {}).get('is_sufficient', False))
-                total_steps = len(results.get('steps', []))
-                
-                score = successful_steps / total_steps if total_steps > 0 else 0
-                
-                # 더 나은 결과가 있으면 업데이트
-                if score > best_score:
-                    best_score = score
-                    best_result = results
-            except Exception as e:
-                # 이 계획 실패, 다음 계획으로 진행
-                print(f"계획 {plan_idx} 실행 중 오류: {str(e)}")
-                continue
-        
-        # 모든 계획이 실패한 경우
-        if best_result is None:
-            return jsonify({
-                "success": False,
-                "query": query,
-                "error": "모든 계획 실행에 실패했습니다."
-            }), 500
-            
-        # 응답 구성
-        final_answer = best_result.get('final_answer')
-        
-        # 노트 기반 답변이 없는 경우 기본 최종 요약 사용
-        if final_answer is None or final_answer == "":
-            final_answer = best_result.get('final_summary', "요청에 대한 답변을 생성할 수 없습니다.")
-            
-        response = {
-            "success": True,
-            "query": query,
-            "answer": final_answer,
-            "details": {
-                "plan": best_result.get('final_plan', all_plans[0] if all_plans else {}),
-                "summary": best_result.get('final_summary', ""),
-                "steps": [
-                    {
-                        "description": step.get('step', {}).get('description', ""),
-                        "tool_name": step.get('step', {}).get('tool_name', ""),
-                        "summary": step.get('summary', ""),
-                        "is_sufficient": step.get('analysis', {}).get('is_sufficient', False)
-                    } for step in best_result.get('all_attempts', [])
-                ],
-                "replan_count": best_result.get('replan_count', 0)
-            }
-        }
-        
-        return jsonify(response), 200
-        
-    except Exception as e:
-        # 예외 처리
-        print(f"API 처리 중 오류: {str(e)}")
-        print(traceback.format_exc())
-        
-        return jsonify({
-            "success": False,
-            "query": request.json.get('query', ""),
-            "error": str(e)
-        }), 500
+        travel_oid = ObjectId(travelId)
+    except Exception:
+        return jsonify({"error": "Invalid travelId"}), 400
 
-if __name__ == '__main__':
-    # 개발 환경에서 실행
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    travels = travel_repo.get_travel({"_id": travel_oid})
+    if not travels:
+        return jsonify({"error": "Invalid travelId"}), 400
+
+    tr = travels[0]
+
+    # people 목록
+    people_raw = travel_people_repo.get_travel_person({"travelId": travel_oid})
+    people_list = []
+    for pr in people_raw:
+        pid = pr["personId"]
+        person_docs = people_repo.get_person({"_id": pid})
+        name = person_docs[0]["name"] if person_docs else ""
+        people_list.append({"id": str(pid), "name": name})
+
+    # places 목록
+    places_raw = travel_places_repo.get_travel_place({"travelId": travel_oid})
+    places_list = []
+    for pr in places_raw:
+        places_list.append({
+            "id": str(pr["placeId"]),
+            "order": pr.get("order", 0),
+            "name": pr.get("name", ""),
+            "location": pr.get("location", [])
+        })
+
+    return jsonify({
+        "date": tr.get("date", ""),
+        "people": people_list,
+        "name": tr.get("name", ""),
+        "places": places_list
+    }), 200
+
+
+# 여행 정보 수정
+@app.route("/api/travels/<travelId>", methods=["PUT"])
+def update_travel(travelId):
+    """
+    여행 정보 수정
+    Body 예:
+    {
+        "date": "2025-05-13",
+        "peopleId": ["6089...", "60ab..."],
+        "name": "수정된 여행 이름",
+        "places": [
+            { "id": "64cd...", "order": 1 },
+            { "id": "64ce...", "order": 2 }
+        ]
+    }
+    """
+    try:
+        travel_oid = ObjectId(travelId)
+    except Exception:
+        return jsonify({"error": "Invalid travelId"}), 400
+
+    data = request.get_json()
+    if not data:
+        return jsonify({"error": "empty body"}), 400
+
+    # build $set update dict only with provided fields
+    update_fields = {}
+    if "date" in data:
+        update_fields["date"] = data["date"]
+
+    if "name" in data:
+        update_fields["name"] = data["name"]
+
+    if "peopleId" in data:
+        update_fields["people"] = [ObjectId(pid) for pid in data["peopleId"]]
+
+    if "places" in data:
+        update_fields["places"] = [
+            {
+                "placeId": ObjectId(p["id"]),
+                "order": p.get("order", idx + 1)
+            }
+            for idx, p in enumerate(data["places"])
+        ]
+
+    if "peopleId" in data:
+        # Delete old mapping then add new
+        travel_people_repo.delete_travel_person({"travelId": travel_oid})
+        for pid in data["peopleId"]:
+            travel_people_repo.add_travel_person({"travelId": travel_oid, "personId": ObjectId(pid)})
+
+    if "places" in data:
+        travel_places_repo.delete_travel_place({"travelId": travel_oid})
+        for idx, p in enumerate(data["places"]):
+            travel_places_repo.add_travel_place({
+                "travelId": travel_oid,
+                "placeId": ObjectId(p["id"]),
+                "order": p.get("order", idx + 1)
+            })
+
+    if not update_fields:
+        return jsonify({"error": "no updatable fields"}), 400
+
+    # perform update
+    travel_repo.update_travel({"_id": travel_oid}, {"$set": update_fields})
+
+    return jsonify({"message": "updated"}), 200
+
+
+# 여행 기록 삭제
+@app.route("/api/travels/<travelId>", methods=["DELETE"])
+def delete_travel(travelId):
+    """
+    여행 기록 삭제
+    성공 시 200, travelId 오류 시 400
+    """
+    try:
+        travel_oid = ObjectId(travelId)
+    except Exception:
+        return jsonify({"error": "Invalid travelId"}), 400
+
+    deleted = travel_repo.delete_travel({"_id": travel_oid})
+    if not deleted:
+        return jsonify({"error": "Invalid travelId"}), 400
+
+    travel_people_repo.delete_travel_person({"travelId": travel_oid})
+    travel_places_repo.delete_travel_place({"travelId": travel_oid})
+
+    return jsonify({"message": "deleted"}), 200
+
 
 if __name__ == "__main__":
     app.run(debug=True)
