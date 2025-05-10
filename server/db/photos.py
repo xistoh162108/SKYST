@@ -1,22 +1,19 @@
-# photos.py
 from .db import MongoDBClient
 
-def add_photo(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["photos"]
-    return collection.insert_one(data)
 
-def get_photo(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["photos"]
-    return collection.find_one(data)
+class PhotoRepository:
+    def __init__(self, db_name: str = "skyst"):
+        self.client = MongoDBClient(db_name=db_name)
+        self.collection_name = "photos"
 
-def update_photo(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["photos"]
-    return collection.update_one(data)
+    def add_photo(self, data: dict):
+        return self.client.create(self.collection_name, data)
 
-def delete_photo(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["photos"]
-    return collection.delete_one(data)
+    def get_photo(self, query: dict):
+        return self.client.read(self.collection_name, query)
+
+    def update_photo(self, query: dict, update_data: dict):
+        return self.client.update(self.collection_name, query, update_data)
+
+    def delete_photo(self, query: dict):
+        return self.client.delete(self.collection_name, query)

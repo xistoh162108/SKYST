@@ -1,22 +1,19 @@
-# people.py
-from .db import MongoDBClient
+# server/db/people.py
+from . import MongoDBClient
 
-def add_person(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["people"]
-    return collection.insert_one(data)
+class PeopleRepository:
+    def __init__(self, db_name: str = "skyst"):
+        self.client = MongoDBClient(db_name=db_name)
+        self.collection_name = "people"
 
-def get_person(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["people"]
-    return collection.find_one(data)
+    def add_person(self, data: dict):
+        return self.client.create(self.collection_name, data)
 
-def update_person(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["people"]
-    return collection.update_one(data)
+    def get_person(self, query: dict):
+        return self.client.read(self.collection_name, query)
 
-def delete_person(data):
-    client = MongoDBClient(db_name="skyst")
-    collection = client["people"]
-    return collection.delete_one(data)
+    def update_person(self, query: dict, update_data: dict):
+        return self.client.update(self.collection_name, query, update_data)
+
+    def delete_person(self, query: dict):
+        return self.client.delete(self.collection_name, query)
