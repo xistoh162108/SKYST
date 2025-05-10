@@ -53,37 +53,6 @@ class Tools:
             raise ValueError(f"Missing required inputs for tool {tool_id}: {missing_inputs}")
         
         return self.tool_mapping[tool_id](**kwargs)
-
-# 사용 예시 (테스트용으로만 사용하세요)
-if __name__ == "__main__":
-    from db.photo_people import PhotoPeopleRepository
-    from db.photos import PhotoRepository
-    from db.people import PeopleRepository
-
-    tools = Tools(
-        photo_people_repo=PhotoPeopleRepository(),
-        photo_repo=PhotoRepository(),
-        people_repo=PeopleRepository()
-    )
-
-    # 도구 정보 조회
-    tool_info = tools.get_tool_info("13")  # photo_search_by_id
-    print("=== 도구 정보 ===")
-    print(f"이름: {tool_info['name']}")
-    print(f"설명: {tool_info['description']}")
-    print(f"필수 입력: {tool_info['inputs']}")
-    print(f"출력: {tool_info['outputs']}")
-
-    try:
-        # 사진 ID로 검색
-        result = tools.execute_tool("13", photo_id="65f1234567890abcdef12345")
-        print("\n=== 검색 결과 ===")
-        print(result)
-
-        # 태그로 사진 검색
-        result = tools.execute_tool("2", photo_id="65f1234567890abcdef12345")
-        print("\n=== 태그 검색 결과 ===")
-        print(result)
-
-    except ValueError as e:
-        print(f"에러: {e}")
+    
+    def get_tool_list(self) -> Dict[str, Any]:
+        return TOOL_LIST

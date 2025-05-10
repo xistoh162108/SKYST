@@ -3,6 +3,7 @@ import sys
 import json
 from typing import Dict, Any, List, Optional
 from datetime import datetime
+from tools.tools import Tools
 
 # 프로젝트 루트 디렉토리를 파이썬 경로에 추가
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -395,5 +396,302 @@ class filterGenerator:
 
         return response
 
-    
+class TOTMaker:
+    def __init__(self, api_key: str, tools: Tools):
+        """
+        TOT 메이커 초기화
 
+        Args:
+            api_key (str): Google API 키
+            tools (Tools): 도구 인스턴스 (도구 목록 조회용)
+        """
+        self.api_key = api_key
+        self.tools = tools
+        genai.configure(api_key=self.api_key)
+
+        # JSON 출력 파서 생성
+        self.json_parser = JSONOutputParser()
+
+        # TOT 메이커 시스템 프롬프트 설정
+        self.tot_maker_config = InstructionConfig(
+            instruction="""당신은 사용자의 요청을 달성하기 위한 실행 계획을 수립하는 TOT(Tree of Thoughts) 메이커입니다.
+            주어진 도구 목록을 분석하고, 사용자의 요청을 달성하기 위해 필요한 도구들을 순서대로 실행하는 계획을 생성해야 합니다.
+
+            각 단계는 다음 정보를 포함해야 합니다:
+            - step_id: 단계 번호
+            - tool_id: 사용할 도구의 ID
+            - tool_name: 도구의 이름
+            - description: 이 단계에서 수행할 작업 설명
+            - inputs: 도구에 전달할 입력 파라미터
+            - expected_output: 예상되는 출력 결과
+
+            JSON 형식으로 응답하세요.
+            """,
+            output_parser=self.json_parser,
+            output_format={
+                "steps": [
+                    {
+                        "step_id": "int — 단계 번호",
+                        "tool_id": "str — 사용할 도구 ID",
+                        "tool_name": "str — 도구 이름",
+                        "description": "str — 수행할 작업 설명",
+                        "inputs": "Dict — 도구 입력 파라미터",
+                        "expected_output": "str — 예상 출력 설명"
+                    }
+                ]
+            },
+            examples=[
+                {
+                    "input": "서울에서 맛있는 카페 추천해줘",
+                    "output": {
+                        "steps": [
+                            {
+                                "step_id": 1,
+                                "tool_id": "5",
+                                "tool_name": "gp_search_text",
+                                "description": "서울의 카페를 검색합니다",
+                                "inputs": {
+                                    "text_query": "서울 맛있는 카페",
+                                    "page_size": 5
+                                },
+                                "expected_output": "검색된 카페 목록"
+                            },
+                            {
+                                "step_id": 2,
+                                "tool_id": "6",
+                                "tool_name": "gp_get_place_details",
+                                "description": "첫 번째 카페의 상세 정보를 조회합니다",
+                                "inputs": {
+                                    "place_id": "검색 결과의 첫 번째 place_id"
+                                },
+                                "expected_output": "카페의 상세 정보"
+                            }
+                        ]
+                    }
+                }
+            ]
+        )
+
+        self.tot_maker = ChatBot(
+            model_name="gemini-2.0-flash",
+            temperature=0.5,
+            max_output_tokens=1024,
+            instruction_config=self.tot_maker_config,
+            api_key=self.api_key
+        )
+
+    def process_query(self, user_message: str) -> Dict[str, Any]:
+        """
+        사용자 쿼리를 처리하여 실행 계획을 생성합니다.
+
+        Args:
+            user_message (str): 사용자 메시지
+
+        Returns:
+            Dict[str, Any]: 생성된 실행 계획
+        """
+        # 챗봇이 실행 중이 아니면 시작
+        if not self.tot_maker.is_running():
+            self.tot_maker.start_chat()
+
+        # 도구 목록 가져오기
+        tool_list = self.tools.get_tool_list()
+        
+        # 도구 목록을 문자열로 변환
+        tool_info = "사용 가능한 도구 목록:\n"
+        for tool_id, tool in tool_list.items():
+            tool_info += f"\n도구 ID: {tool_id}\n"
+            tool_info += f"이름: {tool['name']}\n"
+            tool_info += f"설명: {tool['description']}\n"
+            tool_info += f"입력: {tool['inputs']}\n"
+            tool_info += f"출력: {tool['outputs']}\n"
+            tool_info += "---\n"
+
+        # 사용자 메시지와 도구 목록을 함께 전달
+        full_message = f"{tool_info}\n\n사용자 요청: {user_message}"
+        
+        # 사용자 메시지 처리
+        response = self.tot_maker.send_message(full_message)
+
+        # 응답이 딕셔너리가 아니면 변환
+        if not isinstance(response, dict):
+            try:
+                response = json.loads(response)
+            except:
+                return {
+                    "error": "응답 형식 오류",
+                    "message": "죄송합니다. 응답 처리 중 오류가 발생했습니다."
+                }
+
+        return response
+
+class TOTExecutor:
+    def __init__(self, api_key: str, tools: Tools):
+        """
+        TOT 실행기 초기화
+
+        Args:
+            api_key (str): Google API 키
+            tools (Tools): 도구 인스턴스
+        """
+        self.api_key = api_key
+        self.tools = tools
+        genai.configure(api_key=self.api_key)
+
+        # JSON 출력 파서 생성
+        self.json_parser = JSONOutputParser()
+
+        # TOT 실행기 시스템 프롬프트 설정
+        self.tot_executor_config = InstructionConfig(
+            instruction="""당신은 TOT(Tree of Thoughts) 실행 계획을 단계별로 실행하고 분석하는 실행기입니다.
+            각 단계를 실행하고, 결과를 분석하여 다음 단계로 넘어갈지 결정해야 합니다.
+
+            각 단계 실행 후 다음을 수행해야 합니다:
+            1. 실행 결과 분석
+            2. 결과가 충분한지 판단
+            3. 부족하다면 다른 방법으로 재시도 (최대 3번)
+            4. 다음 단계로 넘어갈 준비
+
+            JSON 형식으로 응답하세요.
+            """,
+            output_parser=self.json_parser,
+            output_format={
+                "analysis": {
+                    "is_sufficient": "bool — 결과가 충분한지 여부",
+                    "reason": "str — 판단 이유",
+                    "retry_count": "int — 재시도 횟수",
+                    "next_action": "str — 다음 행동 (continue/retry/stop)"
+                },
+                "summary": "str — 현재까지의 실행 결과 요약",
+                "next_step_input": "Dict — 다음 단계에 전달할 입력값"
+            }
+        )
+
+        self.tot_executor = ChatBot(
+            model_name="gemini-2.0-flash",
+            temperature=0.5,
+            max_output_tokens=1024,
+            instruction_config=self.tot_executor_config,
+            api_key=self.api_key
+        )
+
+    def execute_step(self, step: Dict[str, Any], previous_results: List[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """
+        단일 단계를 실행하고 결과를 분석합니다.
+
+        Args:
+            step (Dict[str, Any]): 실행할 단계 정보
+            previous_results (List[Dict[str, Any]], optional): 이전 단계들의 결과
+
+        Returns:
+            Dict[str, Any]: 실행 결과와 분석
+        """
+        if not self.tot_executor.is_running():
+            self.tot_executor.start_chat()
+
+        # 이전 결과 요약 생성
+        previous_summary = ""
+        if previous_results:
+            previous_summary = "이전 단계 결과:\n"
+            for idx, result in enumerate(previous_results, 1):
+                previous_summary += f"단계 {idx}: {result.get('summary', '')}\n"
+
+        # 현재 단계 실행
+        try:
+            result = self.tools.execute_tool(step['tool_id'], step['inputs'])
+        except Exception as e:
+            return {
+                "error": str(e),
+                "analysis": {
+                    "is_sufficient": False,
+                    "reason": f"도구 실행 중 오류 발생: {str(e)}",
+                    "retry_count": 0,
+                    "next_action": "stop"
+                },
+                "summary": f"오류 발생: {str(e)}",
+                "next_step_input": None
+            }
+
+        # 실행 결과 분석을 위한 프롬프트 생성
+        analysis_prompt = f"""
+        {previous_summary}
+        
+        현재 단계 정보:
+        - 단계 ID: {step['step_id']}
+        - 도구: {step['tool_name']}
+        - 설명: {step['description']}
+        - 예상 출력: {step['expected_output']}
+        
+        실행 결과:
+        {json.dumps(result, ensure_ascii=False, indent=2)}
+        
+        위 정보를 바탕으로 다음을 분석해주세요:
+        1. 결과가 충분한지
+        2. 부족하다면 어떤 정보가 더 필요한지
+        3. 다음 단계로 넘어갈 준비가 되었는지
+        """
+
+        # 결과 분석
+        analysis = self.tot_executor.send_message(analysis_prompt)
+        
+        return {
+            "result": result,
+            "analysis": analysis,
+            "summary": analysis.get("summary", ""),
+            "next_step_input": analysis.get("next_step_input", {})
+        }
+
+    def execute_plan(self, plan: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        전체 실행 계획을 순차적으로 실행합니다.
+
+        Args:
+            plan (Dict[str, Any]): 실행 계획
+
+        Returns:
+            Dict[str, Any]: 전체 실행 결과
+        """
+        results = []
+        current_step = 0
+        max_retries = 3
+
+        while current_step < len(plan['steps']):
+            step = plan['steps'][current_step]
+            retry_count = 0
+            step_result = None
+
+            while retry_count < max_retries:
+                # 단계 실행
+                step_result = self.execute_step(step, results)
+                
+                # 결과 분석
+                if step_result.get('error'):
+                    return {
+                        "steps": results,  # 여기에 steps 키 추가
+                        "error": step_result['error'],
+                        "final_summary": f"오류 발생: {step_result['error']}"
+                    }
+
+                analysis = step_result['analysis']
+                
+                # 충분한 결과를 얻었거나 최대 재시도 횟수에 도달한 경우
+                if analysis['is_sufficient'] or retry_count >= max_retries - 1:
+                    break
+
+                # 재시도
+                retry_count += 1
+                step['inputs'] = step_result['next_step_input']
+
+            # 결과 저장
+            results.append(step_result)
+            
+            # 다음 단계로 진행
+            if analysis['next_action'] == 'continue':
+                current_step += 1
+            elif analysis['next_action'] == 'stop':
+                break
+
+        return {
+            "steps": results,  # 여기에 steps 키 추가
+            "final_summary": "\n".join([r['summary'] for r in results])
+        }
