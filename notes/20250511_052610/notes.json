@@ -1,0 +1,363 @@
+{
+  "session_id": "20250511_052610",
+  "start_time": "2025-05-11T05:26:10.581195",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:26:15.892412",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛집 양식 OR 서울 카페 양식",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJfSv9VuuZfDURKU5HGbczltI",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Mapo-gu, Yeonnam-dong, 390 25번지 2층",
+            "displayName": {
+              "text": "양식구옥(yangsikguok)",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "wine_bar",
+              "brunch_restaurant",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJiSGKJbeZfDURWHgar2vn4fM",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Mapo-gu, Donggyo-dong, 152-11 청록양식",
+            "displayName": {
+              "text": "청록양식",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJjfRZ0oWjfDURQUCXt6bH7ZQ",
+            "types": [
+              "italian_restaurant",
+              "wine_bar",
+              "asian_restaurant",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Jung District, Sejong-daero, 14 그랜드센트럴",
+            "displayName": {
+              "text": "Szimpatikus Seoul Station",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "error_2",
+      "type": "error",
+      "timestamp": "2025-05-11T05:26:20.054667",
+      "content": {
+        "error_type": "ToolExecutionError",
+        "message": "Unknown tool ID: 8",
+        "details": {
+          "tool_id": "8",
+          "inputs": {
+            "search_results_key": "restaurants_and_cafes",
+            "filter_criteria": {
+              "type": "양식",
+              "category": [
+                "맛집",
+                "카페"
+              ],
+              "sort_by": "평점",
+              "max_results": 3
+            }
+          }
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_3",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:26:25.394557",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 양식 맛집 OR 서울 양식 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJfSv9VuuZfDURKU5HGbczltI",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Mapo-gu, Yeonnam-dong, 390 25번지 2층",
+            "displayName": {
+              "text": "양식구옥(yangsikguok)",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJ1eJigsOYfDUROjYgceg_d3s",
+            "types": [
+              "japanese_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "18-7 Wausan-ro 23-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Bistro Jura",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "error_4",
+      "type": "error",
+      "timestamp": "2025-05-11T05:26:29.797884",
+      "content": {
+        "error_type": "ToolExecutionError",
+        "message": "Unknown tool ID: 8",
+        "details": {
+          "tool_id": "8",
+          "inputs": {
+            "search_results_key": "서울 양식 맛집 및 카페 리스트",
+            "filter_criteria": {
+              "type": "양식",
+              "category": [
+                "맛집",
+                "카페"
+              ],
+              "sort_by": "평점",
+              "max_results": 3
+            }
+          }
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_5",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:26:34.867578",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 카페 OR 서울 맛있는 양식 음식점",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJfSv9VuuZfDURKU5HGbczltI",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Mapo-gu, Yeonnam-dong, 390 25번지 2층",
+            "displayName": {
+              "text": "양식구옥(yangsikguok)",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "wine_bar",
+              "brunch_restaurant",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJo5F2XOiYfDURy1mGpWyyno4",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "6 Yeonnam-ro, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "성격양식",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "error_6",
+      "type": "error",
+      "timestamp": "2025-05-11T05:26:39.220741",
+      "content": {
+        "error_type": "ToolExecutionError",
+        "message": "Unknown tool ID: 8",
+        "details": {
+          "tool_id": "8",
+          "inputs": {
+            "search_results_key": "검색 결과 (카페, 음식점 리스트)",
+            "filter_criteria": {
+              "type": "양식",
+              "category": [
+                "카페",
+                "음식점"
+              ],
+              "sort_by": "평점",
+              "max_results": 5
+            }
+          }
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}

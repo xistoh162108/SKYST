@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e0c7e6b (middle update)
 # server/test.py
@@ -7,6 +8,12 @@ from tools.tools import Tools
 from db.people import PeopleRepository
 from db.photos import PhotoRepository
 <<<<<<< HEAD
+=======
+# server/test.py
+from server.tools.tool import Tools
+from db.people import PeopleRepository
+from db.photos import PhotoRepository
+>>>>>>> feature/llm_agent
 from db.photo_people import PhotoPeopleRepository
 from bson import ObjectId
 
@@ -178,6 +185,7 @@ def test_all_tools():
         print(f"에러: {e}\n")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     test_all_tools()
 =======
 =======
@@ -410,3 +418,6 @@ for person in people:
 if __name__ == "__main__":
     test_all_tools()
 >>>>>>> e0c7e6b (middle update)
+=======
+    test_all_tools()
+>>>>>>> feature/llm_agent

@@ -1,0 +1,555 @@
+{
+  "session_id": "20250511_053518",
+  "start_time": "2025-05-11T05:35:18.476983",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:35:23.510678",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "대전 놀거리",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJGeYDXX9JZTURsFJQxqnBPws",
+            "types": [
+              "botanical_garden",
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "169 Dunsan-daero, Seo-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Hanbat Arboretum",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJXWJF3WFOZTURTmrtYDD54Nk",
+            "types": [
+              "tourist_attraction",
+              "amusement_park",
+              "amusement_center",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "70 Sajeonggongwon-ro, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon O-World",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ9aXvG9lIZTURw9DlYapcrb0",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "48-14 Eunhaeng-dong, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon walking street",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJtSfCqdlIZTURm6bWh6op6fU",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Jungang-ro 164beon-gil, 은행선화동 Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Skyroad",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJOXvOnYhJZTURfBbbv4D8ie8",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "480 Daedeok-daero, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Expo Science Park",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:35:28.543931",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "거길동 선호 장소 OR 거길동 취향"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "(서울 길동역)Elephant Coffee-디저트가 정말 맛있는 카페 : 네이버 ...",
+            "htmlTitle": "(서울 <b>길동</b>역)Elephant Coffee-디저트가 정말 맛있는 카페 : 네이버 ...",
+            "link": "https://m.blog.naver.com/kohku1/223275430812",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Nov 26, 2023 ... ... 장소의 다른 글. ◎별점 (5) ... 선호하는 편은 아니라서 그건 살짝 아쉽다. 그럼에도 불구하고 재주문 의사가 있을 정도로 내 취향 ...",
+            "htmlSnippet": "Nov 26, 2023 <b>...</b> ... <b>장소</b>의 다른 글. ◎별점 (5) ... <b>선호</b>하는 편은 아니라서 그건 살짝 아쉽다. 그럼에도 불구하고 재주문 의사가 있을 정도로 내 <b>취향</b>&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/kohku1/223275430812",
+            "htmlFormattedUrl": "https://m.blog.naver.com/kohku1/223275430812",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_WaAsf7y8xZbbzTjsxOcZ4lVEeuoC8CV4tuOfj8guShm8DQ2LjHBOqU&s",
+                  "width": "335",
+                  "height": "150"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMzExMjZfMjk5/MDAxNzAxMDAzMTE0NzUy.ARS3_RbXODIPVVnvMTMJ1USNCTJTSjRmMJ7BFUxyGj0g.-wsI-HGk-M-w6qW9kGGz5Lh8_dyVJpwVgeHaEc8K2g8g.JPEG.kohku1/KakaoTalk_20231117_203950669_14.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 미남쌤의 교육블로그",
+                  "og:title": "(서울 길동역)Elephant Coffee-디저트가 정말 맛있는 카페",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNDAxMzFfMjA1/MDAxNzA2NzA3NjMyNjM2.CYAMih74gHLXjv4e-WLQizKkFtq8AT0IpOT7JOso4egg.2CNLCyaRnPhGtwOUe090F8wGlmayh4eMgV6PEFF9fpMg.JPEG.kohku1/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_%281%29.jpg/%25EC%25A0%259C%25EB%25AA%25A9%25EC%259D%2584-%25EC%259E%2585%25EB%25A0%25A5%25ED%2595%25B4%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594_-001%2B%25281%2529.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033FC40B39C,service=blog,collection=blog",
+                  "og:description": "간단요약 ◎별점 ★★★★★(5) ★ : 누구에게라도 자신있게 비추천! 절대 가지마라! ★★ : 내 취향 아님....",
+                  "referrer": "always",
+                  "naverblog:nickname": "미남",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/kohku1/223275430812",
+                  "og:article:author": "미남쌤의 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=smarteditor&markers=color%3A0x11cc73%7Csize%3Amid%7Cpos%3A127.1438239%2037.5342631%7CviewSizeRatio%3A0.7%7Ctype%3Ad&w=700&h=315&scale=2&dataversion=170.58"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "암사동맛집 성내동 올림픽공원 길동 먹기좋은 핵밥 : 네이버 블로그",
+            "htmlTitle": "암사동맛집 성내동 올림픽공원 <b>길동</b> 먹기좋은 핵밥 : 네이버 블로그",
+            "link": "https://blog.naver.com/1004eihwa/223676063536",
+            "displayLink": "blog.naver.com",
+            "snippet": "Nov 28, 2024 ... ... 취향이 다르니 선호하는 메뉴도 다르겠지만. 혹시라도 이 글을 보고 찾아 ... 장소의 다른 글. ​. ​. ​. ​. ​.",
+            "htmlSnippet": "Nov 28, 2024 <b>...</b> ... <b>취향</b>이 다르니 <b>선호</b>하는 메뉴도 다르겠지만. 혹시라도 이 글을 보고 찾아 ... <b>장소</b>의 다른 글. ​. ​. ​. ​. ​.",
+            "formattedUrl": "https://blog.naver.com/1004eihwa/223676063536",
+            "htmlFormattedUrl": "https://blog.naver.com/1004eihwa/223676063536",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScuRXfT1VkDvJ5gGIPyBZGYJfUQr0EpHDz-CRWPcdOPWzE8XIZZGb2BCv_&s",
+                  "width": "259",
+                  "height": "194"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDExMjhfMjIz/MDAxNzMyNzgxODExMDgy.GbkxNITSR2RNXjmuDVbMGqxH9xlt112N7g2bneMof5Ug.bfRjzU9qtZSD_0Y3fxOEutJxHd4naWu2aQAQs01AWOIg.PNG/900%A3%DF04.png?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 새콤달콤 새달이네",
+                  "og:title": "암사동맛집 성내동 올림픽공원 길동 먹기좋은 핵밥",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/20150620_88/1004eihwa_1434806456714VJL2V_JPEG/cafe+%281%29.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_00000000000000341421DF30,service=blog,collection=blog",
+                  "og:description": "한때는 친구랑 맛집 투어하는 게 취미라 서울, 경기는 물론이고 강원도까지도 심심하면 차 끌고 나가곤 했...",
+                  "referrer": "always",
+                  "naverblog:nickname": "새콤달콤",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/1004eihwa/223676063536",
+                  "og:article:author": "새콤달콤 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDExMjhfMjUx/MDAxNzMyNzgxNzUzMTk0.-ph-ILe4WvOBOuO3u9nUeG9qDninAC1BzO6bozmEjh0g.EMwkxca9jqDdwERf0sOllA6hlHX1-3Xjmedr-_jnw24g.PNG/900%EF%BC%BF02.png?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "(취향+기호)×선호=취미",
+            "htmlTitle": "(<b>취향</b>+기호)×<b>선호</b>=취미",
+            "link": "https://brunch.co.kr/@mrdrjr/1012",
+            "displayLink": "brunch.co.kr",
+            "snippet": "Dec 13, 2023 ... 취향(趣向)과 취미(趣味)를 구분하는 일은 쉽지 않다. 국어사전에서부터 시작하자. 『표준』에서(이하 사전은 모두 『표준』이다) '취향'은 “하고 ...",
+            "htmlSnippet": "Dec 13, 2023 <b>...</b> <b>취향</b>(趣向)과 취미(趣味)를 구분하는 일은 쉽지 않다. 국어사전에서부터 시작하자. 『표준』에서(이하 사전은 모두 『표준』이다) &#39;<b>취향</b>&#39;은 “하고&nbsp;...",
+            "formattedUrl": "https://brunch.co.kr/@mrdrjr/1012",
+            "htmlFormattedUrl": "https://brunch.co.kr/@mrdrjr/1012",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CvNqoQC_deWpkmhdh7ibiErwzLBFeGmVWXpMhGSRE72AOxyc_WLw53gL&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://t1.daumcdn.net/brunch/static/img/help/pc/brunchstory/img_share_default.png",
+                  "twitter:app:url:iphone": "brunchapp://open",
+                  "theme-color": "#ffffff",
+                  "twitter:card": "summary",
+                  "article:published_time": "2023-12-13T16:34+0900",
+                  "og:site_name": "Brunch Story",
+                  "article:mobile_view_url": "https://brunch.co.kr/@@3Wte/1012",
+                  "article:mobile_service_home": "https://brunch.co.kr",
+                  "article:pc_view_url": "https://brunch.co.kr/@@3Wte/1012",
+                  "title": "(취향+기호)×선호=취미",
+                  "twitter:app:id:iphone": "1001388574",
+                  "article:service_name": "브런치",
+                  "og:description": "취향(趣向)과 취미(趣味)를 구분하는 일은 쉽지 않다. 국어사전에서부터 시작하자. 『표준』에서(이하 사전은 모두 『표준』이다) ‘취향’은 “하고 싶은 마음이 생기는 방향. 또는 그런 경향.”이라고 되어 있다. ‘취미’는 “전문적으로 하는 것이 아니라 즐기기 위하여 하는 일.”이라고 풀이된다. ‘취향’을 ‘지향성’으로 볼 수 있다면, ‘취미’는 ‘구체적인 행",
+                  "twitter:image": "https://img1.daumcdn.net/thumb/C500x500/?fname=https://t1.daumcdn.net/brunch/static/img/help/pc/brunchstory/img_share_default.png",
+                  "article:talk_channel_view_url": "https://brunch.co.kr/@@3Wte/1012",
+                  "article:pc_url": "https://brunch.co.kr/@@3Wte/1012",
+                  "article:txid": "3Wte_1012",
+                  "article:media_name": "정선생",
+                  "article:mobile_url": "https://brunch.co.kr/@@3Wte/1012",
+                  "dg:plink": "https://brunch.co.kr/@@3Wte/1012",
+                  "og:article:author": "정선생",
+                  "og:type": "article",
+                  "twitter:title": "(취향+기호)×선호=취미",
+                  "og:title": "(취향+기호)×선호=취미",
+                  "article:pc_service_home": "https://brunch.co.kr",
+                  "article:author": "정선생",
+                  "referrer": "always",
+                  "fb:app_id": "313683402170826",
+                  "byl": "정선생",
+                  "viewport": "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover",
+                  "twitter:description": "취향(趣向)과 취미(趣味)를 구분하는 일은 쉽지 않다. 국어사전에서부터 시작하자. 『표준』에서(이하 사전은 모두 『표준』이다) ‘취향’은 “하고 싶은 마음이 생기는 방향. 또는 그런 경향.”이라고 되어 있다. ‘취미’는 “전문적으로 하는 것이 아니라 즐기기 위하여 하는 일.”이라고 풀이된다. ‘취향’을 ‘지향성’으로 볼 수 있다면, ‘취미’는 ‘구체적인 행",
+                  "plink": "https://brunch.co.kr/@@3Wte/1012",
+                  "og:url": "https://brunch.co.kr/@mrdrjr/1012",
+                  "twitter:app:name:iphone": "브런치스토리",
+                  "og:regdate": "2023-12-13T16:34+0900"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://t1.daumcdn.net/brunch/static/img/help/pc/brunchstory/img_share_default.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "강동크림베이글 화덕에서 굽는 담백한 길동 베이글 맛집 : 네이버 블로그",
+            "htmlTitle": "강동크림베이글 화덕에서 굽는 담백한 <b>길동</b> 베이글 맛집 : 네이버 블로그",
+            "link": "https://blog.naver.com/better1810/223259456409?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "Nov 8, 2023 ... ... 취향에는 맞았어요. 다음에 방문하게 되면 플레인에. 스프레드 추가해서 ... 장소의 다른 글. #강동크림베이글 #길동빵집 #길동역카페 #길동크림 ...",
+            "htmlSnippet": "Nov 8, 2023 <b>...</b> ... <b>취향</b>에는 맞았어요. 다음에 방문하게 되면 플레인에. 스프레드 추가해서 ... <b>장소</b>의 다른 글. #강동크림베이글 #<b>길동</b>빵집 #<b>길동</b>역카페 #<b>길동</b>크림&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/better1810/223259456409?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/better1810/223259456409?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPMU12Oq4_3kXXgnS1r3VNPrKtDtqDSGPFVFhNhFIXGVxxBR58kn-Duo4h&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMzExMDdfNDcg/MDAxNjk5MzU1MjIxOTcw.crC7Ro9gh3DU1Kj2cc2jLphsXMZptIbzCfbuwfdXjikg.sE2HoRE8TVsDstZCpSyIJlGBb1E_r-0-ToNjS_utAdIg.JPEG.better1810/%C1%A6%B8%F1%C0%BB-%C0%D4%B7%C2%C7%D8%C1%D6%BC%BC%BF%E4_-001_%2821%29.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 잘먹는 하마양",
+                  "og:title": "강동크림베이글 화덕에서 굽는 담백한 길동 베이글 맛집",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNDAxMThfMTU1/MDAxNzA1NTY5NjYzMjY5.5WY-k5KHCAPpQn2v-xC0t4E0GUR7iwDQJfGqC-6NGLEg.Xo2jmzv8K5QF0J__R4gSvFxipsqLvdoTZlqdk1gkrQ0g.PNG.better1810/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033FB4CF399,service=blog,collection=blog",
+                  "og:description": "안녕하세요 여러분 하마양입니다 오늘은 유기농 밀가루로 반죽하고 화덕에서 구워서 담백한 &#x27;강동크림...",
+                  "referrer": "always",
+                  "naverblog:nickname": "하마양",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/better1810/223259456409",
+                  "og:article:author": "잘먹는 하.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyMzExMDdfNDcg/MDAxNjk5MzU1MjIxOTcw.crC7Ro9gh3DU1Kj2cc2jLphsXMZptIbzCfbuwfdXjikg.sE2HoRE8TVsDstZCpSyIJlGBb1E_r-0-ToNjS_utAdIg.JPEG.better1810/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(21).jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "행촌문화재단",
+            "htmlTitle": "행촌문화재단",
+            "link": "http://haengchon.or.kr/351",
+            "displayLink": "haengchon.or.kr",
+            "snippet": "손기환展 길동이와 주먹대장 ... 장르, 혹은 성향과 사정에 따라 세 번에 나누어 해남에 온 예술가들은 각기 취향에 따라 가고 싶은 장소 선호하는 음식을 여유 있게 즐겼다.",
+            "htmlSnippet": "손기환展 <b>길동</b>이와 주먹대장 ... 장르, 혹은 성향과 사정에 따라 세 번에 나누어 해남에 온 예술가들은 각기 <b>취향</b>에 따라 가고 싶은 <b>장소 선호</b>하는 음식을 여유 있게 즐겼다.",
+            "formattedUrl": "http://haengchon.or.kr/351",
+            "htmlFormattedUrl": "http://haengchon.or.kr/351",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKdeVQrUHfwRWV2BpYEcZX5tIVJTnS4cfKyKfohqrRFpBTwPxxm8qbUs&s",
+                  "width": "219",
+                  "height": "214"
+                }
+              ],
+              "metatags": [
+                {
+                  "application-name": "행촌문화재단",
+                  "og:image": "https://cdn.imweb.me/upload/S201805295b0cde88eb7b1/32496a2e24f34.png",
+                  "theme-color": "#ff472d",
+                  "og:image:width": "1200",
+                  "og:type": "website",
+                  "msapplication-tooltip": "행촌문화재단",
+                  "og:title": "행촌문화재단",
+                  "og:image:height": "627",
+                  "msapplication-navbutton-color": "#ff472d",
+                  "og:description": "행촌문화재단, 행촌미술관, 이마도작업실, 수윤아트스페이스, 거인의정원",
+                  "apple-mobile-web-app-status-bar-style": "black-translucent",
+                  "naver-site-verification": "7830f94d931f5738c5501667655e28fe436d3986",
+                  "viewport": "width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+                  "og:url": "http://haengchon.or.kr/351"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cdn.imweb.me/upload/S201805295b0cde88eb7b1/32496a2e24f34.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "꾸브라꼬숯불두마리치킨 길동점 - 길동 숯불치킨 맛집 | 다이닝코드, 빅 ...",
+            "htmlTitle": "꾸브라꼬숯불두마리치킨 <b>길동</b>점 - <b>길동</b> 숯불치킨 맛집 | 다이닝코드, 빅 ...",
+            "link": "https://www.diningcode.com/profile.php?rid=TfLOaLmcXYVK",
+            "displayLink": "www.diningcode.com",
+            "snippet": "05.07 (수) 영업시간: 14:00 - 01:50 취향존중 두마리 세트(30900원), 양념꾸브(19000원), 소금꾸브(18000원), 170도 후라이드(18000원), 버터꾸브(20000원), ...",
+            "htmlSnippet": "05.07 (수) 영업시간: 14:00 - 01:50 <b>취향</b>존중 두마리 세트(30900원), 양념꾸브(19000원), 소금꾸브(18000원), 170도 후라이드(18000원), 버터꾸브(20000원),&nbsp;...",
+            "formattedUrl": "https://www.diningcode.com/profile.php?rid=TfLOaLmcXYVK",
+            "htmlFormattedUrl": "https://www.diningcode.com/profile.php?rid=TfLOaLmcXYVK",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRldzEKBN5dNbmjf8aSvXaVhjApWVzopdy2GtJBMcOEUsfUppDYGBwF8&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://s3-ap-northeast-1.amazonaws.com/dcicons/2018/images/mobile/common/rest_main_photo.jpg?rest=TfLOaLmcXYVK",
+                  "og:image:width": "750",
+                  "og:type": "website",
+                  "twitter:card": "summary",
+                  "og:site_name": "다이닝코드",
+                  "twitter:url": "https://www.diningcode.com/profile.php?rid=TfLOaLmcXYVK",
+                  "og:title": "꾸브라꼬숯불두마리치킨 길동점 - 길동 숯불치킨 맛집 | 다이닝코드, 빅데이터 맛집검색",
+                  "og:image:height": "750",
+                  "og:description": "05.07 (수) 영업시간: 14:00 - 01:50  취향존중 두마리 세트(30,900원), 양념꾸브(19,000원), 소금꾸브(18,000원), 170도 후라이드(18,000원), 버터꾸브(20,000원), [신메뉴] 계바삭(19,500원), [신메뉴] 맵계바삭(2",
+                  "twitter:image": "https://s3-ap-northeast-1.amazonaws.com/dcicons/2018/images/mobile/common/rest_main_photo.jpg?rest=TfLOaLmcXYVK",
+                  "referrer": "origin-when-crossorigin",
+                  "fb:app_id": "347023355469829",
+                  "viewport": "width=device-width,minimum-scale=1,initial-scale=1,initial-scale=1,user-scalable=no",
+                  "og:url": "https://www.diningcode.com/profile.php?rid=TfLOaLmcXYVK"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://s3-ap-northeast-1.amazonaws.com/dcicons/2018/images/mobile/common/rest_main_photo.jpg?rest=TfLOaLmcXYVK"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "쭈꾸길동본점 | TikTok",
+            "htmlTitle": "쭈꾸<b>길동</b>본점 | TikTok",
+            "link": "https://www.tiktok.com/discover/%EC%AD%88%EA%BE%B8%EA%B8%B8%EB%8F%99%EB%B3%B8%EC%A0%90",
+            "displayLink": "www.tiktok.com",
+            "snippet": "... 장소. 좋아요 35개,쭈꾸길동본점 (@jju._.99u) 님. 8401주 전. jju._.99u. 쭈꾸길동본점. \"비주얼? 그런 거 필요 없습니다. 진짜 맛집은 혀가 증명합니다!\" 상호:쭈꾸 길동 ...",
+            "htmlSnippet": "... <b>장소</b>. 좋아요 35개,쭈꾸<b>길동</b>본점 (@jju._.99u) 님. 8401주 전. jju._.99u. 쭈꾸<b>길동</b>본점. &quot;비주얼? 그런 <b>거</b> 필요 없습니다. 진짜 맛집은 혀가 증명합니다!&quot; 상호:쭈꾸 <b>길동</b>&nbsp;...",
+            "formattedUrl": "https://www.tiktok.com/discover/쭈꾸길동본점",
+            "htmlFormattedUrl": "https://www.tiktok.com/discover/쭈꾸<b>길동</b>본점",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhj0fmFc6VUtjBsK8nLhMG_qSUHoEieuH_ZED_OVckyB6-sdfXR1Izvoka&s",
+                  "width": "168",
+                  "height": "300"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:type": "website",
+                  "og:site_name": "TikTok",
+                  "al:ios:app_name": "musical.ly",
+                  "og:title": "쭈꾸길동본점 | TikTok",
+                  "al:android:package": "com.zhiliaoapp.musically",
+                  "applicable-device": "pc, mobile",
+                  "pumbaa-ctx": "login=0,ftc=0",
+                  "google": "notranslate",
+                  "al:ios:url": "snssdk1233://user/profile/?ug_medium=card&refer=facebook&",
+                  "og:description": "13.9M개의 게시물이 있습니다. TikTok에서 쭈꾸길동본점 관련 동영상을 찾아보세요.",
+                  "al:ios:app_store_id": "835599320",
+                  "al:android:url": "snssdk1233://user/profile/?ug_medium=card&refer=facebook&",
+                  "fb:app_id": "597615686992125",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no",
+                  "og:url": "https://www.tiktok.com/discover/쭈꾸길동본점",
+                  "al:android:app_name": "musical.ly",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://www.tiktok.com/api/img/?itemId=7481674475038067975&location=0&aid=1988"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "성수동 - 나무위키",
+            "htmlTitle": "성수동 - 나무위키",
+            "link": "https://namu.wiki/w/%EC%84%B1%EC%88%98%EB%8F%99",
+            "displayLink": "namu.wiki",
+            "snippet": "Apr 27, 2025 ... ... 장소들이 대거 입점하였으며, 공장 지대를 개발한 소위 말하는 '힙한 ... 특히 2020년대 중반 기준으로, 레트로 감성을 선호하는 요즘 Z세대에게 각광 받는 ...",
+            "htmlSnippet": "Apr 27, 2025 <b>...</b> ... <b>장소</b>들이 대거 입점하였으며, 공장 지대를 개발한 소위 말하는 &#39;힙한 ... 특히 2020년대 중반 기준으로, 레트로 감성을 <b>선호</b>하는 요즘 Z세대에게 각광 받는&nbsp;...",
+            "formattedUrl": "https://namu.wiki/w/성수동",
+            "htmlFormattedUrl": "https://namu.wiki/w/성수동",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStz9HzX5tjEFn-QGRXPNG44SKfqXQNBMLWzwb4-82u1M8R-KoeTNBda48-&s",
+                  "width": "255",
+                  "height": "197"
+                }
+              ],
+              "metatags": [
+                {
+                  "application-name": "나무위키",
+                  "msapplication-starturl": "/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8",
+                  "og:image": "//i.namu.wiki/i/3k964-oYqxHTk8UUUlXEdgl4LGqaL-1xPyn90eEuizu85be_GklA2RDgTEu6WupReya_8EUabj9y-pTPtWDQ-g.webp",
+                  "og:type": "article",
+                  "theme-color": "#00a69c",
+                  "og:site_name": "나무위키",
+                  "msapplication-tooltip": "나무위키",
+                  "og:title": "성수동",
+                  "color-scheme": "light dark",
+                  "og:description": "서울특별시   성동구 에 속한  법정동  성수동1가와 성수동2가를 포함하는 지역으로, 흔히 '뚝섬'이라고 부르는 지",
+                  "viewport": "user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://namu.wiki/w/%EC%84%B1%EC%88%98%EB%8F%99"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://i.namu.wiki/i/lEhGap_NJDSIP1nbsXgfr3mCUTt4cudo0GNiWxKUtXq2-44AttXauk6vlAbqsmgsWjN3ig5I5jx8HE9i1pbioQ.webp"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "어린이 ․ 청소년의 성격유형별 선호도서 목록개발 및 독서지도 방안 ...",
+            "htmlTitle": "어린이 ․ 청소년의 성격유형별 <b>선호</b>도서 목록개발 및 독서지도 방안 ...",
+            "link": "https://oak.go.kr/nl-ir/bitstream/2020.oak/333/1/%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EC%B2%AD%EC%86%8C%EB%85%84%EC%9D%98%20%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95%EB%B3%84%20%EC%84%A0%ED%98%B8%EB%8F%84%EC%84%9C%20%EB%AA%A9%EB%A1%9D%EA%B0%9C%EB%B0%9C%20%EB%B0%8F%20%EB%8F%85%EC%84%9C%EC%A7%80%EB%8F%84%20%EB%B0%A9%EC%95%88%20%EC%97%B0%EA%B5%AC.pdf",
+            "displayLink": "oak.go.kr",
+            "snippet": "Dec 26, 2012 ... 거장소와 시대적 배경이 과거인 도서를 선호하였다. 이러한 특성을 반영 ... 이유 : 길동이 사는 시대는 탐관오리가 많았기 때문에 길동이 그런 자를.",
+            "htmlSnippet": "Dec 26, 2012 <b>...</b> <b>거장소</b>와 시대적 배경이 과거인 도서를 <b>선호</b>하였다. 이러한 특성을 반영 ... 이유 : <b>길동</b>이 사는 시대는 탐관오리가 많았기 때문에 <b>길동</b>이 그런 자를.",
+            "formattedUrl": "https://oak.go.kr/.../어린이%20청소년의%20성격유형별%20선호도서%20...",
+            "htmlFormattedUrl": "https://oak.go.kr/.../어린이%20청소년의%20성격유형별%20<b>선호</b>도서%20...",
+            "pagemap": {
+              "metatags": [
+                {
+                  "moddate": "D:20121226190007+09'00'",
+                  "creationdate": "D:20121226190007+09'00'",
+                  "creator": "PScript5.dll Version 5.2.2",
+                  "author": "<28C1D629C1B6C0BAB1DBC5CD>",
+                  "producer": "Acrobat Distiller with ezUniHFT",
+                  "title": "<BEEEC3BBB5B52DBCBAB0DDC0AFC7FCBAB02DC7D1C0B1BFC128C1B6B9CCBEC6292D3136C0FD2D2DB4D9B5EBB1E22DC0CEBCE2BFEB2E687770>"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "먹방러 | #잠수교집 #잠실 냉삼이 먹고 싶어서 방문한 #잠수교집 냉동 ...",
+            "htmlTitle": "먹방러 | #잠수교집 #잠실 냉삼이 먹고 싶어서 방문한 #잠수교집 냉동 ...",
+            "link": "https://www.instagram.com/p/C2xAikXvhHk/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Jan 31, 2024 ... 10 likes, 1 comments - ddam90 on January 31, 2024: \"#잠수교집 #잠실 냉삼이 먹고 싶어서 방문한 #잠수교집 냉동삼겹살이 한참 유행할때 많이 들어 ...",
+            "htmlSnippet": "Jan 31, 2024 <b>...</b> 10 likes, 1 comments - ddam90 on January 31, 2024: &quot;#잠수교집 #잠실 냉삼이 먹고 싶어서 방문한 #잠수교집 냉동삼겹살이 한참 유행할때 많이 들어&nbsp;...",
+            "formattedUrl": "https://www.instagram.com/p/C2xAikXvhHk/",
+            "htmlFormattedUrl": "https://www.instagram.com/p/C2xAikXvhHk/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEohOYL3HjhsCeKNVBUVOhuInHFgLEGq6Sb_9K1FJL7PjMFHt_IE5qd0&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/424501794_1046531619980378_7637408892944183234_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&_nc_ohc=jpcwZjP2be8Q7kNvwGq044Z&_nc_oc=AdleVPAKlJKb0c3OIbeKsnzDcRdvuGaxz_AljsSEYJ-nNMXBjaIUNo_XGSneRiErOkM&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=xMI0Gx4Jwu5vd_OpV6h5Vw&oh=00_AfFTIzJCiKc8TgM7LwLHxwVqnqIMqAk1GjvAMVwnu4oFEg&oe=681D07AA",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=3292415178099790308",
+                  "og:description": "10 likes, 1 comments - ddam90 on January 31, 2024: \"#잠수교집 #잠실\n냉삼이 먹고 싶어서 방문한 #잠수교집\n냉동삼겹살이 한참 유행할때 많이 들어봤는데, 그 당시 신사에 살던 나는 대삼식당에 가서 냉삼을 먹었던지라 잠수교집은 이번이 첫방문이였다 😋\n\n근데 OMG !! 이 집은 완전 내스타일이였음! \n고수를 미치게 조아하는데, 고수를 시킬수 있었고\n거기다 한상나오는 반찬들이 하나하나 다 맛있었음👍\n계란말이도 오동통 하고 거기다 리필도 되다니..\n감동..또 감동...🫢\n\n볶음밥은 그저그런맛이였으나, 나머지가 너무 훌륭해서 재방문의사 100%\n잠수교집 안 가보신분들.. 어서 가보세요! 진짜 최고🥹\n\n#맛집 #잠실맛집 #냉삼맛집 #냉삼집 #맛집추천 #맛스타그램 \n#먹방스타그램 #먹스타그램 #고기스타그램 #고기집추천\".",
+                  "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/424501794_1046531619980378_7637408892944183234_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&_nc_ohc=jpcwZjP2be8Q7kNvwGq044Z&_nc_oc=AdleVPAKlJKb0c3OIbeKsnzDcRdvuGaxz_AljsSEYJ-nNMXBjaIUNo_XGSneRiErOkM&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=xMI0Gx4Jwu5vd_OpV6h5Vw&oh=00_AfFTIzJCiKc8TgM7LwLHxwVqnqIMqAk1GjvAMVwnu4oFEg&oe=681D07AA",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "11207535923",
+                  "og:type": "article",
+                  "twitter:title": "먹방러 (@ddam90) • Instagram photos and videos",
+                  "al:ios:app_name": "Instagram",
+                  "app-title": "Instagram",
+                  "og:title": "먹방러 on Instagram: \"#잠수교집 #잠실\n냉삼이 먹고 싶어서 방문한 #잠수교집\n냉동삼겹살이 한참 유행할때 많이 들어봤는데, 그 당시 신사에 살던 나는 대삼식당에 가서 냉삼을 먹었던지라 잠수교집은 이번이 첫방문이였다 😋\n\n근데 OMG !! 이 집은 완전 내스타일이였음! \n고수를 미치게 조아하는데, 고수를 시킬수 있었고\n거기다 한상나오는 반찬들이 하나하나 다 맛있었음👍\n계란말이도 오동통 하고 거기다 리필도 되다니..\n감동..또 감동...🫢\n\n볶음밥은 그저그런맛이였으나, 나머지가 너무 훌륭해서 재방문의사 100%\n잠수교집 안 가보신분들.. 어서 가보세요! 진짜 최고🥹\n\n#맛집 #잠실맛집 #냉삼맛집 #냉삼집 #맛집추천 #맛스타그램 \n#먹방스타그램 #먹스타그램 #고기스타그램 #고기집추천\"",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/C2xAikXvhHk/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/C2xAikXvhHk/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3292415174358348580"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    }
+  ]
+}

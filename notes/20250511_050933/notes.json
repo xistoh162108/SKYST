@@ -1,0 +1,1930 @@
+{
+  "session_id": "20250511_050933",
+  "start_time": "2025-05-11T05:09:33.194170",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:09:39.611492",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJq6qqqoGefDURZ6dyLgCZf7o",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "6-1 Mokdongdong-ro 14-gil, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Gentle Dining",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:09:44.771707",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJi1N05ISefDURZDyi47CGkzw",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "point_of_interest",
+              "store",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "293 Mokdongdong-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Tom N Toms Coffee",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJoeWbrsGYfDUR1u7e0FV_-CY",
+            "types": [
+              "cafe",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "147-1 Wausan-ro, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Gabie",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJPz5188SjfDURkViUpa5T1Ac",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "point_of_interest",
+              "store",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Jongno District, Cheonggyecheon-ro, 155 1,2,3층",
+            "displayName": {
+              "text": "Burnt Seoul",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ5d8TKNaffDURInDHbBF_Qmg",
+            "types": [
+              "cafe",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "12 Gyeongin-ro 77ga-gil, Yeongdeungpo District, Seoul, South Korea",
+            "displayName": {
+              "text": "Cafe 1953 with Audrey",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJv-bHllyffDURRNn259iMOmA",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "point_of_interest",
+              "store",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Yangcheon District, Mokdongdong-ro, 309 1 층",
+            "displayName": {
+              "text": "루시카토 베이크카페&플러버브런치카페 행복한백화점",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_3",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:09:50.573438",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "장소 리뷰 및 평점 비교"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "새 장소 리뷰로 이전 | Maps JavaScript API | Google for Developers",
+            "htmlTitle": "새 <b>장소 리뷰</b>로 이전 | Maps JavaScript API | Google for Developers",
+            "link": "https://developers.google.com/maps/documentation/javascript/places-migration-reviews?hl=ko",
+            "displayLink": "developers.google.com",
+            "snippet": "장소 리뷰를 사용하면 웹페이지에 사용자 리뷰와 평점을 추가할 수 있습니다. ... 가격 및 플랜 · 영업팀에 문의 · 지원 · 서비스 약관 · Google Developers. Android ...",
+            "htmlSnippet": "<b>장소 리뷰</b>를 사용하면 웹페이지에 사용자 <b>리뷰</b>와 <b>평점</b>을 추가할 수 있습니다. ... 가격 <b>및</b> 플랜 &middot; 영업팀에 문의 &middot; 지원 &middot; 서비스 약관 &middot; Google Developers. Android&nbsp;...",
+            "formattedUrl": "https://developers.google.com/maps/.../places-migration-reviews?hl=ko",
+            "htmlFormattedUrl": "https://developers.google.com/maps/.../places-migration-reviews?hl=ko",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkTng82jmPENEUwxGCLwecd2H3TYtmrrLGu81NsDDiRdT2DuM8zGOxTqN&s",
+                  "width": "300",
+                  "height": "168"
+                }
+              ],
+              "document": [
+                {
+                  "keywords": "E__category__GmpLocalInformation E__category__GmpIdealLocation E__category__Industries E__category__ECommerce E__category__UseCases E__category__DevsiteMarketingFocusMobile E__category__Web E__category__LocationOrMaps E__category__DevsiteMarketingProductAreas E__category__Enterprise E__language__JavaScript E__category__GmpInteractiveExperiences E__category__GmpEfficientRoutes E__category__RealEstate E__category__Cloud E__product__GmpMaps E__api__GmpMapsJavaScript E__category__Interest E__category__GmpMapsDynamic E__category__DevsiteMarketingFocusAreas E__category__Travel E__category__GmpUseCases E__product__GoogleMapsPlatform E__category__DevsiteMarketingServicesAndIntegrations E__category__DevsiteMarketingUseCases E__category__GmpGeospatialData E__category__GmpContextualExperiences E__category__TransportationAndLogistics E__category__Financial K__api__GmpMapsJavaScript",
+                  "keyword": "E__category__GmpLocalInformation"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://developers.google.com/static/maps/images/google-maps-platform-1200x675.png?hl=ko",
+                  "og:type": "website",
+                  "theme-color": "#fff",
+                  "og:image:width": "1200",
+                  "twitter:card": "summary_large_image",
+                  "google-signin-client-id": "721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com",
+                  "og:site_name": "Google for Developers",
+                  "og:title": "새 장소 리뷰로 이전  |  Maps JavaScript API  |  Google for Developers",
+                  "og:image:height": "675",
+                  "twitter:site": "@GMapsPlatform",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "og:locale": "ko",
+                  "google-signin-scope": "profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award",
+                  "og:url": "https://developers.google.com/maps/documentation/javascript/places-migration-reviews?hl=ko"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://developers.google.com/static/maps/images/google-maps-platform-1200x675.png?hl=ko"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "ParkWhiz -- Parking App - Google Play 앱",
+            "htmlTitle": "ParkWhiz -- Parking App - Google Play 앱",
+            "link": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp&hl=ko",
+            "displayLink": "play.google.com",
+            "snippet": "ParkWhiz 앱을 사용하여 주차를 번거롭게 수행하십시오. 주요 도시에서 주차를 찾아 가격을 비교하고 미리 예약 할 때 최대 50 %를 절약하십시오. 주차 할 장소를 찾는 ...",
+            "htmlSnippet": "ParkWhiz 앱을 사용하여 주차를 번거롭게 수행하십시오. 주요 도시에서 주차를 찾아 가격을 <b>비교</b>하고 미리 예약 할 때 최대 50 %를 절약하십시오. 주차 할 <b>장소</b>를 찾는&nbsp;...",
+            "formattedUrl": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp...",
+            "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp...",
+            "pagemap": {
+              "offer": [
+                {
+                  "price": "0",
+                  "url": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp&rdid=com.parkwhiz.driverApp&feature=md&offerId"
+                }
+              ],
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztOD457nq2EfaU4pGFGklrFXyONMV4-trbcp0e86BY7hVMlk1JcOn68ZF&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://play-lh.googleusercontent.com/ckL_ml00h4KEju2Yo6HlKFs_J1roadk9-kAEfak_lPH3JPZZCNwFcOb2t7QCEVKgO_4",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "ParkWhiz -- Parking App - Google Play 앱",
+                  "twitter:url": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp&hl=ko",
+                  "appstore:developer_url": "http://www.parkwhiz.com",
+                  "og:title": "ParkWhiz -- Parking App - Google Play 앱",
+                  "twitter:image": "https://play-lh.googleusercontent.com/ckL_ml00h4KEju2Yo6HlKFs_J1roadk9-kAEfak_lPH3JPZZCNwFcOb2t7QCEVKgO_4=w600-h300-pc0xffffff-pd",
+                  "appstore:bundle_id": "com.parkwhiz.driverApp",
+                  "referrer": "origin",
+                  "twitter:site": "@GooglePlay",
+                  "appstore:store_id": "com.parkwhiz.driverApp",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "apple-mobile-web-app-capable": "yes",
+                  "twitter:description": "Arrive Network의 일부인 Arrive Mobility 브랜드 ParkWhiz",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp&hl=ko"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://play-lh.googleusercontent.com/ckL_ml00h4KEju2Yo6HlKFs_J1roadk9-kAEfak_lPH3JPZZCNwFcOb2t7QCEVKgO_4"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "App Store에서 제공하는 Google Maps",
+            "htmlTitle": "App Store에서 제공하는 Google Maps",
+            "link": "https://apps.apple.com/kr/app/google-maps/id585027354",
+            "displayLink": "apps.apple.com",
+            "snippet": "이번 업데이트에는 Google 지도로 새로운 장소를 더 쉽게 발견하고 탐색할 수 있도록 하기 위한 버그 수정사항이 포함되었습니다. 평가 및 리뷰. 모두 보기. 4.8/5. 32.5 ...",
+            "htmlSnippet": "이번 업데이트에는 Google 지도로 새로운 <b>장소</b>를 더 쉽게 발견하고 탐색할 수 있도록 하기 위한 버그 수정사항이 포함되었습니다. 평가 <b>및 리뷰</b>. 모두 보기. 4.8/5. 32.5&nbsp;...",
+            "formattedUrl": "https://apps.apple.com/kr/app/google-maps/id585027354",
+            "htmlFormattedUrl": "https://apps.apple.com/kr/app/google-maps/id585027354",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDZHgczHWRbZ73aJxc4pZqe_2IUI-o_gi7thHaMGtcCHK9bZRCVQGQK_O&s",
+                  "width": "310",
+                  "height": "163"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/2f/52/cf2f5243-39c3-8d39-4775-f8cd1453ecfe/logo_maps_ios_color-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220-0.png/1200x630wa.png",
+                  "og:image:width": "1200",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "App Store",
+                  "applicable-device": "pc,mobile",
+                  "og:image:type": "image/png",
+                  "og:description": "‎Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아보세요. 음식점, 상점, 생활용품 판매점에 이르기까지 2억 5천만 개가 넘는 비즈니스와 장소를 사진, 리뷰, 유용한 정보와 함께 살펴보세요.\n\n원하는 방식으로 세계를 탐색하기:\n• 연비 최적 경로 옵션을 사용하여 목적지로 이동하세요.\n• 실시간, 세부 경로 안내 음성, 화면 내비게이션으로 최적 경로를 찾으세요.\n• 교통상황, 사고, 도로 폐쇄 등의 실시간 정보에 기반…",
+                  "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/2f/52/cf2f5243-39c3-8d39-4775-f8cd1453ecfe/logo_maps_ios_color-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220-0.png/1200x630wa.png",
+                  "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/2f/52/cf2f5243-39c3-8d39-4775-f8cd1453ecfe/logo_maps_ios_color-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220-0.png/1200x600wa.png",
+                  "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222516.0.0%2Bad1bd522%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+                  "twitter:image:alt": "App Store에서 제공하는 Google Maps",
+                  "twitter:site": "@AppStore",
+                  "og:image:alt": "App Store에서 제공하는 Google Maps",
+                  "og:type": "website",
+                  "twitter:title": "‎Google Maps",
+                  "og:title": "‎Google Maps",
+                  "og:image:height": "630",
+                  "version": "2516.0.0",
+                  "globalnav-search-suggestions-enabled": "false",
+                  "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+                  "ac-gn-search-suggestions-enabled": "false",
+                  "twitter:description": "‎Google 지도를 사용하여 세계를 둘러보고 탐색하세요. 실시간 교통정보 데이터와 실시간 GPS 내비게이션으로 차량, 도보, 자전거, 대중교통을 사용한 최적 경로를 찾아보세요. 음식점, 상점, 생활용품 판매점에 이르기까지 2억 5천만 개가 넘는 비즈니스와 장소를 사진, 리뷰, 유용한 정보와 함께 살펴보세요.\n\n원하는 방식으로 세계를 탐색하기:\n• 연비 최적 경로 옵션을 사용하여 목적지로 이동하세요.\n• 실시간, 세부 경로 안내 음성, 화면 내비게이션으로 최적 경로를 찾으세요.\n• 교통상황, 사고, 도로 폐쇄 등의 실시간 정보에 기반…",
+                  "og:locale": "ko_KR",
+                  "apple:content_id": "585027354",
+                  "og:url": "https://apps.apple.com/kr/app/google-maps/id585027354"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/2f/52/cf2f5243-39c3-8d39-4775-f8cd1453ecfe/logo_maps_ios_color-0-1x_U007emarketing-0-0-0-7-0-0-0-0-85-220-0.png/1200x630wa.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "호텔 소유자를 위한 자주 묻는 질문(FAQ) - Hotel Center 고객센터",
+            "htmlTitle": "호텔 소유자를 위한 자주 묻는 질문(FAQ) - Hotel Center 고객센터",
+            "link": "https://support.google.com/hotelprices/answer/7219055?hl=ko",
+            "displayLink": "support.google.com",
+            "snippet": "... 리뷰 및 설명을 관리하는 방법에 대한 일반적인 질문과 답변을 제공 ... 하나요? 사용자는 Google 검색을 사용하여 어느 기기에서든 호텔을 검색, 비교, 예약할 수 있습니다.",
+            "htmlSnippet": "... <b>리뷰 및</b> 설명을 관리하는 방법에 대한 일반적인 질문과 답변을 제공 ... 하나요? 사용자는 Google 검색을 사용하여 어느 기기에서든 호텔을 검색, <b>비교</b>, 예약할 수 있습니다.",
+            "formattedUrl": "https://support.google.com/hotelprices/answer/7219055?hl=ko",
+            "htmlFormattedUrl": "https://support.google.com/hotelprices/answer/7219055?hl=ko",
+            "pagemap": {
+              "metatags": [
+                {
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=3,user-scalable=yes",
+                  "format-detection": "email=no"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "뉴욕 타임스퀘어 5분거리, 가성비 호텔 추천: 로얄톤 뉴욕 (예약 사이트 ...",
+            "htmlTitle": "뉴욕 타임스퀘어 5분거리, 가성비 호텔 추천: 로얄톤 뉴욕 (예약 사이트 ...",
+            "link": "https://blog.naver.com/letsdohazel/223434283988?viewType=pc",
+            "displayLink": "blog.naver.com",
+            "snippet": "May 2, 2024 ... ​. ​. 또 뉴욕 호텔 후기 찾아봤을때 높은 평점과. 청결함, 캐리어를 ... 곳_ 자유의 여신상 크루즈 페리 비교 및 후기. 미국으로 4박 6일동안 자유 ...",
+            "htmlSnippet": "May 2, 2024 <b>...</b> ​. ​. 또 뉴욕 호텔 후기 찾아봤을때 높은 <b>평점</b>과. 청결함, 캐리어를 ... 곳_ 자유의 여신상 크루즈 페리 <b>비교 및</b> 후기. 미국으로 4박 6일동안 자유&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/letsdohazel/223434283988?viewType=pc",
+            "htmlFormattedUrl": "https://blog.naver.com/letsdohazel/223434283988?viewType=pc",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrjzuo1aQ71F5auwb4VtD0lgAz72IXHCqxLGlfatScDRcvEAl7nuL3OkA&s",
+                  "width": "195",
+                  "height": "259"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDA1MDJfOTIg/MDAxNzE0NjM1NTc2NTAw.C1AXBHoq_uNbc0wI3UO6I0CuwlkhnFDScQc1WySJJi8g.1RjVKBmmqDRx1sAowbYpQiKWO1QClzI5CirqgdCQdHcg.JPEG/IMG_9561.JPG?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 헤이즐의 여행기록",
+                  "og:title": "뉴욕 타임스퀘어 5분거리, 가성비 호텔 추천: 로얄톤 뉴욕 (예약 사이트 비교)",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNDAxMjdfMTAg/MDAxNzA2MzQ4MjIxNTkx.lHzIZG0bS3MtRItRvzYZ7fQjrCLWvD4ig-Nr7EWFZ1Yg.EKkBWIwtHBfwpXyBl8z3rOrmQc8MP0GDjzhDWl5K4e0g.JPEG.dbs1476/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_000000000000003405B89BD4,service=blog,collection=blog",
+                  "og:description": "뉴욕 4박5일 여행동안 머물었던 뉴욕 타임스퀘어 5분거리, 시내 초근접 뉴욕 가성비 호텔 추천해드릴게요!!...",
+                  "referrer": "always",
+                  "naverblog:nickname": "렛츠고헤이즐",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/letsdohazel/223434283988",
+                  "og:article:author": "헤이즐의 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://blogthumb.pstatic.net/MjAyNDA1MDJfOTIg/MDAxNzE0NjM1NTc2NTAw.C1AXBHoq_uNbc0wI3UO6I0CuwlkhnFDScQc1WySJJi8g.1RjVKBmmqDRx1sAowbYpQiKWO1QClzI5CirqgdCQdHcg.JPEG/IMG_9561.JPG?type=w2"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[완결] 미국 시카고 여행 전망대 비교! 윌리스타워 스카이덱 vs 존핸콕 ...",
+            "htmlTitle": "[완결] 미국 시카고 여행 전망대 <b>비교</b>! 윌리스타워 스카이덱 vs 존핸콕 ...",
+            "link": "https://m.blog.naver.com/foresten/221765872060",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Jan 10, 2020 ... 동행들과 한정된 시간 안에 인생샷 뽑아내느라 진땀빼며 깔깔거리며 웃었던 기억이 있는 곳이에요. [Skydeck Chicago]. 구글 평점 (4.5점 ...",
+            "htmlSnippet": "Jan 10, 2020 <b>...</b> 동행들과 한정된 시간 안에 인생샷 뽑아내느라 진땀빼며 깔깔거리며 웃었던 기억이 있는 곳이에요. [Skydeck Chicago]. 구글 <b>평점</b> (4.5점&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/foresten/221765872060",
+            "htmlFormattedUrl": "https://m.blog.naver.com/foresten/221765872060",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAMfVLJ6wRro2fcZyMOCa6q-q0LmqcoYTDCsbi7aM2VB9H2eFkM9rpkng&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMDAxMDlfNDUg/MDAxNTc4NTcyNTg1Nzg1.MZOpLf2ycDUSivK7UTDRLWs4ewUA0qA3nclb_OXM4WYg.xenuwoVTVIMVnwg2W4rzaFqHV__c1iNx4hufFHLorcUg.JPEG.foresten/IMG_1712.JPG?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 망고요정의 트래블라이프",
+                  "og:title": "[완결] 미국 시카고 여행 전망대 비교! 윌리스타워 스카이덱 vs 존핸콕센터 360 vs 헬리콥터 투어",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNTAzMDRfMTI1/MDAxNzQxMDE1NjQ5NTIy.riMBe8BdPmkB0aOFrUM7rPPTKhs24ivvz1Tz5daZYz0g.VBkUof0AYWJM7fSXgTEEZ8ozzwKXRModUnrLZnersLwg.PNG/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033A246A9BC,service=blog,collection=blog",
+                  "og:description": "Chicago 미국 시카고 여행, 야경 보기 좋은 전망대 비교 -윌리스타워 스카이덱 / 존핸콕 센터 / 헬리곱터 ...",
+                  "referrer": "always",
+                  "naverblog:nickname": "망고요정",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/foresten/221765872060",
+                  "og:article:author": "망고요정의.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://blogthumb.pstatic.net/MjAyMDAxMDlfNDUg/MDAxNTc4NTcyNTg1Nzg1.MZOpLf2ycDUSivK7UTDRLWs4ewUA0qA3nclb_OXM4WYg.xenuwoVTVIMVnwg2W4rzaFqHV__c1iNx4hufFHLorcUg.JPEG.foresten/IMG_1712.JPG?type=w2"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[뮤 Travel] 샌프란시스코 다운타운 내 숙소 비교 및 추천과 숙소 예약 ...",
+            "htmlTitle": "[뮤 Travel] 샌프란시스코 다운타운 내 숙소 <b>비교 및</b> 추천과 숙소 예약 ...",
+            "link": "https://blog.naver.com/mymd0205/223681042902?fromRss=true&trackingCode=rss",
+            "displayLink": "blog.naver.com",
+            "snippet": "Dec 3, 2024 ... ... 리뷰가 많거나,. 평점이 좋은 숙소, 위치 등을 파악하고. 평균적인 가격대를 설정하는 것이 좋다. 나의 경우 1박 15만 원~20만 원대로 설정했고. 7박 ...",
+            "htmlSnippet": "Dec 3, 2024 <b>...</b> ... <b>리뷰</b>가 많거나,. <b>평점</b>이 좋은 숙소, 위치 등을 파악하고. 평균적인 가격대를 설정하는 것이 좋다. 나의 경우 1박 15만 원~20만 원대로 설정했고. 7박&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/mymd0205/223681042902?fromRss=true...rss",
+            "htmlFormattedUrl": "https://blog.naver.com/mymd0205/223681042902?fromRss=true...rss",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjMmkzpzYbGr3L7Rpgi2Cag_eYmvk6Sw-NpzFQ3PM8qRESEqfvNc9tm31m&s",
+                  "width": "241",
+                  "height": "209"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDEyMDNfNjgg/MDAxNzMzMTk4ODM2MzEw.1NHlB3e2Dzc8qIY-UziRVtv7yxNroEOpfbmBdoau9jMg.tgMbJApDIFirSgOh7omQzshfp60fTrROX1asYezFIL4g.JPEG/KakaoTalk_20241203_124927313_13.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 투닥투닥 맛집 사냥꾼",
+                  "og:title": "[뮤 Travel] 샌프란시스코 다운타운 내 숙소 비교 및 추천과 숙소 예약 꿀 팁(w. 더 인앳 유니온 스퀘어)",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMjAxMDdfNTkg/MDAxNjQxNTQxNjc4NjE0.7RzyBQ9vPog6QK_JfsOSru3LCISfWAWgYvPhaoQGfisg.c7Nyl1ZpBQ2Z1BfTt2pghf4EFLapC2G8ajr6tVxwEqIg.JPEG.mymd0205/images.jpeg/images.jpeg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000034146DD9D6,service=blog,collection=blog",
+                  "og:description": "🏨 11월 갑자기 다녀온 샌프란시스코! 비행기도 비행기지만 정말 걱정이 되는 것은 바로 숙소. 비싼 미국...",
+                  "referrer": "always",
+                  "naverblog:nickname": "헌터 또니",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/mymd0205/223681042902",
+                  "og:article:author": "투닥투닥 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://storep-phinf.pstatic.net/ogq_6222d1f6d32c3/original_22.png?type=p100_100"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "중국인 관광객 리뷰 평가를 통한 서울·도쿄 숙박 경험 차이 분석",
+            "htmlTitle": "중국인 관광객 <b>리뷰</b> 평가를 통한 서울·도쿄 숙박 경험 차이 분석",
+            "link": "https://www.yanolja-research.com/brief/view/161?lang=kr?sub_confirmation=1",
+            "displayLink": "www.yanolja-research.com",
+            "snippet": "Feb 4, 2025 ... 전체 및 등급별 서울·도쿄 숙소별 평점의 평균 비교. * 5점 만점 척도(소수점 첫째자리까지 평가) * 독립표본 t검정 수행 결과 p<.05 수준에서 전체, 3 ...",
+            "htmlSnippet": "Feb 4, 2025 <b>...</b> 전체 <b>및</b> 등급별 서울·도쿄 숙소별 <b>평점</b>의 평균 <b>비교</b>. * 5점 만점 척도(소수점 첫째자리까지 평가) * 독립표본 t검정 수행 결과 p&lt;.05 수준에서 전체, 3&nbsp;...",
+            "formattedUrl": "https://www.yanolja-research.com/brief/view/161?lang=kr?sub...1",
+            "htmlFormattedUrl": "https://www.yanolja-research.com/brief/view/161?lang=kr?sub...1",
+            "pagemap": {
+              "metatags": [
+                {
+                  "og:image": "/",
+                  "og:type": "website",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "og:title": "Yanolja"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "/"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "실버 클라우드 호텔 시애틀 최고의 위치와 가격비교 꿀팁 | 비짓시애틀 ...",
+            "htmlTitle": "실버 클라우드 호텔 시애틀 최고의 위치와 가격<b>비교</b> 꿀팁 | 비짓시애틀 ...",
+            "link": "https://visitseattle.co.kr/319",
+            "displayLink": "visitseattle.co.kr",
+            "snippet": "Oct 3, 2024 ... ... 장소입니다. 위치적으로 안전하고 편리한 시애틀의 일상 속에서 특별한 경험을 제공합니다. 투숙객 리뷰 및 평가. 조용한 위치와 훌륭한 아침식사, 청결 ...",
+            "htmlSnippet": "Oct 3, 2024 <b>...</b> ... <b>장소</b>입니다. 위치적으로 안전하고 편리한 시애틀의 일상 속에서 특별한 경험을 제공합니다. 투숙객 <b>리뷰 및</b> 평가. 조용한 위치와 훌륭한 아침식사, 청결&nbsp;...",
+            "formattedUrl": "https://visitseattle.co.kr/319",
+            "htmlFormattedUrl": "https://visitseattle.co.kr/319",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHUmwIzgR2YCeZuX16fBHWtgNMYCYtL4OhM1TOWxvAphBrgSRvifIZ87n&s",
+                  "width": "281",
+                  "height": "179"
+                }
+              ],
+              "question": [
+                {
+                  "name": "실버 클라우드 호텔 - 시애틀 유니버시티 오브 워싱턴 디스트릭트에서는 어떤 종류의 아침 식사를 제공하나요?"
+                },
+                {
+                  "name": "실버 클라우드 호텔 - 시애틀 유니버시티 오브 워싱턴 디스트릭트에서는 어떤 즐길 거리를 제공하나요?"
+                },
+                {
+                  "name": "실버 클라우드 호텔 - 시애틀 유니버시티 오브 워싱턴 디스트릭트의 숙박 요금은 얼마인가요?"
+                }
+              ],
+              "answer": [
+                {
+                  "text": "이 호텔에서는 유럽식 아침 식사를 제공합니다. 투숙객의 평점은 7.5로 높은 점수를 기록하고 있습니다."
+                },
+                {
+                  "text": "호텔에서는 피트니스 센터, 사이클링, 해피아워 등 다양한 액티비티와 서비스를 제공하고 있으며, 일부 이용 시 요금이 부과될 수 있습니다."
+                },
+                {
+                  "text": "숙박 요금은 날짜나 호텔 정책에 따라 달라질 수 있으므로, 원하는 숙박 날짜를 입력하고 요금을 확인하는 것이 좋습니다."
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/117946114.jpg?k=058f06db2916262efdc547cc303eb227496db931a8dc1be6d92fc42a9ebf29fa&o=&hp=1",
+                  "og:type": "website",
+                  "twitter:title": "실버 클라우드 호텔 시애틀 최고의 위치와 가격비교 꿀팁 | 비짓시애틀 - 워싱턴주 한인 포털 사이트",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "비짓시애틀",
+                  "subject": "실버 클라우드 호텔 시애틀 최고의 위치와 가격비교 꿀팁 | 비짓시애틀 - 워싱턴주 한인 포털 사이트",
+                  "og:title": "실버 클라우드 호텔 시애틀 최고의 위치와 가격비교 꿀팁 | 비짓시애틀 - 워싱턴주 한인 포털 사이트",
+                  "og:description": "실버 클라우드 호텔 개요 시애틀의 실버 클라우드 호텔은 워싱턴 대학교 근처에 위치하여 매우 편리하며, 연간 …",
+                  "twitter:image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/117946114.jpg?k=058f06db2916262efdc547cc303eb227496db931a8dc1be6d92fc42a9ebf29fa&o=&hp=1",
+                  "twitter:image:src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/117946114.jpg?k=058f06db2916262efdc547cc303eb227496db931a8dc1be6d92fc42a9ebf29fa&o=&hp=1",
+                  "twitter:site": "비짓시애틀",
+                  "naver-site-verification": "12d22879cb761bf8941ce4eb29bdeabcc51c6816",
+                  "viewport": "width=device-width, initial-scale=1,user-scalable=yes",
+                  "og:url": "https://visitseattle.co.kr/319"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/117946114.jpg?k=058f06db2916262efdc547cc303eb227496db931a8dc1be6d92fc42a9ebf29fa&o=&hp=1"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "최고의 캠프장 AI 생성기 (무료)",
+            "htmlTitle": "최고의 캠프장 AI 생성기 (무료)",
+            "link": "https://openart.ai/ko/saengseonggi/kaempeujang",
+            "displayLink": "openart.ai",
+            "snippet": "다양한 옵션: 다양한 캠핑 장소를 한눈에 비교하고 선택할 수 있습니다. 리뷰 및 평점: 다른 캠퍼들의 리뷰와 평점을 참고하여 더 나은 선택을 할 수 있습니다. 이 AI ...",
+            "htmlSnippet": "다양한 옵션: 다양한 캠핑 <b>장소</b>를 한눈에 <b>비교</b>하고 선택할 수 있습니다. <b>리뷰 및 평점</b>: 다른 캠퍼들의 <b>리뷰</b>와 <b>평점</b>을 참고하여 더 나은 선택을 할 수 있습니다. 이 AI&nbsp;...",
+            "formattedUrl": "https://openart.ai/ko/saengseonggi/kaempeujang",
+            "htmlFormattedUrl": "https://openart.ai/ko/saengseonggi/kaempeujang",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4VNicqbvxDXEjenvh-z9kh2iE2et-6nQrjQ1vvzyFzA2EkdWf1k5hpk&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/6705bf7d1e6d8e24b6572ad4_669726ec32daf24911796914_image_6ddd83c1_1720808693044_1024.avif",
+                  "twitter:title": "최고의 캠프장 AI 생성기 (무료)",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "viewport": "width=device-width, initial-scale=1",
+                  "twitter:description": "AI 캠프사이트 생성기로 캠프를 꾸며보세요! 아늑하고 세밀한 캠프 장면을 손쉽게 만들어보세요.",
+                  "og:title": "최고의 캠프장 AI 생성기 (무료)",
+                  "og:description": "AI 캠프사이트 생성기로 캠프를 꾸며보세요! 아늑하고 세밀한 캠프 장면을 손쉽게 만들어보세요.",
+                  "twitter:image": "https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/6705bf7d1e6d8e24b6572ad4_669726ec32daf24911796914_image_6ddd83c1_1720808693044_1024.avif"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cdn.prod.website-files.com/6600e1eab90de089c2d9c972/672a724ed86c6c46cbce9463_67227a1cb3d2e5c7742b2a43_south-korea.svg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_4",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:03.089726",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJq6qqqoGefDURZ6dyLgCZf7o",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "6-1 Mokdongdong-ro 14-gil, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Gentle Dining",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_5",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:08.383976",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJ0wVOI5SdfDUR3E6hrlj65Lg",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "318 Gangseo-ro, Gangseo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Another Side",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJoeWbrsGYfDUR1u7e0FV_-CY",
+            "types": [
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "147-1 Wausan-ro, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Gabie",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJi1N05ISefDURZDyi47CGkzw",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "293 Mokdongdong-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Tom N Toms Coffee",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJPz5188SjfDURkViUpa5T1Ac",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Jongno District, Cheonggyecheon-ro, 155 1,2,3층",
+            "displayName": {
+              "text": "Burnt Seoul",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJv-bHllyffDURRNn259iMOmA",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Yangcheon District, Mokdongdong-ro, 309 1 층",
+            "displayName": {
+              "text": "루시카토 베이크카페&플러버브런치카페 행복한백화점",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_6",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:14.102931",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "각 장소별 리뷰, 평점, 가격대 비교 분석"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "6. 현지 쇼핑 아이템 추천 웹 검색 및 @YouTube 정보를 참고하여 ...",
+            "htmlTitle": "6. 현지 쇼핑 아이템 추천 웹 검색 및 @YouTube 정보를 참고하여 ...",
+            "link": "https://www.threads.com/@prompt_dict/post/DIG49DtJ7ZI/6-%ED%98%84%EC%A7%80-%EC%87%BC%ED%95%91-%EC%95%84%EC%9D%B4%ED%85%9C-%EC%B6%94%EC%B2%9C%EC%9B%B9-%EA%B2%80%EC%83%89-%EB%B0%8F-youtube-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%B0%B8%EA%B3%A0%ED%95%98%EC%97%AC-%EA%B5%AD%EA%B0%80%EB%8F%84%EC%8B%9C%EC%97%90%EC%84%9C-%EA%B5%AC%EB%A7%A4%ED%95%A0-%EB%A7%8C%ED%95%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%8A%94-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%95%84%EC%9D%B4%ED%85%9C%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%B4%EC%A4%98-%EB%8B%A4%EC%9D%8C-%EC%A1%B0%EA%B1%B4%EC%9C%BC%EB%A1%9C-",
+            "displayLink": "www.threads.com",
+            "snippet": "Apr 6, 2025 ... ... 가격 정보 순으로 정리하고, 각 옵션별 장단점을 분석해줘. 2. 1 ... 지도의 리뷰 및 평점 정보를 적극 활용하여 [도시명]에서 현지인 평가가 좋거나 ...",
+            "htmlSnippet": "Apr 6, 2025 <b>...</b> ... <b>가격</b> 정보 순으로 정리하고, <b>각</b> 옵션<b>별</b> 장단점을 <b>분석</b>해줘. 2. 1 ... 지도의 <b>리뷰</b> 및 <b>평점</b> 정보를 적극 활용하여 [도시명]에서 현지인 평가가 좋거나&nbsp;...",
+            "formattedUrl": "https://www.threads.com/.../6-현지-쇼핑-아이템-추천웹-검색-및-youtube-...",
+            "htmlFormattedUrl": "https://www.threads.com/.../6-현지-쇼핑-아이템-추천웹-검색-및-youtube-...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0EKyIdd6qIQsAdUUoJiN79flviXe6dUJX4hh7qvDncMkO_embtyE90B0J&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DIG49DtJ7ZI",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DIG49DtJ7ZI",
+                  "color-scheme": "light",
+                  "og:description": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict). 184 Views. 6. 현지 쇼핑 아이템 추천\n\n웹 검색 및 @YouTube 정보를 참고하여 [국가/도시]에서 구매할 만한 가치 있는 특별한 아이템을 추천해줘. 다음 조건으로 검색해줘:\n- 현지에서 구매 시 가격 메리트가 있는 것으로 알려진 상품\n- 한국에서는 구하기 어렵거나 희소성 있는 현지 전통/특산품\n- 면세점 외 현지 마트/시장에서 구매하기 좋은 품목 정보\n- 각 상품별 대략적인 가격대 정보 및 일반적인 흥정 문화/팁 (해당되는 경우)\n- 현지어, 영어, 일본어, 한국어로도 검색하여 로컬 쇼핑 정보 확인\n- 짐 무게/크기 고려한 추천 (기내 반입 가능 여부 관련 정보 포함)\n- 구매 가능한 상점 이름 및 @Google 지도 검색 결과 링크 또는 주소 정보 포함 시도. 답변은 카테고리별로 정리하고, 각 아이템마다 구체적인 정보와 현지인들이 주로 구매하는  ",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@prompt_dict/post/DIG49DtJ7ZI/6-%ED%98%84%EC%A7%80-%EC%87%BC%ED%95%91-%EC%95%84%EC%9D%B4%ED%85%9C-%EC%B6%94%EC%B2%9C%EC%9B%B9-%EA%B2%80%EC%83%89-%EB%B0%8F-youtube-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%B0%B8%EA%B3%A0%ED%95%98%EC%97%AC-%EA%B5%AD%EA%B0%80%EB%8F%84%EC%8B%9C%EC%97%90%EC%84%9C-%EA%B5%AC%EB%A7%A4%ED%95%A0-%EB%A7%8C%ED%95%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%8A%94-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%95%84%EC%9D%B4%ED%85%9C%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%B4%EC%A4%98-%EB%8B%A4%EC%9D%8C-%EC%A1%B0%EA%B1%B4%EC%9C%BC%EB%A1%9C-",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict). 184 Views. 6. 현지 쇼핑 아이템 추천\n\n웹 검색 및 @YouTube 정보를 참고하여 [국가/도시]에서 구매할 만한 가치 있는 특별한 아이템을 추천해줘. 다음 조건으로 검색해줘:\n- 현지에서 구매 시 가격 메리트가 있는 것으로 알려진 상품\n- 한국에서는 구하기 어렵거나 희소성...",
+                  "og:url": "https://www.threads.com/@prompt_dict/post/DIG49DtJ7ZI/6-%ED%98%84%EC%A7%80-%EC%87%BC%ED%95%91-%EC%95%84%EC%9D%B4%ED%85%9C-%EC%B6%94%EC%B2%9C%EC%9B%B9-%EA%B2%80%EC%83%89-%EB%B0%8F-youtube-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%B0%B8%EA%B3%A0%ED%95%98%EC%97%AC-%EA%B5%AD%EA%B0%80%EB%8F%84%EC%8B%9C%EC%97%90%EC%84%9C-%EA%B5%AC%EB%A7%A4%ED%95%A0-%EB%A7%8C%ED%95%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%8A%94-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%95%84%EC%9D%B4%ED%85%9C%EC%9D%84-%EC%B6%94%EC%B2%9C%ED%95%B4%EC%A4%98-%EB%8B%A4%EC%9D%8C-%EC%A1%B0%EA%B1%B4%EC%9C%BC%EB%A1%9C-",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "아이패드 추천 : 태블릿 TOP 5 리뷰&비교 (2025년)",
+            "htmlTitle": "아이패드 추천 : 태블릿 TOP 5 <b>리뷰</b>&amp;<b>비교</b> (2025년)",
+            "link": "https://nosearch.com/recommendation/pick/digitalit/tablet",
+            "displayLink": "nosearch.com",
+            "snippet": "Apr 18, 2025 ... 가격 인하로 이제야 가성비 모델이라 할 수 있음 현 시점에 대안이 없는 가장 저렴한 아이패드. 홈버튼을 없앤 10세대의 개선 모델입니다. 2025년 모데 ...",
+            "htmlSnippet": "Apr 18, 2025 <b>...</b> <b>가격</b> 인하로 이제야 가성비 모델이라 할 수 있음 현 시점에 대안이 없는 가장 저렴한 아이패드. 홈버튼을 없앤 10세대의 개선 모델입니다. 2025년 모데&nbsp;...",
+            "formattedUrl": "https://nosearch.com/recommendation/pick/digitalit/tablet",
+            "htmlFormattedUrl": "https://nosearch.com/recommendation/pick/digitalit/tablet",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTot5bfo41vZHiKlIb4VUct-vOcqhrc7LskPRsePz4QCxVqS8cxsH2pV8Vv&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://d21x3meyyr2jva.cloudfront.net/image_temp/1667290461000_태블릿_애플.png",
+                  "og:type": "article",
+                  "article:published_time": "2021-09-20T06:10:00.000Z",
+                  "og:site_name": "노써치",
+                  "author": "Brandon",
+                  "og:title": "아이패드 추천 : 태블릿 TOP 5 리뷰&비교 (2025년)",
+                  "title": "아이패드 추천 : 태블릿 TOP 5 리뷰&비교 (2025년)",
+                  "og:description": "가장 추천하는 아이패드는 애플 아이패드 9세대 Wi-Fi 64GB으로 압도적인 가성비를 자랑하는 가장 저렴한 아이패드입니다. 웹서핑, 유튜브, 인강시청용으로 부족함 없는 성능으로 게임이나 헤비한 작업을 하지 않는 분이라면 만족하고 사용할 수 있습니다.",
+                  "url": "https://nosearch.com/recommendation/pick/digitalit/tablet",
+                  "next-head-count": "27",
+                  "naver-site-verification": "fc48b33ed6fd55b7ddebf5ee5e186d0208f70ab5",
+                  "article:modified_time": "2025-04-18T05:52:54.000Z",
+                  "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+                  "og:locale": "ko_KR",
+                  "og:url": "https://nosearch.com/recommendation/pick/digitalit/tablet"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://d21x3meyyr2jva.cloudfront.net/image_temp/1667290461000_%ED%83%9C%EB%B8%94%EB%A6%BF_%EC%95%A0%ED%94%8C.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "Post by PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict)",
+            "htmlTitle": "Post by PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict)",
+            "link": "https://www.threads.com/@prompt_dict/post/DIINXUDSOhW/post-by-prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-prompt_dict",
+            "displayLink": "www.threads.com",
+            "snippet": "Apr 6, 2025 ... ... 가격 정보 순으로 정리하고, 각 옵션별 장단점을 분석해줘 ... 5. 현지인 맛집 검색 · @Google. 지도의 리뷰 및 평점 정보를 적극 활용하여 [도시명] ...",
+            "htmlSnippet": "Apr 6, 2025 <b>...</b> ... <b>가격</b> 정보 순으로 정리하고, <b>각</b> 옵션<b>별</b> 장단점을 <b>분석</b>해줘 ... 5. 현지인 맛집 검색 &middot; @Google. 지도의 <b>리뷰</b> 및 <b>평점</b> 정보를 적극 활용하여 [도시명]&nbsp;...",
+            "formattedUrl": "https://www.threads.com/.../post-by-prompt-dict-프롬프트-딕셔너리-prom...",
+            "htmlFormattedUrl": "https://www.threads.com/.../post-by-prompt-dict-프롬프트-딕셔너리-prom...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0EKyIdd6qIQsAdUUoJiN79flviXe6dUJX4hh7qvDncMkO_embtyE90B0J&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DIINXUDSOhW",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "PROMPT DICT | 프롬프트 딕셔너리 (@prompt_dict) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DIINXUDSOhW",
+                  "color-scheme": "light",
+                  "og:description": "679 Views. See more photos and videos by PROMPT DICT | 프롬프트 딕셔너리 on Threads.",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@prompt_dict/post/DIINXUDSOhW/post-by-prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-prompt_dict",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "679 Views. See more photos and videos by PROMPT DICT | 프롬프트 딕셔너리 on Threads.",
+                  "og:url": "https://www.threads.com/@prompt_dict/post/DIINXUDSOhW/post-by-prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-prompt_dict",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "갤럭시탭 추천 : 태블릿 TOP 4 리뷰&비교 (2025년)",
+            "htmlTitle": "갤럭시탭 추천 : 태블릿 TOP 4 <b>리뷰</b>&amp;<b>비교</b> (2025년)",
+            "link": "https://nosearch.com/recommendation/pick/digitalit/tablet/%EC%82%BC%EC%84%B1",
+            "displayLink": "nosearch.com",
+            "snippet": "Apr 18, 2025 ... ... 별 가격과 성능을 고려하여 추천제품을 선정하였습니다. 더보기. 광고. 노써치픽. 갤럭시탭 추천 & 리뷰 : 태블릿 TOP 4. 1. 저가형, 갤럭시탭 S9 FE ...",
+            "htmlSnippet": "Apr 18, 2025 <b>...</b> ... <b>별 가격</b>과 성능을 고려하여 추천제품을 선정하였습니다. 더보기. 광고. 노써치픽. 갤럭시탭 추천 &amp; <b>리뷰</b> : 태블릿 TOP 4. 1. 저가형, 갤럭시탭 S9 FE&nbsp;...",
+            "formattedUrl": "https://nosearch.com/recommendation/pick/digitalit/tablet/삼성",
+            "htmlFormattedUrl": "https://nosearch.com/recommendation/pick/digitalit/tablet/삼성",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykFtbegzoS5m6hO4-8XhPqLPKp0ncDZA-oDCEr7wLQPym_JuLoWZBtwnl&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://d21x3meyyr2jva.cloudfront.net/image_temp/1667290461000_태블릿_삼성.png",
+                  "og:type": "article",
+                  "article:published_time": "2021-09-05T23:25:51.000Z",
+                  "og:site_name": "노써치",
+                  "author": "Brandon",
+                  "og:title": "갤럭시탭 추천 : 태블릿 TOP 4 리뷰&비교 (2025년)",
+                  "title": "갤럭시탭 추천 : 태블릿 TOP 4 리뷰&비교 (2025년)",
+                  "og:description": "가장 추천하는 갤럭시탭은 SM-X610 갤럭시탭S9 FE 플러스 Wi-Fi 128GB으로 이런 경우 추천드립니다. 1) 저렴하면서도 쓸만한 갤럭시탭을 찾는 경우 2) 필기용 쓸만한 가성비 태블릿을 찾는 경우 3)'화질은 기본만 하면 된다. 화면크기가 더 중요하다.'라고 생각하는 경우",
+                  "url": "https://nosearch.com/recommendation/pick/digitalit/tablet/%EC%82%BC%EC%84%B1",
+                  "next-head-count": "31",
+                  "naver-site-verification": "fc48b33ed6fd55b7ddebf5ee5e186d0208f70ab5",
+                  "article:modified_time": "2025-04-18T05:52:29.000Z",
+                  "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+                  "og:locale": "ko_KR",
+                  "og:url": "https://nosearch.com/recommendation/pick/digitalit/tablet/%EC%82%BC%EC%84%B1"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://d21x3meyyr2jva.cloudfront.net/image_temp/1667290461000_%ED%83%9C%EB%B8%94%EB%A6%BF_%EC%82%BC%EC%84%B1.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "發佈者：PROMPT DICT | 프롬프트 딕셔너리（@prompt_dict）",
+            "htmlTitle": "發佈者：PROMPT DICT | 프롬프트 딕셔너리（@prompt_dict）",
+            "link": "https://www.threads.com/@prompt_dict/post/DIINkMQy7Kr/%E7%99%BC%E4%BD%88%E8%80%85prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%ACprompt_dict?hl=zh-tw",
+            "displayLink": "www.threads.com",
+            "snippet": "Apr 7, 2025 ... 맛집 검색 @Google 지도의 리뷰 및 평점 정보를 적극 활용하여 [도시명]에서 현지인 평가 ... 가격 정보 순으로 정리하고, 각 옵션별 장단점을 분석해줘.",
+            "htmlSnippet": "Apr 7, 2025 <b>...</b> 맛집 검색 @Google 지도의 <b>리뷰</b> 및 <b>평점</b> 정보를 적극 활용하여 [도시명]에서 현지인 평가 ... <b>가격</b> 정보 순으로 정리하고, <b>각</b> 옵션<b>별</b> 장단점을 <b>분석</b>해줘.",
+            "formattedUrl": "https://www.threads.com/.../發佈者prompt-dict-프롬프트-딕셔너리prompt...",
+            "htmlFormattedUrl": "https://www.threads.com/.../發佈者prompt-dict-프롬프트-딕셔너리prompt...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0EKyIdd6qIQsAdUUoJiN79flviXe6dUJX4hh7qvDncMkO_embtyE90B0J&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DIINkMQy7Kr",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "Threads 上的 PROMPT DICT | 프롬프트 딕셔너리（@prompt_dict）",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "Threads 上的 PROMPT DICT | 프롬프트 딕셔너리（@prompt_dict）",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DIINkMQy7Kr",
+                  "color-scheme": "light",
+                  "og:description": "51 Views. @prompt_dict quoted @prompt_dict: 5. 현지인 맛집 검색\n\n@Google 지도의 리뷰 및 평점 정보를 적극 활용하여 [도시명]에서 현지인 평가가 좋거나 로컬 분위기가 강한 맛집을 알려줘. 다음 조건으로 검색해줘:\n- [해당 국가 언어], 영어, 한국어로 동시에 검색하여 지도 및 웹 정보 종합\n- 관광객 위주 식당보다는 현지인 평가가 높은 곳 (지도상의 리뷰 및 평점 집중 확인)\n- 가격대별 3단계 (저렴/중간/고급) 분류 해서 3개씩 추천\n- 대표 메뉴 추천 및 현지 주문 관련 팁 검색\n- 최근 6개월 이내 지도 리뷰 정보를 우선적으로 참고\n- 지도에 등록되어 있고, 최근까지 영업 중인 것으로 확인되는 식당 정보 위주로 포함. 최종 답변은 한국어로 제공하고, 각 식당의 특징적인 메뉴와 함께, 메뉴 설명을 바탕으로 한국인에게 선호될 만한 요소가 있는지 분석해줘.",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@prompt_dict/post/DIINkMQy7Kr/%E7%99%BC%E4%BD%88%E8%80%85prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%ACprompt_dict",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "51 Views. @prompt_dict quoted @prompt_dict: 5. 현지인 맛집 검색\n\n@Google 지도의 리뷰 및 평점 정보를 적극 활용하여 [도시명]에서 현지인 평가가 좋거나 로컬 분위기가 강한 맛집을 알려줘. 다음 조건으로 검색해줘:\n- [해당 국가 언어], 영어, 한국어로 동시에 검색하여 지도 및 웹 정보 종합\n- 관광객 위주...",
+                  "og:url": "https://www.threads.com/@prompt_dict/post/DIINkMQy7Kr/%E7%99%BC%E4%BD%88%E8%80%85prompt-dict-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%94%95%EC%85%94%EB%84%88%EB%A6%ACprompt_dict",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/prompt_dict/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "잠실 새내 노래방",
+            "htmlTitle": "잠실 새내 노래방",
+            "link": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "displayLink": "jamsilsaenaenoraebang.isweb.co.kr",
+            "snippet": "이 콘텐츠에서는 실제 이용자 리뷰와 평점 기준으로 잠실새내 노래방 추천 TOP5를 정리했습니다. 각 노래방의 가격대, 룸 크기, 청결도, 음향 시설 등을 비교 분석하여 ...",
+            "htmlSnippet": "이 콘텐츠에서는 실제 이용자 <b>리뷰</b>와 <b>평점</b> 기준으로 잠실새내 노래방 추천 TOP5를 정리했습니다. <b>각</b> 노래방의 <b>가격대</b>, 룸 크기, 청결도, 음향 시설 등을 <b>비교 분석</b>하여&nbsp;...",
+            "formattedUrl": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "htmlFormattedUrl": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "pagemap": {
+              "metatags": [
+                {
+                  "og:type": "website",
+                  "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+                  "og:title": "잠실 새내 노래방 - Home",
+                  "title": "잠실 새내 노래방 - Home",
+                  "og:url": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+                  "og:description": "잠실새내 노래방 정보를 한눈에 확인하세요. 최신 시설을 갖춘 프라이빗 노래방, 가성비 좋은 혼코노, 회식 후 2차에 적합한 단체룸까지 다양한 업소 정보를 상세히 안내합니다. 가격 비교, 후기, 위치, 운영 시간, 인기 노래방 순위 등 잠실새내역 인근에서 노래방을 찾는 분들을 위한 실용적인 정보를 제공합니다. 실시간 예약 팁과 시간대별 요금표도 함께 제공하여 처음 방문하는 분도 쉽게 이용할 수 있습니다."
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "BEREX 매트리스/안마의자 - BEREX 안마의자 페블체어｜coway",
+            "htmlTitle": "BEREX 매트리스/안마의자 - BEREX 안마의자 페블체어｜coway",
+            "link": "https://www.coway.com/product/detail?prdno=1059",
+            "displayLink": "www.coway.com",
+            "snippet": "자동 체형 분석. 자동으로 체형을 분석하고 어깨 위치를 감지하여 사용자 ... 각 제품별 기능 설명, 제품 사이즈 비교까지 상담 받아보세요! 제품 정보. 신청자 ...",
+            "htmlSnippet": "자동 체형 <b>분석</b>. 자동으로 체형을 <b>분석</b>하고 어깨 위치를 감지하여 사용자 ... <b>각</b> 제품<b>별</b> 기능 설명, 제품 사이즈 <b>비교</b>까지 상담 받아보세요! 제품 정보. 신청자&nbsp;...",
+            "formattedUrl": "https://www.coway.com/product/detail?prdno=1059",
+            "htmlFormattedUrl": "https://www.coway.com/product/detail?prdno=1059",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8huBjDrV6-bEHvUyjUWBrqz3TEmUfPySb7eRaADPROmEjJBL4NhPWvUfX&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "organization": [
+                {
+                  "url": "http://www.coway.com/",
+                  "sameas": "https://www.instagram.com/coway.kr"
+                }
+              ],
+              "metatags": [
+                {
+                  "msapplication-tilecolor": "#da532c",
+                  "og:image": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_5442_attimg_org.png",
+                  "theme-color": "#ffffff",
+                  "og:image:width": "750",
+                  "og:type": "website",
+                  "og:title": "코웨이 BEREX 안마의자 페블체어",
+                  "og:image:height": "750",
+                  "_csrf_parameter": "_csrf",
+                  "_csrf": "456304a7-ee11-44d7-a4be-62fd24e47578",
+                  "title": "BEREX 매트리스/안마의자 - BEREX 안마의자 페블체어｜coway",
+                  "og:description": "나의 첫 번째 릴랙스 체어",
+                  "naver-site-verification": "86494b2119167a6073a2e51b9a0bd02d7a701806",
+                  "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+                  "_csrf_header": "X-XSRF-TOKEN",
+                  "og:url": "https://m.coway.com/product/detail?prdno=1059",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_5442_attimg_org.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "htmlTitle": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "포, POI에 작성된 각 리뷰별 토픽 분포, 그리고 키워드별 토픽 분포를 모두. 추정 ... 형태소 분석을 마친 각 리뷰는 일반. 명사, 고유명사, 동사, 형용사, 그리고 ...",
+            "htmlSnippet": "포, POI에 작성된 <b>각 리뷰별</b> 토픽 분포, 그리고 키워드<b>별</b> 토픽 분포를 모두. 추정 ... 형태소 <b>분석</b>을 마친 <b>각 리뷰</b>는 일반. 명사, 고유명사, 동사, 형용사, 그리고&nbsp;...",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljJoJ3c2JHWrvpQsF8fY-rHSPmGUaL3_78Q-ZtLGw_2Z-H7OhixZfrg&s",
+                  "width": "296",
+                  "height": "171"
+                }
+              ],
+              "metatags": [
+                {
+                  "moddate": "D:20080821135700+09'00'",
+                  "creationdate": "D:20080820165432+09'00'",
+                  "creator": "ezPDF Builder 2006",
+                  "producer": "ezPDF Builder 2006"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///a48c470fa4a0fef01e6bd5e01be50a035c6ddd095843e4df6dacf0c92115c707"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "SMALL BIG",
+            "htmlTitle": "SMALL BIG",
+            "link": "https://bai.or.kr/Upload/Notice/2020%EB%85%84%20%EC%A4%91%EC%86%8C%EA%B8%B0%EC%97%85%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%ED%99%9C%EC%9A%A9%20%EC%9A%B0%EC%88%98%EC%82%AC%EB%A1%80%EC%A7%91.pdf",
+            "displayLink": "bai.or.kr",
+            "snippet": "이런 상황에서 중소기업 빅데이터 분석·활용 지원사업에 참. 여한 ㈜에코샌드는 고객 주문건수, 최근성, 구매주기, 평균결. 제금액 등 기준에 따른 고객군 분석을 통해 ...",
+            "htmlSnippet": "이런 상황에서 중소기업 빅데이터 <b>분석</b>·활용 지원사업에 참. 여한 ㈜에코샌드는 고객 주문건수, 최근성, 구매주기, 평균결. 제금액 등 기준에 따른 고객군 <b>분석</b>을 통해&nbsp;...",
+            "formattedUrl": "https://bai.or.kr/.../2020년%20중소기업%20빅데이터%20분석활용%20우...",
+            "htmlFormattedUrl": "https://bai.or.kr/.../2020년%20중소기업%20빅데이터%20<b>분석</b>활용%20우...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVmG6zo70wNwxdNl1U89k-S-PAl0BNRfVXJBv_VXtmgsI1U2W7CPcQafHm&s",
+                  "width": "269",
+                  "height": "187"
+                }
+              ],
+              "metatags": [
+                {
+                  "moddate": "D:20201222104048+09'00'",
+                  "creationdate": "D:20201222102837+09'00'",
+                  "creator": "Adobe InDesign 14.0 (Macintosh)",
+                  "producer": "Adobe PDF Library 15.0",
+                  "title": "2020smallbig_본문(1222).indd",
+                  "gts_pdfxversion": "PDF/X-4"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///230eecb64d42d62fb29188deed1a382241df4ee71c5aa914dda28f9564117be2"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[2024외식업트렌드] 식(食)별력",
+            "htmlTitle": "[2024외식업트렌드] 식(食)별력",
+            "link": "https://ceo.baemin.com/knowhow/11971",
+            "displayLink": "ceo.baemin.com",
+            "snippet": "플랫폼별 성격(신규가게↑, 여행지↑, 클린리뷰↑등)을 파악해 목적에 맞춰 바꿔가며 평점을 비교해요. 가게 전체의 평점도 중요하지만, 오히려 각 메뉴 평점에서 맛에 ...",
+            "htmlSnippet": "플랫폼<b>별</b> 성격(신규가게↑, 여행지↑, 클린<b>리뷰</b>↑등)을 파악해 목적에 맞춰 바꿔가며 <b>평점</b>을 <b>비교</b>해요. 가게 전체의 <b>평점</b>도 중요하지만, 오히려 <b>각</b> 메뉴 <b>평점</b>에서 맛에&nbsp;...",
+            "formattedUrl": "https://ceo.baemin.com/knowhow/11971",
+            "htmlFormattedUrl": "https://ceo.baemin.com/knowhow/11971",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OORM_fwFdrPCULTJSsUIH4BS8vz0gQ_MX18sLFMAKnXHEd7KbQiJ_uiQ&s",
+                  "width": "298",
+                  "height": "169"
+                }
+              ],
+              "organization": [
+                {
+                  "url": "https://ceo.baemin.com/",
+                  "sameas": "https://blog.naver.com/baemin_ceo"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://ceoimg.cdn.baemin.com/ceoimg-ym4g/i/2023/12/11/01hhcn252czvk5475t44hmqave.jpg",
+                  "og:type": "article",
+                  "supported-color-schemes": "light",
+                  "og:site_name": "배민외식업광장",
+                  "og:title": "[2024외식업트렌드] 식(食)별력",
+                  "color-scheme": "light only",
+                  "og:description": "실패 없는 식사를 위해 '더' 꼼꼼하게 판단해요 🧐",
+                  "apple-mobile-web-app-status-bar-style": "black",
+                  "naver-site-verification": "34020edd8a19255ca93821e19da962fbb0daf7dc",
+                  "viewport": "width=device-width,initial-scale=1",
+                  "apple-mobile-web-app-capable": "yes",
+                  "og:locale": "ko_KR",
+                  "og:url": "https://ceo.baemin.com/knowhow/11971"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://ceoimg.cdn.baemin.com/ceoimg-ym4g/i/2023/12/11/01hhcn252czvk5475t44hmqave.jpg"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_7",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:25.203192",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 양식 레스토랑",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJc9jwGwCffDURfblAqokjEjA",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "264 Mokdongseo-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "서울파스타",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJSU3OPyWZfDUR_OeCR-gLghE",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "22-30 Yanghwa-ro 19-gil, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Langteu",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJidzmOGmjfDUR8GDNl564_js",
+            "types": [
+              "italian_restaurant",
+              "brunch_restaurant",
+              "wine_bar",
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "133 Chebu-dong, Jongno District, Seoul, South Korea",
+            "displayName": {
+              "text": "틴서울 tiiin seoul",
+              "languageCode": "ko"
+            }
+          },
+          {
+            "id": "ChIJq6qqqoGefDURZ6dyLgCZf7o",
+            "types": [
+              "italian_restaurant",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "6-1 Mokdongdong-ro 14-gil, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Gentle Dining",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJqXMziL-YfDUR7a-eme2r7M0",
+            "types": [
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+            ],
+            "formattedAddress": "2-31 Changjeon-dong, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Quiet Evening",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_8",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:29.826597",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "서울 맛있는 카페",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJi1N05ISefDURZDyi47CGkzw",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "293 Mokdongdong-ro, Yangcheon District, Seoul, South Korea",
+            "displayName": {
+              "text": "Tom N Toms Coffee",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJoeWbrsGYfDUR1u7e0FV_-CY",
+            "types": [
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "147-1 Wausan-ro, Mapo-gu, Seoul, South Korea",
+            "displayName": {
+              "text": "Gabie",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJPz5188SjfDURkViUpa5T1Ac",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Jongno District, Cheonggyecheon-ro, 155 1,2,3층",
+            "displayName": {
+              "text": "Burnt Seoul",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ5d8TKNaffDURInDHbBF_Qmg",
+            "types": [
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "12 Gyeongin-ro 77ga-gil, Yeongdeungpo District, Seoul, South Korea",
+            "displayName": {
+              "text": "Cafe 1953 with Audrey",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJv-bHllyffDURRNn259iMOmA",
+            "types": [
+              "coffee_shop",
+              "cafe",
+              "food_store",
+              "store",
+              "food",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "South Korea, Seoul, Yangcheon District, Mokdongdong-ro, 309 1 층",
+            "displayName": {
+              "text": "루시카토 베이크카페&플러버브런치카페 행복한백화점",
+              "languageCode": "ko"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_9",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T05:10:34.956640",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "각 장소별 리뷰, 평점, 가격대, 분위기 비교 분석"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "잠실 새내 노래방",
+            "htmlTitle": "잠실 새내 노래방",
+            "link": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "displayLink": "jamsilsaenaenoraebang.isweb.co.kr",
+            "snippet": "이 콘텐츠에서는 실제 이용자 리뷰와 평점 기준으로 잠실새내 노래방 추천 TOP5를 정리했습니다. 각 노래방의 가격대, 룸 크기, 청결도, 음향 시설 등을 비교 분석하여 ...",
+            "htmlSnippet": "이 콘텐츠에서는 실제 이용자 <b>리뷰</b>와 <b>평점</b> 기준으로 잠실새내 노래방 추천 TOP5를 정리했습니다. <b>각</b> 노래방의 <b>가격대</b>, 룸 크기, 청결도, 음향 시설 등을 <b>비교 분석</b>하여&nbsp;...",
+            "formattedUrl": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "htmlFormattedUrl": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+            "pagemap": {
+              "metatags": [
+                {
+                  "og:type": "website",
+                  "viewport": "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+                  "og:title": "잠실 새내 노래방 - Home",
+                  "title": "잠실 새내 노래방 - Home",
+                  "og:url": "https://jamsilsaenaenoraebang.isweb.co.kr/",
+                  "og:description": "잠실새내 노래방 정보를 한눈에 확인하세요. 최신 시설을 갖춘 프라이빗 노래방, 가성비 좋은 혼코노, 회식 후 2차에 적합한 단체룸까지 다양한 업소 정보를 상세히 안내합니다. 가격 비교, 후기, 위치, 운영 시간, 인기 노래방 순위 등 잠실새내역 인근에서 노래방을 찾는 분들을 위한 실용적인 정보를 제공합니다. 실시간 예약 팁과 시간대별 요금표도 함께 제공하여 처음 방문하는 분도 쉽게 이용할 수 있습니다."
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "청정기 - 아이콘 공기청정기｜coway",
+            "htmlTitle": "청정기 - 아이콘 공기청정기｜coway",
+            "link": "https://www.coway.com/product/detail?prdno=7",
+            "displayLink": "www.coway.com",
+            "snippet": "각 가정에 맞춰 더 강력한 청정 성능을 발휘할 수 있도록 2달 마다 맞춤 필터를 제공하는 코웨이만의 서비스입니다. - 매연 필터 : 매연이 고민인 집",
+            "htmlSnippet": "<b>각</b> 가정에 맞춰 더 강력한 청정 성능을 발휘할 수 있도록 2달 마다 맞춤 필터를 제공하는 코웨이만의 서비스입니다. - 매연 필터 : 매연이 고민인 집",
+            "formattedUrl": "https://www.coway.com/product/detail?prdno=7",
+            "htmlFormattedUrl": "https://www.coway.com/product/detail?prdno=7",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DW6wwiOW0kKXzw9LwtDu0T3QfyxS8W7Ys1duC34ISBokGfDWwe244oEa&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "organization": [
+                {
+                  "url": "http://www.coway.com/",
+                  "sameas": "https://www.instagram.com/coway.kr"
+                }
+              ],
+              "metatags": [
+                {
+                  "msapplication-tilecolor": "#da532c",
+                  "og:image": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_1917_attimg_org.png",
+                  "theme-color": "#ffffff",
+                  "og:image:width": "750",
+                  "og:type": "website",
+                  "og:title": "코웨이 아이콘 공기청정기",
+                  "og:image:height": "750",
+                  "_csrf_parameter": "_csrf",
+                  "_csrf": "1b678338-b74f-40bf-ba03-f056125c4766",
+                  "title": "청정기 - 아이콘 공기청정기｜coway",
+                  "og:description": "감각적인 소재와 디자인에 청정력까지",
+                  "naver-site-verification": "86494b2119167a6073a2e51b9a0bd02d7a701806",
+                  "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+                  "_csrf_header": "X-XSRF-TOKEN",
+                  "og:url": "https://m.coway.com/product/detail?prdno=7",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_1917_attimg_org.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "오사카 여행에서 숙소 선택하는 방법 | Harukazesou Tengachaya",
+            "htmlTitle": "오사카 여행에서 숙소 선택하는 방법 | Harukazesou Tengachaya",
+            "link": "https://harukazesou.jp/ko/osaka-accommodation-guide/",
+            "displayLink": "harukazesou.jp",
+            "snippet": "Nov 22, 2024 ... 비교 사이트 활용. Booking.com, Agoda, Expedia 등 숙박 비교 사이트를 이용하여 가격, 시설, 위치를 비교해 보세요. 이용 후기 또한 참고할 수 있습니다 ...",
+            "htmlSnippet": "Nov 22, 2024 <b>...</b> <b>비교</b> 사이트 활용. Booking.com, Agoda, Expedia 등 숙박 <b>비교</b> 사이트를 이용하여 <b>가격</b>, 시설, 위치를 <b>비교해</b> 보세요. 이용 후기 또한 참고할 수 있습니다&nbsp;...",
+            "formattedUrl": "https://harukazesou.jp/ko/osaka-accommodation-guide/",
+            "htmlFormattedUrl": "https://harukazesou.jp/ko/osaka-accommodation-guide/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEIyh2jG5XxRMSXCaa_SQArUTmq4mD90dewJ18OT099PBLy5d-7CTNTw&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://harukazesou.jp/wp-content/uploads/2024/11/9b7b8ff9f9bc3e544c7a544b79c4bc56.jpg",
+                  "og:type": "website",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Harukazesou Tengachaya",
+                  "og:title": "오사카 여행에서 숙소 선택하는 방법",
+                  "msapplication-tileimage": "https://harukazesou.jp/wp-content/uploads/2024/10/cropped-4660ad544bbe1d591c65b6a5509a7203-270x270.png",
+                  "facebook-domain-verification": "ub7edijo4g91zgfmkdgjcjsj3lv0ji",
+                  "fb:app_id": "1760580897575502",
+                  "viewport": "width=device-width,initial-scale=1.0",
+                  "og:locale": "ja_JP",
+                  "fb:admins": "280000225843319",
+                  "og:url": "https://harukazesou.jp/ko/osaka-accommodation-guide/",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://harukazesou.jp/wp-content/uploads/2024/11/9b7b8ff9f9bc3e544c7a544b79c4bc56.jpg"
+                }
+              ],
+              "listitem": [
+                {
+                  "item": "ホーム",
+                  "name": "ホーム",
+                  "position": "1"
+                },
+                {
+                  "item": "未分類",
+                  "name": "未分類",
+                  "position": "2"
+                },
+                {
+                  "item": "오사카 여행에서 숙소 선택하는 방법",
+                  "name": "오사카 여행에서 숙소 선택하는 방법",
+                  "position": "3"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "BEREX 매트리스/안마의자 - BEREX 트리플체어｜coway",
+            "htmlTitle": "BEREX 매트리스/안마의자 - BEREX 트리플체어｜coway",
+            "link": "https://www.coway.com/product/detail?prdno=1207",
+            "displayLink": "www.coway.com",
+            "snippet": "... 점수(평점정 보), 연체정보; 라. 동의의 효력(보유 및 이용기간) : 동의일 ... 각 제품별 기능 설명, 제품 사이즈 비교까지 상담 받아보세요! 제품 정보. 신청자 ...",
+            "htmlSnippet": "... 점수(<b>평점</b>정 보), 연체정보; 라. 동의의 효력(보유 및 이용기간) : 동의일 ... <b>각</b> 제품<b>별</b> 기능 설명, 제품 사이즈 <b>비교</b>까지 상담 받아보세요! 제품 정보. 신청자&nbsp;...",
+            "formattedUrl": "https://www.coway.com/product/detail?prdno=1207",
+            "htmlFormattedUrl": "https://www.coway.com/product/detail?prdno=1207",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPms_-pUtav803OeGqRB_ugHI1oW2gRbMXdj069MCz9k9V6KQwWU3sECx&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "organization": [
+                {
+                  "url": "http://www.coway.com/",
+                  "sameas": "https://www.instagram.com/coway.kr"
+                }
+              ],
+              "metatags": [
+                {
+                  "msapplication-tilecolor": "#da532c",
+                  "og:image": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_5955_attimg_org.png?v=230846",
+                  "theme-color": "#ffffff",
+                  "og:image:width": "750",
+                  "og:type": "website",
+                  "og:title": "코웨이 BEREX 트리플체어",
+                  "og:image:height": "750",
+                  "_csrf_parameter": "_csrf",
+                  "_csrf": "37d684be-527c-42a6-bd82-8c55f8fa611d",
+                  "title": "BEREX 매트리스/안마의자 - BEREX 트리플체어｜coway",
+                  "og:description": "3가지 능력을 하나의 의자에",
+                  "naver-site-verification": "86494b2119167a6073a2e51b9a0bd02d7a701806",
+                  "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+                  "_csrf_header": "X-XSRF-TOKEN",
+                  "og:url": "https://m.coway.com/product/detail?prdno=1207",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mall.cowaystatic.com/static/upload/product/product/ID0101_5955_attimg_org.png?v=230846"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "htmlTitle": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "... 별 키워드 분. 포, POI에 작성된 각 리뷰별 토픽 분포, 그리고 키워드별 토픽 분포를 모두. 추정할 수 있다. 그중에서도 본 연구에서는 LDA 모델링 다음 단계인 POI.",
+            "htmlSnippet": "... <b>별</b> 키워드 분. 포, POI에 작성된 <b>각 리뷰별</b> 토픽 분포, 그리고 키워드<b>별</b> 토픽 분포를 모두. 추정할 수 있다. 그중에서도 본 연구에서는 LDA 모델링 다음 단계인 POI.",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/175101/1/000000165019.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljJoJ3c2JHWrvpQsF8fY-rHSPmGUaL3_78Q-ZtLGw_2Z-H7OhixZfrg&s",
+                  "width": "296",
+                  "height": "171"
+                }
+              ],
+              "metatags": [
+                {
+                  "moddate": "D:20080821135700+09'00'",
+                  "creationdate": "D:20080820165432+09'00'",
+                  "creator": "ezPDF Builder 2006",
+                  "producer": "ezPDF Builder 2006"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///a48c470fa4a0fef01e6bd5e01be50a035c6ddd095843e4df6dacf0c92115c707"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[서비스 분석] 스페이스클라우드 vs 아워플레이스 비교",
+            "htmlTitle": "[서비스 <b>분석</b>] 스페이스클라우드 vs 아워플레이스 <b>비교</b>",
+            "link": "https://brunch.co.kr/@@7jTf/2",
+            "displayLink": "brunch.co.kr",
+            "snippet": "Nov 23, 2023 ... 업로드된 장소 수가 많아서 그런지, 지역도 엄청 세분화해 놨다. 서울만 봐서 저만큼이라니. 베스트(평점), 리뷰순은 아플과 공통. 다만 여기는 ...",
+            "htmlSnippet": "Nov 23, 2023 <b>...</b> 업로드된 <b>장소</b> 수가 많아서 그런지, 지역도 엄청 세분화해 놨다. 서울만 봐서 저만큼이라니. 베스트(<b>평점</b>), <b>리뷰</b>순은 아플과 공통. 다만 여기는&nbsp;...",
+            "formattedUrl": "https://brunch.co.kr/@@7jTf/2",
+            "htmlFormattedUrl": "https://brunch.co.kr/@@7jTf/2",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDjM1yFwVTjsavcWACJIZLb_VR4bSRNRXwMJEHuw5M0BFFKL9rV32QMBbB&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "//img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7jTf/image/lcgtBRzNCtVrF4zbQ8GbU7pExMs.PNG",
+                  "twitter:app:url:iphone": "brunchapp://open",
+                  "theme-color": "#ffffff",
+                  "twitter:card": "summary",
+                  "article:published_time": "2023-11-23T20:39+0900",
+                  "og:site_name": "Brunch Story",
+                  "article:mobile_view_url": "https://brunch.co.kr/@@7jTf/2",
+                  "article:mobile_service_home": "https://brunch.co.kr",
+                  "article:pc_view_url": "https://brunch.co.kr/@@7jTf/2",
+                  "title": "[서비스 분석] 스페이스클라우드 vs 아워플레이스 비교",
+                  "twitter:app:id:iphone": "1001388574",
+                  "article:service_name": "브런치",
+                  "og:description": "[프롭테크] 공간대여 서비스 플랫폼 UX, UI 분석 | 서비스 분석 스터디를 자체적으로 해보고자.. 그 첫 서비스로 공간대여 플랫폼 대표주자 2곳 비교하기. 스클은 오케 동생들이랑 파티룸 빌려서 놀아볼까 하고 서칭만 해보고 예약 경험은 사실 전무하다. 예전에 홍보대행사에서 인턴으로 근무할 때 미팅룸 서칭할 때 써본 정도...? 아워플레이스는 회사에서 촬영할 때 PD님들이 주로 사용하시는 플랫폼이라 자주 봤던 곳",
+                  "twitter:image": "https://img1.daumcdn.net/thumb/C500x500.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7jTf/image/lcgtBRzNCtVrF4zbQ8GbU7pExMs.PNG",
+                  "article:talk_channel_view_url": "https://brunch.co.kr/@@7jTf/2",
+                  "article:pc_url": "https://brunch.co.kr/@@7jTf/2",
+                  "article:txid": "7jTf_2",
+                  "article:media_name": "동글",
+                  "article:mobile_url": "https://brunch.co.kr/@@7jTf/2",
+                  "dg:plink": "https://brunch.co.kr/@@7jTf/2",
+                  "og:article:author": "동글",
+                  "og:type": "article",
+                  "twitter:title": "[서비스 분석] 스페이스클라우드 vs 아워플레이스 비교",
+                  "og:title": "[서비스 분석] 스페이스클라우드 vs 아워플레이스 비교",
+                  "article:pc_service_home": "https://brunch.co.kr",
+                  "article:author": "동글",
+                  "referrer": "always",
+                  "fb:app_id": "313683402170826",
+                  "byl": "동글",
+                  "viewport": "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover",
+                  "twitter:description": "[프롭테크] 공간대여 서비스 플랫폼 UX, UI 분석 | 서비스 분석 스터디를 자체적으로 해보고자.. 그 첫 서비스로 공간대여 플랫폼 대표주자 2곳 비교하기. 스클은 오케 동생들이랑 파티룸 빌려서 놀아볼까 하고 서칭만 해보고 예약 경험은 사실 전무하다. 예전에 홍보대행사에서 인턴으로 근무할 때 미팅룸 서칭할 때 써본 정도...? 아워플레이스는 회사에서 촬영할 때 PD님들이 주로 사용하시는 플랫폼이라 자주 봤던 곳",
+                  "plink": "https://brunch.co.kr/@@7jTf/2",
+                  "og:url": "https://brunch.co.kr/@adela224/2",
+                  "twitter:app:name:iphone": "브런치스토리",
+                  "og:regdate": "2023-11-23T20:39+0900"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7jTf/image/YLgZnYjSa9p-bXXqXICyzSCfAOY"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "htmlTitle": "저작자표시-비영리-변경금지 2.0 대한민국 이용자는 아래의 조건을 ...",
+            "link": "https://s-space.snu.ac.kr/bitstream/10371/137310/1/000000145084.pdf",
+            "displayLink": "s-space.snu.ac.kr",
+            "snippet": "본 연구에서는 각 장소 POI에 대한 언급빈도수와 감성분석 결과를 모. 두 고려하여 ... 장소 리뷰를 이용한 공간. 감성어 사전 구축, 한국지형공간정보학회지, 제25 ...",
+            "htmlSnippet": "본 연구에서는 <b>각 장소</b> POI에 대한 언급빈도수와 감성<b>분석</b> 결과를 모. 두 고려하여 ... <b>장소 리뷰</b>를 이용한 공간. 감성어 사전 구축, 한국지형공간정보학회지, 제25&nbsp;...",
+            "formattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/137310/1/000000145084.pdf",
+            "htmlFormattedUrl": "https://s-space.snu.ac.kr/bitstream/10371/137310/1/000000145084.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptT61cFO0vKaerQ7HxeyWGv9Hc1BIyHhb6WQdAgZcoC1HEflUbi4l0bs&s",
+                  "width": "264",
+                  "height": "191"
+                }
+              ],
+              "metatags": [
+                {
+                  "moddate": "D:20080821135700+09'00'",
+                  "creationdate": "D:20080820165432+09'00'",
+                  "creator": "ezPDF Builder 2006",
+                  "producer": "ezPDF Builder 2006"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///2849b4df1af3e80201440063be30b7446110be0097b0ed87d0f6ff9b1aa627b6"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[위스키] 위스키 알고 마시면 더 맛있습니다. 위스키 정보 3편! 위스키의 ...",
+            "htmlTitle": "[위스키] 위스키 알고 마시면 더 맛있습니다. 위스키 정보 3편! 위스키의 ...",
+            "link": "https://blog.naver.com/hw5027573/223181520164",
+            "displayLink": "blog.naver.com",
+            "snippet": "Aug 12, 2023 ... 또한, 입문용이자 각 증류소의 개성을 알 수 있는 '엔트리'급을 살펴보면, 스카치(12년 급이 기본)에 비해 버번(6~8년 남짓) 숙성 연수가 낮은 편이고, ...",
+            "htmlSnippet": "Aug 12, 2023 <b>...</b> 또한, 입문용이자 <b>각</b> 증류소의 개성을 알 수 있는 &#39;엔트리&#39;급을 살펴보면, 스카치(12년 급이 기본)에 비해 버번(6~8년 남짓) 숙성 연수가 낮은 편이고,&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/hw5027573/223181520164",
+            "htmlFormattedUrl": "https://blog.naver.com/hw5027573/223181520164",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxc09yZSWh97HCHaBqk5XTwgm2d1-KHuEpIJSIjRabLuNDL2GFyxQRfY&s",
+                  "width": "275",
+                  "height": "183"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMzA4MTJfNzcg/MDAxNjkxNzY4NTkwNzIw.WV4ykIA7cBQWe44ZMCjyvoPXK0KaFDSuzjSXzJRGbrMg._wrtp0eVMuxwUt3r47zwCp95gtGlhQs4hViXueRm9sQg.JPEG.hw5027573/scotland-7545581_1920.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 지나가던 블로그",
+                  "og:title": "[위스키] 위스키 알고 마시면 더 맛있습니다. 위스키 정보 3편! 위스키의 종류 나눠보기!(기본편)",
+                  "naverblog:profile_image": "https://ssl.pstatic.net/static/blog/m/img_default.gif",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033F6A7BD24,service=blog,collection=blog",
+                  "og:description": "반갑습니다. 지나가던 블로그입니다. 더운 여름의 종착역이 다와가는 느낌입니다. 아직 덥다고는 하지만 이...",
+                  "referrer": "always",
+                  "naverblog:nickname": "지나가던 행인",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/hw5027573/223181520164",
+                  "og:article:author": "지나가던 .. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyMzA4MTJfNzcg/MDAxNjkxNzY4NTkwNzIw.WV4ykIA7cBQWe44ZMCjyvoPXK0KaFDSuzjSXzJRGbrMg._wrtp0eVMuxwUt3r47zwCp95gtGlhQs4hViXueRm9sQg.JPEG.hw5027573/scotland-7545581_1920.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "푸드트럭 서비스 이용객 경험에 관한 연구: 토픽모델링 기법 중심으로",
+            "htmlTitle": "푸드트럭 서비스 이용객 경험에 관한 연구: 토픽모델링 기법 중심으로",
+            "link": "https://www.koreascience.kr/article/JAKO202429848395912.pdf",
+            "displayLink": "www.koreascience.kr",
+            "snippet": "각 리뷰의 주제가. 푸드트럭 서비스의 종합적인 평가에 어떠한 영. 향을 ... 25에 속하는 리뷰둘은 다른 리뷰들과 비교하여. 푸드트럭의 위치, 분위기에 대한 ...",
+            "htmlSnippet": "<b>각 리뷰</b>의 주제가. 푸드트럭 서비스의 종합적인 평가에 어떠한 영. 향을 ... 25에 속하는 <b>리뷰</b>둘은 다른 <b>리뷰</b>들과 <b>비교</b>하여. 푸드트럭의 위치, <b>분위기</b>에 대한&nbsp;...",
+            "formattedUrl": "https://www.koreascience.kr/article/JAKO202429848395912.pdf",
+            "htmlFormattedUrl": "https://www.koreascience.kr/article/JAKO202429848395912.pdf",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4T9wfkTlzf9v-brWaWApcM36EhQuGW_xWcEIylcctCOhmxKk95CN1Gy8&s",
+                  "width": "262",
+                  "height": "192"
+                }
+              ],
+              "metatags": [
+                {
+                  "moddate": "D:20241010140304+09'00'",
+                  "creationdate": "D:20241010140301+09'00'",
+                  "creator": "Hwp 2022 12.0.0.3747",
+                  "author": "jongy",
+                  "producer": "Hancom PDF 1.3.0.547"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "x-raw-image:///4f858a55ee7dc780ff7c15b82c9808bed3b22cdf8afec48884ab8076d34f215c"
+                }
+              ]
+            },
+            "mime": "application/pdf",
+            "fileFormat": "PDF/Adobe Acrobat"
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "Bespoke 냉장고 2도어 키친핏 333L | RB33A3661APWW | Samsung ...",
+            "htmlTitle": "Bespoke 냉장고 2도어 키친핏 333L | RB33A3661APWW | Samsung ...",
+            "link": "https://org-sec-b2c.samsung.com/sec/refrigerators/bottom-mount-freezer-rb33a3661ap-d2c/RB33A3661APWW/",
+            "displayLink": "org-sec-b2c.samsung.com",
+            "snippet": "Aug 31, 2024 ... 앱 화면 구성 등은 변경될 수 있습니다. * SmartThings에 연결 가능한 기기 수는 장소(Location)당 최대 200개입니다. 사용자의 네트워크 환경에 따라 ...",
+            "htmlSnippet": "Aug 31, 2024 <b>...</b> 앱 화면 구성 등은 변경될 수 있습니다. * SmartThings에 연결 가능한 기기 수는 <b>장소</b>(Location)당 최대 200개입니다. 사용자의 네트워크 환경에 따라&nbsp;...",
+            "formattedUrl": "https://org-sec-b2c.samsung.com/sec/refrigerators/.../RB33A3661APWW/",
+            "htmlFormattedUrl": "https://org-sec-b2c.samsung.com/sec/refrigerators/.../RB33A3661APWW/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSuffVlAH9-aRXMBBdYfXg_TPOa4cYlAjYkrDSMWyf7_sdnbA5YflaY2G8&s",
+                  "width": "256",
+                  "height": "197"
+                }
+              ],
+              "metatags": [
+                {
+                  "date": "2025-04-28",
+                  "og:image": "//images.samsung.com/kdp/goods/2022/07/26/843a5219-c22d-4037-90d4-81ae4e4ecf9e.png",
+                  "twitter:card": "summary",
+                  "twitter:title": "BESPOKE 냉장고 2도어 키친핏 333L | RB33A3661APWW | Samsung 대한민국",
+                  "og:type": "website",
+                  "og:site_name": "Samsung sec",
+                  "twitter:url": "https://www.samsung.com/sec/refrigerators/bottom-mount-freezer-rb33a3661ap-d2c/RB33A3661APWW/",
+                  "og:title": "BESPOKE 냉장고 2도어 키친핏 333L | RB33A3661APWW | Samsung 대한민국",
+                  "twitter:creator": "@samsungkorea",
+                  "twitter:image": "//images.samsung.com/kdp/goods/2022/07/26/843a5219-c22d-4037-90d4-81ae4e4ecf9e.png",
+                  "sitecode": "sec",
+                  "twitter:site": "@samsungkorea",
+                  "viewport": "width=device-width,initial-scale=1.0",
+                  "og:locale": "ko",
+                  "og:url": "https://www.samsung.com/sec/refrigerators/bottom-mount-freezer-rb33a3661ap-d2c/RB33A3661APWW/",
+                  "og:country-name": "sec"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://org-sec-b2c.samsung.com/sec/static/_images/common/pd_gallery_default_visual.png"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    }
+  ]
+}
