@@ -1,0 +1,854 @@
+{
+  "session_id": "20250511_061749",
+  "start_time": "2025-05-11T06:17:49.477372",
+  "notes": [
+    {
+      "id": "tool_execution_1",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T06:17:55.976517",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "대전 놀거리",
+          "page_size": 5
+        },
+        "result": [
+          {
+            "id": "ChIJGeYDXX9JZTURsFJQxqnBPws",
+            "types": [
+              "tourist_attraction",
+              "botanical_garden",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "169 Dunsan-daero, Seo-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Hanbat Arboretum",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJXWJF3WFOZTURTmrtYDD54Nk",
+            "types": [
+              "tourist_attraction",
+              "amusement_center",
+              "amusement_park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "70 Sajeonggongwon-ro, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon O-World",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ9aXvG9lIZTURw9DlYapcrb0",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "48-14 Eunhaeng-dong, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon walking street",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJtSfCqdlIZTURm6bWh6op6fU",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Jungang-ro 164beon-gil, 은행선화동 Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Skyroad",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJOXvOnYhJZTURfBbbv4D8ie8",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "480 Daedeok-daero, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Expo Science Park",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_2",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T06:18:01.027123",
+      "content": {
+        "tool_id": "9",
+        "tool_name": "gs_search",
+        "inputs": {
+          "query": "거길동 취향"
+        },
+        "result": [
+          {
+            "kind": "customsearch#result",
+            "title": "강동구 길동 여우손톱에서 취향저격 빨간 네일아트 너무 예뻐! : 네이버 ...",
+            "htmlTitle": "강동구 <b>길동</b> 여우손톱에서 <b>취향</b>저격 빨간 네일아트 너무 예뻐! : 네이버 ...",
+            "link": "https://blog.naver.com/wind131313/222598463798",
+            "displayLink": "blog.naver.com",
+            "snippet": "Dec 18, 2021 ... 갑자기 너무 추워진 거 있죠...(이게 무슨일이야..) 손도 트고 하얗게 일어나는 큐티클들... 오랜만에 저는 네일아트를 받으러 갔습니다. 대략 기억이 ...",
+            "htmlSnippet": "Dec 18, 2021 <b>...</b> 갑자기 너무 추워진 <b>거</b> 있죠...(이게 무슨일이야..) 손도 트고 하얗게 일어나는 큐티클들... 오랜만에 저는 네일아트를 받으러 갔습니다. 대략 기억이&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/wind131313/222598463798",
+            "htmlFormattedUrl": "https://blog.naver.com/wind131313/222598463798",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLecvQTFKOOftiKZeSUH-rWJ2qpWtxabCA-8cy5oaeiOKy3-pxRqxTeWj&s",
+                  "width": "194",
+                  "height": "259"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMTEyMTdfMzEg/MDAxNjM5NzQxOTYxNjI2.kGWcXvgmcOP_4cwyiKu-zV_e1PsBNBrpZxmlbvZd3_8g.CB_VjMaE3Z4hMczILz-5MFrDzOH2if7HD5g_1hIhAucg.JPEG.wind131313/20211217%A3%DF175803.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 소다로그:-)",
+                  "og:title": "강동구 길동 여우손톱에서 취향저격 빨간 네일아트 너무 예뻐!",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMTExMjVfMTc3/MDAxNjM3ODM0MTg4OTU1.s_W11VFosuw36STmAqOChr8j1ITBv5tw4MwSIon9XY4g.sAX4NK9VGF7rfPMBYcY20YJo9jbjIfqwFvqdfbwE5j0g.JPEG.wind131313/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033D3E70136,service=blog,collection=blog",
+                  "og:description": "갑자기 너무 추워진 거 있죠...(이게 무슨일이야..) 손도 트고 하얗게 일어나는 큐티클들... 오랜만에 저는...",
+                  "referrer": "always",
+                  "naverblog:nickname": "소다닷",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/wind131313/222598463798",
+                  "og:article:author": "소다로그:-.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://blogthumb.pstatic.net/MjAyMTEyMTdfMzEg/MDAxNjM5NzQxOTYxNjI2.kGWcXvgmcOP_4cwyiKu-zV_e1PsBNBrpZxmlbvZd3_8g.CB_VjMaE3Z4hMczILz-5MFrDzOH2if7HD5g_1hIhAucg.JPEG.wind131313/20211217%A3%DF175803.jpg?type=w2"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! 길동이네 고구마 ...",
+            "htmlTitle": "아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! <b>길동</b>이네 고구마 ...",
+            "link": "https://www.threads.com/@issac_37/post/DG91ENPyi4I/%EC%95%84%EB%8B%88%EC%96%8C-%EC%96%B4%EC%A0%9C-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EA%B5%AC%EC%9B%8C%EB%A8%B9%EC%97%88%EB%8A%94%EB%8D%B0-%EB%84%88%EB%AC%B4-%EB%A7%9B%EC%9D%B4-%EC%A2%8B%EC%95%84-%EA%B8%B8%EB%8F%99%EC%9D%B4%EB%84%A4-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EC%99%84%EC%A0%84-%EB%82%B4-%EC%B7%A8%ED%96%A5%EC%9D%B4%EC%95%BC-%EA%B3%84%EC%86%8D-%EB%A7%9B%EC%9E%88%EB%8A%94-%EA%B3%A0%EA%B5%AC%EB%A7%88-%ED%8C%94%EC%95%84%EC%A4%98-%EC%95%8C%EA%B2%A0%EC%A7%80",
+            "displayLink": "www.threads.com",
+            "snippet": "Mar 8, 2025 ... 이삭 (@issac_37). 1 Reply. 137 Views. 아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! 길동이네 고구마 완전 내 취향이야~ 계속 맛있는 ...",
+            "htmlSnippet": "Mar 8, 2025 <b>...</b> 이삭 (@issac_37). 1 Reply. 137 Views. 아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! <b>길동</b>이네 고구마 완전 내 <b>취향</b>이야~ 계속 맛있는&nbsp;...",
+            "formattedUrl": "https://www.threads.com/.../아니얌-어제-고구마-구워먹었는데-너무-맛이-...",
+            "htmlFormattedUrl": "https://www.threads.com/.../아니얌-어제-고구마-구워먹었는데-너무-맛이-...",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOUsMKVGNQRbkQWl69DEFWRiV7kyykPEJnqWZ4NMxoHe54yhZFYSZv6g&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=6446901002, app-argument=barcelona://media?shortcode=DG91ENPyi4I",
+                  "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/issac_37/profile_pic.jpg",
+                  "og:type": "article",
+                  "twitter:card": "summary",
+                  "twitter:title": "이삭 (@issac_37) on Threads",
+                  "theme-color": "#FFFFFF",
+                  "og:site_name": "Threads",
+                  "al:ios:app_name": "Threads",
+                  "app-title": "Threads",
+                  "og:title": "이삭 (@issac_37) on Threads",
+                  "al:android:package": "com.instagram.barcelona",
+                  "bingbot": "noarchive",
+                  "al:ios:url": "barcelona://media?shortcode=DG91ENPyi4I",
+                  "color-scheme": "light",
+                  "og:description": "이삭 (@issac_37). 1 Reply. 137 Views. 아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! 길동이네 고구마 완전 내 취향이야~ \n계속 맛있는 고구마 팔아줘~ 알겠지?",
+                  "al:ios:app_store_id": "6446901002",
+                  "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/threads/issac_37/profile_pic.jpg",
+                  "al:android:url": "https://www.threads.com/@issac_37/post/DG91ENPyi4I/%EC%95%84%EB%8B%88%EC%96%8C-%EC%96%B4%EC%A0%9C-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EA%B5%AC%EC%9B%8C%EB%A8%B9%EC%97%88%EB%8A%94%EB%8D%B0-%EB%84%88%EB%AC%B4-%EB%A7%9B%EC%9D%B4-%EC%A2%8B%EC%95%84-%EA%B8%B8%EB%8F%99%EC%9D%B4%EB%84%A4-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EC%99%84%EC%A0%84-%EB%82%B4-%EC%B7%A8%ED%96%A5%EC%9D%B4%EC%95%BC-%EA%B3%84%EC%86%8D-%EB%A7%9B%EC%9E%88%EB%8A%94-%EA%B3%A0%EA%B5%AC%EB%A7%88-%ED%8C%94%EC%95%84%EC%A4%98-%EC%95%8C%EA%B2%A0%EC%A7%80",
+                  "referrer": "origin-when-crossorigin",
+                  "viewport": "width=device-width, viewport-fit=cover, initial-scale=1, maximum-scale=1, shrink-to-fit=no",
+                  "twitter:description": "이삭 (@issac_37). 1 Reply. 137 Views. 아니얌!! 어제 고구마 구워먹었는데 너무 맛이 좋아!!! 길동이네 고구마 완전 내 취향이야~ \n계속 맛있는 고구마 팔아줘~ 알겠지?",
+                  "og:url": "https://www.threads.com/@issac_37/post/DG91ENPyi4I/%EC%95%84%EB%8B%88%EC%96%8C-%EC%96%B4%EC%A0%9C-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EA%B5%AC%EC%9B%8C%EB%A8%B9%EC%97%88%EB%8A%94%EB%8D%B0-%EB%84%88%EB%AC%B4-%EB%A7%9B%EC%9D%B4-%EC%A2%8B%EC%95%84-%EA%B8%B8%EB%8F%99%EC%9D%B4%EB%84%A4-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EC%99%84%EC%A0%84-%EB%82%B4-%EC%B7%A8%ED%96%A5%EC%9D%B4%EC%95%BC-%EA%B3%84%EC%86%8D-%EB%A7%9B%EC%9E%88%EB%8A%94-%EA%B3%A0%EA%B5%AC%EB%A7%88-%ED%8C%94%EC%95%84%EC%A4%98-%EC%95%8C%EA%B2%A0%EC%A7%80",
+                  "al:android:app_name": "Threads"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.fbsbx.com/lookaside/crawler/threads/issac_37/profile_pic.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "[이태원/한남] 취향들이 섞여 더 멋진 음악 아지트 _ 뮤직바 넘 NUMB ...",
+            "htmlTitle": "[이태원/한남] <b>취향</b>들이 섞여 더 멋진 음악 아지트 _ 뮤직바 넘   NUMB ...",
+            "link": "https://blog.naver.com/wjddbs02010/222517278537",
+            "displayLink": "blog.naver.com",
+            "snippet": "Sep 26, 2021 ... 길동이랑 신기할정도로 취향이 비슷할 때가 많다. 내가 어! 하고 걸음 ... 지금은 보드카 쳐다도 안 보는거 개신기.. 갑자기 tmi 뿌리기ㅋ ...",
+            "htmlSnippet": "Sep 26, 2021 <b>...</b> <b>길동</b>이랑 신기할정도로 <b>취향</b>이 비슷할 때가 많다. 내가 어!   하고 걸음 ... 지금은 보드카 쳐다도 안 보는<b>거</b> 개신기.. 갑자기 tmi 뿌리기ㅋ&nbsp;...",
+            "formattedUrl": "https://blog.naver.com/wjddbs02010/222517278537",
+            "htmlFormattedUrl": "https://blog.naver.com/wjddbs02010/222517278537",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBb8TAsUC6-7gWzW-7BX8BDMYo_2602wQKEHehsLNEBkxX9Rpd5kGucJB&s",
+                  "width": "259",
+                  "height": "194"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyMTA5MjZfMjkx/MDAxNjMyNjI3ODA0Mzc3.Hqxy810g1Y0p8_HcnZGo0nYqwJViiXy0P2GWQWyhGs8g.ffRUwSLbm1ytrx1Sg7-vz_33h4RBlgdPZhGew4HjsYwg.JPEG.wjddbs02010/P20210904_192903233_995130DC-F6E8-452A-A6C6-52512825DC19.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | ✨New Perspective✨",
+                  "og:title": "[이태원/한남] 취향들이 섞여 더 멋진 음악 아지트 _ 뮤직바 넘♪ NUMB♪",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyMjA3MjJfMTgw/MDAxNjU4NDIyMzY2NDk1.ly4XybMr3OxeKDCbeQmcnAXj5hj4qRYWw0rOxBNR0a0g.JK6US6xT8Ckcpo1DaofaY_3t22bSdFz7nMTb7e98xOkg.PNG.wjddbs02010/profileImage.png?type=s1",
+                  "napp-site-analysis": "gdid=90000003_0000000000000033CF103749,service=blog,collection=blog",
+                  "og:description": "모두의 취향이 섞여 만들어진 멋진 공간, 그곳에서 보낸 멋진 시간 MUSIC BAR NUMB ♪ 한남동 ...",
+                  "referrer": "always",
+                  "naverblog:nickname": "최배추",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/wjddbs02010/222517278537",
+                  "og:article:author": "✨New Pe.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyMTA5MjZfMzAw/MDAxNjMyNjI3Nzg1MTYy.b1NgUwsrpiXyZ6McVYCz9EyOrJVj8-d5iSXFfeUbmQ4g.hyZ2_gJe5K3-OeRBgBbslr9oR7X4_e2Y-Eg0JCBwUyEg.JPEG.wjddbs02010/SE-cd08a803-c1c7-4d48-923f-e24dd6dcec38.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "길동 복조리시장 맛집 주차 쇼핑목록 추천 가게 : 네이버 블로그",
+            "htmlTitle": "<b>길동</b> 복조리시장 맛집 주차 쇼핑목록 추천 가게 : 네이버 블로그",
+            "link": "https://m.blog.naver.com/hasongart/223401037455",
+            "displayLink": "m.blog.naver.com",
+            "snippet": "Mar 31, 2024 ... ... 거 같아요. 고기도 좋고 저렴합니다. 계란도 함께 파는곳있고 왕란 ... 떡집이 여러군데 있는데 개인취향이지만 저는 길동 복조리시장 한양떡집 ...",
+            "htmlSnippet": "Mar 31, 2024 <b>...</b> ... <b>거</b> 같아요. 고기도 좋고 저렴합니다. 계란도 함께 파는곳있고 왕란 ... 떡집이 여러군데 있는데 개인<b>취향</b>이지만 저는 <b>길동</b> 복조리시장 한양떡집&nbsp;...",
+            "formattedUrl": "https://m.blog.naver.com/hasongart/223401037455",
+            "htmlFormattedUrl": "https://m.blog.naver.com/hasongart/223401037455",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZWcecunCAk4O95JfIATbOeiQKp5Qfe1888JhWz3xH33A-UNMgJoHl5M&s",
+                  "width": "225",
+                  "height": "225"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://blogthumb.pstatic.net/MjAyNDAzMzFfNzgg/MDAxNzExODY1NjE4ODM5.SaKK8DmK4yPbbQb74xV2k6nLTfe5JmTw_KA_ffNPJ_4g.ADvtLtXnLSdqTDfL5MaKL3jXoN-1gP2qxiuyEBQRj7cg.JPEG/1711865443161.jpg?type=w2",
+                  "og:type": "article",
+                  "og:site_name": "네이버 블로그 | 꿈꾸는 라라하",
+                  "og:title": "길동 복조리시장 맛집 주차 쇼핑목록 추천 가게",
+                  "naverblog:profile_image": "https://blogpfthumb-phinf.pstatic.net/MjAyNDAxMDRfMTEx/MDAxNzA0Mzc1NDk4OTY4.U4RhEiqEHpCZrbxB5iGX4C_USmzlS2fKPipRGPkOvbog.p5AlGTqMwXSL8d3m-evZfQf7XnEoLv_dnZe2TkaEPjYg.JPEG.hasongart/profileImage.jpg?type=s1",
+                  "napp-site-analysis": "gdid=90000003_000000000000003403BD4E8F,service=blog,collection=blog",
+                  "og:description": "#길동시장 #길동복조리시장 #복조리시장 #길동복조리시장주차 #길동복조리시장맛집 #멘야세븐 #길동마제소...",
+                  "referrer": "always",
+                  "naverblog:nickname": "라라하",
+                  "me:feed:serviceid": "blog",
+                  "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+                  "og:url": "https://blog.naver.com/hasongart/223401037455",
+                  "og:article:author": "꿈꾸는 라.. | 블로그",
+                  "format-detection": "telephone=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://mblogthumb-phinf.pstatic.net/MjAyNDAzMzFfNzgg/MDAxNzExODY1NjE4ODM5.SaKK8DmK4yPbbQb74xV2k6nLTfe5JmTw_KA_ffNPJ_4g.ADvtLtXnLSdqTDfL5MaKL3jXoN-1gP2qxiuyEBQRj7cg.JPEG/1711865443161.jpg?type=w800"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "朝露아침이슬 على X: \"제 취향으로선 건개때 칠판앞에서 선을 끈 ...",
+            "htmlTitle": "朝露아침이슬 على X: &quot;제 <b>취향</b>으로선 건개때 칠판앞에서 선을 끈 ...",
+            "link": "https://x.com/achimisuru/status/869001546909982720?lang=ar-x-fm",
+            "displayLink": "x.com",
+            "snippet": "May 29, 2017 ... 제 취향으로선 건개때 칠판앞에서 선을 끈 옆모습이 아직도 최고 인데요. 생각해보니 길동에서 제훈이 옆모습 잘 살린거 많네요.",
+            "htmlSnippet": "May 29, 2017 <b>...</b> 제 <b>취향</b>으로선 건개때 칠판앞에서 선을 끈 옆모습이 아직도 최고 인데요. 생각해보니 <b>길동</b>에서 제훈이 옆모습 잘 살린<b>거</b> 많네요.",
+            "formattedUrl": "https://x.com/achimisuru/status/869001546909982720?lang=ar-x-fm",
+            "htmlFormattedUrl": "https://x.com/achimisuru/status/869001546909982720?lang=ar-x-fm",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZLhFaIiybrt-QTCfkdIAF_SveyIqBmRgabf7qA42PP0u1bMmSvO3Yjs&s",
+                  "width": "200",
+                  "height": "200"
+                }
+              ],
+              "imageobject": [
+                {
+                  "contenturl": "https://pbs.twimg.com/media/DA17fVfV0AA5NJN.jpg",
+                  "width": "840",
+                  "caption": "الصورة",
+                  "thumbnailurl": "https://pbs.twimg.com/media/DA17fVfV0AA5NJN?format=jpg&name=thumb"
+                },
+                {
+                  "contenturl": "https://pbs.twimg.com/media/DA17fVhUQAArAGd.jpg",
+                  "width": "840",
+                  "caption": "الصورة",
+                  "thumbnailurl": "https://pbs.twimg.com/media/DA17fVhUQAArAGd?format=jpg&name=thumb"
+                },
+                {
+                  "contenturl": "https://pbs.twimg.com/media/DA17fVcV0AAAKFS.jpg",
+                  "width": "840",
+                  "caption": "الصورة",
+                  "thumbnailurl": "https://pbs.twimg.com/media/DA17fVcV0AAAKFS?format=jpg&name=thumb"
+                },
+                {
+                  "contenturl": "https://pbs.twimg.com/media/DA17fViUMAAsqOd.jpg",
+                  "width": "840",
+                  "caption": "الصورة",
+                  "thumbnailurl": "https://pbs.twimg.com/media/DA17fViUMAAsqOd?format=jpg&name=thumb"
+                }
+              ],
+              "person": [
+                {
+                  "identifier": "193936760",
+                  "givenname": "朝露아침이슬",
+                  "additionalname": "achimisuru"
+                }
+              ],
+              "interactioncounter": [
+                {
+                  "userinteractioncount": "559",
+                  "interactiontype": "https://schema.org/FollowAction",
+                  "name": "Likes"
+                },
+                {
+                  "userinteractioncount": "419",
+                  "interactiontype": "https://schema.org/SubscribeAction",
+                  "name": "Retweets"
+                },
+                {
+                  "userinteractioncount": "44724",
+                  "interactiontype": "https://schema.org/LikeAction",
+                  "name": "Quotes"
+                },
+                {
+                  "userinteractioncount": "0",
+                  "interactiontype": "https://schema.org/LikeAction",
+                  "name": "Likes",
+                  "url": "https://twitter.com/achimisuru/status/869001546909982720/likes"
+                },
+                {
+                  "userinteractioncount": "0",
+                  "interactiontype": "https://schema.org/InteractAction",
+                  "name": "Retweets",
+                  "url": "https://twitter.com/achimisuru/status/869001546909982720/retweets"
+                },
+                {
+                  "userinteractioncount": "0",
+                  "interactiontype": "https://schema.org/InteractAction",
+                  "name": "Quotes",
+                  "url": "https://twitter.com/achimisuru/status/869001546909982720/retweets/with_comments"
+                },
+                {
+                  "userinteractioncount": "0",
+                  "interactiontype": "https://schema.org/InteractAction",
+                  "name": "Replies",
+                  "url": "https://twitter.com/achimisuru/status/869001546909982720"
+                }
+              ],
+              "metatags": [
+                {
+                  "apple-itunes-app": "app-id=333903271",
+                  "og:image": "https://pbs.twimg.com/profile_images/1581569454529736704/zDd_Gy2T_200x200.jpg",
+                  "theme-color": "#FFFFFF",
+                  "og:type": "article",
+                  "og:site_name": "X (formerly Twitter)",
+                  "al:ios:app_name": "X",
+                  "apple-mobile-web-app-title": "Twitter",
+                  "og:title": "朝露아침이슬 (@achimisuru) على X",
+                  "al:android:package": "com.twitter.android",
+                  "al:ios:url": "twitter://status?id=869001546909982720",
+                  "title": "朝露아침이슬 (@achimisuru) على X",
+                  "og:description": "제 취향으로선 건개때  칠판앞에서 선을 끈 옆모습이 아직도 최고 인데요. 생각해보니 길동에서 제훈이 옆모습 잘 살린거 많네요. https://t.co/PxFGMZqgVf",
+                  "al:ios:app_store_id": "333903271",
+                  "facebook-domain-verification": "x6sdcc8b5ju3bh8nbm59eswogvg6t1",
+                  "al:android:url": "twitter://status?id=869001546909982720",
+                  "fb:app_id": "2231777543",
+                  "apple-mobile-web-app-status-bar-style": "white",
+                  "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://x.com/achimisuru/status/869001546909982720?lang=ar-x-fm",
+                  "al:android:app_name": "X"
+                }
+              ],
+              "collection": [
+                {
+                  "name": "نشر مع الردود"
+                }
+              ],
+              "creativework": [
+                {
+                  "name": "Expanded Tweet URLs",
+                  "url": "https://t.co/PxFGMZqgVf"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://pbs.twimg.com/profile_images/1581569454529736704/zDd_Gy2T_200x200.jpg"
+                }
+              ],
+              "socialmediaposting": [
+                {
+                  "identifier": "869001546909982720",
+                  "commentcount": "0",
+                  "articlebody": "제 취향으로선 건개때 칠판앞에서 선을 끈 옆모습이 아직도 최고 인데요. 생각해보니 길동에서 제훈이 옆모습 잘 살린거 많네요.ترجمة المنشور",
+                  "position": "1",
+                  "datecreated": "2017-05-29T01:24:48.000Z",
+                  "isbasedon": "https://twitter.com/jehoon_useless/status/868486100418928641",
+                  "datepublished": "2017-05-29T01:24:48.000Z",
+                  "url": "https://twitter.com/achimisuru/status/869001546909982720",
+                  "mainentityofpage": "https://twitter.com/achimisuru/status/869001546909982720"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "아이보리나 검정은 무난한거 같아서 카키를 샀는데요 카라부분이 빨강 ...",
+            "htmlTitle": "아이보리나 검정은 무난한<b>거</b> 같아서 카키를 샀는데요 카라부분이 빨강 ...",
+            "link": "https://gildongsangsa.com/article/review/4/106037/",
+            "displayLink": "gildongsangsa.com",
+            "snippet": "상품에 만족하셨다니 저희도 너무 기분좋네요 :)예쁘게 입어주시구요 앞으로도 더 좋은 상품 많이 보여드릴테니저희 길동상사 많이 사랑해주세요♡즐거운 하루 보내세요!!",
+            "htmlSnippet": "상품에 만족하셨다니 저희도 너무 기분좋네요 :)예쁘게 입어주시구요 앞으로도 더 좋은 상품 많이 보여드릴테니저희 <b>길동</b>상사 많이 사랑해주세요♡즐거운 하루 보내세요!!",
+            "formattedUrl": "https://gildongsangsa.com/article/review/4/106037/",
+            "htmlFormattedUrl": "https://gildongsangsa.com/article/review/4/106037/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsNBk3YJtNIj37XsC_1EHKWpOa1d6WpMxIqXji--Dgr7XAQKpW0cdFEjmj&s",
+                  "width": "194",
+                  "height": "259"
+                }
+              ],
+              "organization": [
+                {
+                  "url": "https://gildongsangsa.com/"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:type": "article",
+                  "og:site_name": "길동상사",
+                  "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes",
+                  "og:title": "아이보리나 검정은 무난한거 같아서 카키를 샀는데요 카라부분이 빨강색이라서 포인트REVIEW - 길동상사",
+                  "design_html_path": "/board/product/read.html",
+                  "og:url": "https://gildongsangsa.com/article/review/4/106037/",
+                  "path_role": "BOARD_PRODUCT_DETAIL",
+                  "og:description": "상품 사용후기입니다."
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://cafe24.poxo.com/ec01/gildongsangsa/VkFWTPAzMrEzqU6J/kWsed6UXhMrWxOXN7KHzKUJzNocpI19TbHgEKDpKpZYWDmlwrFA7YRZQIaYoy2FXC3xbg==/_/file_data/gildongsangsa/2022/08/30/286ad0b0c3829ff8de4e10b5c0e4b195.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "취향 코드 출력소 프린팅박스",
+            "htmlTitle": "<b>취향</b> 코드 출력소 프린팅박스",
+            "link": "http://printingbox.kr/",
+            "displayLink": "printingbox.kr",
+            "snippet": "세상 모든 취향을 출력하다.",
+            "htmlSnippet": "세상 모든 <b>취향</b>을 출력하다.",
+            "formattedUrl": "http://printingbox.kr/",
+            "htmlFormattedUrl": "http://printingbox.kr/",
+            "pagemap": {
+              "organization": [
+                {
+                  "url": "https://printingbox.kr/",
+                  "sameas": "https://www.facebook.com/myfacebook"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://printingbox.kr/assets/images/new_share.png",
+                  "og:type": "website",
+                  "og:image:width": "1200",
+                  "twitter:card": "summary_large_image",
+                  "twitter:title": "취향 코드 출력소 프린팅박스",
+                  "og:site_name": "인쇄와 인화도 프린팅박스",
+                  "twitter:url": "https://printingbox.kr",
+                  "author": "(주)프린팅박스",
+                  "og:title": "취향 코드 출력소 프린팅박스",
+                  "og:image:type": "image/png",
+                  "title": "취향 코드 출력소 프린팅박스",
+                  "og:description": "세상 모든 취향을 출력하다",
+                  "twitter:image": "https://printingbox.kr/assets/images/new_share.png",
+                  "twitter:image:src": "https://printingbox.kr/assets/images/new_share.png",
+                  "naver-site-verification": "074ba331c79de231f98b1c9778cb58ffca1a49a9",
+                  "viewport": "width=device-width, initial-scale=1.0",
+                  "twitter:description": "세상 모든 취향을 출력하다",
+                  "og:locale": "ko_KR",
+                  "keyword": "프링팅박스,사진인화,사진출력,증명사진,여권사진,정부24",
+                  "og:url": "https://printingbox.kr"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://printingbox.kr/assets/images/new_share.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "길동상사 ❤︎ 의류•뷰티•리빙•일상 | 저의 뉴 붕붕이를 소개합니다 ...",
+            "htmlTitle": "<b>길동</b>상사 ❤︎ 의류•뷰티•리빙•일상 | 저의 뉴 붕붕이를 소개합니다 ...",
+            "link": "https://www.instagram.com/p/DIv60hMJ0Ew/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Apr 22, 2025 ... ... 거 보니 베이지로 하길 넘 잘한거같아요 히히 오빠 고마워 내가 더 잘 ... 취향에 관계없이 어느 인테리어에나 어울리는 깔끔하고 심플한 ...",
+            "htmlSnippet": "Apr 22, 2025 <b>...</b> ... <b>거</b> 보니 베이지로 하길 넘 잘한거같아요   히히 오빠 고마워 내가 더 잘 ... <b>취향</b>에 관계없이 어느 인테리어에나 어울리는 깔끔하고 심플한&nbsp;...",
+            "formattedUrl": "https://www.instagram.com/p/DIv60hMJ0Ew/",
+            "htmlFormattedUrl": "https://www.instagram.com/p/DIv60hMJ0Ew/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV5Zm-9nDq09oIArv04uNLAIIjUXs-OxwZwFzzvE_LvHHnJAZ-SDCbxAo&s",
+                  "width": "201",
+                  "height": "251"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.75761-15/491463051_18502334986055482_641552274323912931_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=C4LY90efWbcQ7kNvwHdTuay&_nc_oc=Adli42YvqyWGtaeeXS851Wg8apExlWJBI_dotRrPB3cbcUA8tog26Sx_0Ti8olcVxrc&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=li1BU_hU1by27q5GP4iW-w&oh=00_AfFvUKxItiloJ3hFnI-EoQZMHzGYuIfJtKxEHEmC273B7w&oe=680D5918",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=3616367732631008222",
+                  "og:description": "jwjw0317 on April 22, 2025: \"저의 뉴 붕붕이를 소개합니다☺️\n끄악 너무 예쁘잖아요!🖤🖤🖤\n\n파나메라, 레인지로버SV랑 엄청 고민하다가\n결국 타이칸으로 결정했어요!\n전기차 타다보니 전기차가 조용하고 주유소 안가도 되서\n저는 너무 편하더라고요ㅋㅋㅋㅋㅋ\n아니 그냥 타이칸이 넘 예뻤어요?🤣\n시트도 베이지시트랑 레드시트 오백만번 고민했어요\n사실 레드로 계약 다 해놓고\n아무리 봐도 헤드가 블랙인게 넘 안예뻐서\n결국 베이지로 바꿨답니다..ㅋㅋㅋㅋㅋㅋ\n나온거 보니 베이지로 하길 넘 잘한거같아요🤍 히히\n \n오빠 고마워 내가 더 잘할게..🫶🏻 (잔소리 견뎌…..)\".",
+                  "twitter:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.75761-15/491463051_18502334986055482_641552274323912931_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=C4LY90efWbcQ7kNvwHdTuay&_nc_oc=Adli42YvqyWGtaeeXS851Wg8apExlWJBI_dotRrPB3cbcUA8tog26Sx_0Ti8olcVxrc&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=li1BU_hU1by27q5GP4iW-w&oh=00_AfFvUKxItiloJ3hFnI-EoQZMHzGYuIfJtKxEHEmC273B7w&oe=680D5918",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "474295481",
+                  "og:type": "article",
+                  "twitter:title": "길동상사 ❤︎ 의류•뷰티•리빙•일상 (@jwjw0317) • Instagram photos and videos",
+                  "al:ios:app_name": "Instagram",
+                  "og:title": "길동상사 ❤︎ 의류•뷰티•리빙•일상 on Instagram: \"저의 뉴 붕붕이를 소개합니다☺️\n끄악 너무 예쁘잖아요!🖤🖤🖤\n\n파나메라, 레인지로버SV랑 엄청 고민하다가\n결국 타이칸으로 결정했어요!\n전기차 타다보니 전기차가 조용하고 주유소 안가도 되서\n저는 너무 편하더라고요ㅋㅋㅋㅋㅋ\n아니 그냥 타이칸이 넘 예뻤어요?🤣\n시트도 베이지시트랑 레드시트 오백만번 고민했어요\n사실 레드로 계약 다 해놓고\n아무리 봐도 헤드가 블랙인게 넘 안예뻐서\n결국 베이지로 바꿨답니다..ㅋㅋㅋㅋㅋㅋ\n나온거 보니 베이지로 하길 넘 잘한거같아요🤍 히히\n \n오빠 고마워 내가 더 잘할게..🫶🏻 (잔소리 견뎌…..)\"",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/DIv60rgp_Pe/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/DIv60rgp_Pe/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3616362633967879041"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "대통령 비서실장이 된 51세 임길동 | 중앙일보",
+            "htmlTitle": "대통령 비서실장이 된 51세 임<b>길동</b> | 중앙일보",
+            "link": "https://www.joongang.co.kr/article/21560398",
+            "displayLink": "www.joongang.co.kr",
+            "snippet": "May 10, 2017 ... 취향저격한 구독 상품을 한눈에 모아보고 알림받는 내구독; 북마크한 ... 것”이라고 말했다. 임 비서실장은 \"(문재인 대통령을) 성심으로 모시되 ...",
+            "htmlSnippet": "May 10, 2017 <b>...</b> <b>취향</b>저격한 구독 상품을 한눈에 모아보고 알림받는 내구독; 북마크한 ... 것”이라고 말했다. 임 비서실장은 &quot;(문재인 대통령을) 성심으로 모시되&nbsp;...",
+            "formattedUrl": "https://www.joongang.co.kr/article/21560398",
+            "htmlFormattedUrl": "https://www.joongang.co.kr/article/21560398",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymFAsxyGvL5qv6lpZtaMuv7csHjASCrS4EO3UIoZljSPPptT2YpziB6g&s",
+                  "width": "310",
+                  "height": "163"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://img.joongang.co.kr/pubimg/share/ja-opengraph-img.png",
+                  "og:image:width": "1200",
+                  "article:published_time": "2017-05-10T17:36:18+09:00",
+                  "twitter:card": "summary_large_image",
+                  "theme-color": "#ffffff",
+                  "og:site_name": "중앙일보",
+                  "title": "대통령 비서실장이 된 51세 임길동 | 중앙일보",
+                  "og:description": "문재인 정부 초대 대통령 비서실장으로 발탁된 임종석 전 의원은 1980년대 ‘운동권 스타’출신이다.\n그의 발탁을 두고 문 대통령은 10일 “젊은 청와대, 역동적이고 군림하지 않은 청와대로의 변화”라며 “참모들끼리 치열하게 토론하고 열정적으로 일하는 청와대로 바뀔 것”이라고 말했다.\n하지만 자유한국당 정준길",
+                  "og:image:secure_url": "https://img.joongang.co.kr/pubimg/share/ja-opengraph-img.png",
+                  "article:publisher": "https://www.joongang.co.kr",
+                  "article:section2": "정치",
+                  "article:section3": "정치일반",
+                  "news_keywords": "임종석,후보 비서실장,신임 비서실장,정치자금법 위반",
+                  "msapplication-tilecolor": "#F6330A",
+                  "og:type": "article",
+                  "article:section": "중앙일보",
+                  "twitter:title": "대통령 비서실장이 된 51세 임길동 | 중앙일보",
+                  "author": "최민우",
+                  "dable:item_id": "21560398",
+                  "moka:recentud": "2025-03-06 09:49:40",
+                  "og:title": "대통령 비서실장이 된 51세 임길동 | 중앙일보",
+                  "fb:pages": "306376056509633,155192444524300",
+                  "article:author": "https://www.joongang.co.kr",
+                  "twitter:image:src": "https://img.joongang.co.kr/pubimg/share/ja-opengraph-img.png",
+                  "facebook-domain-verification": "ademavch7lxvqx7mnvjjutqc4ymh4v",
+                  "referrer": "no-referrer-when-downgrade",
+                  "fb:app_id": "1011513095546498",
+                  "dable:author": "최민우",
+                  "viewport": "width=device-width, initial-scale=1.0",
+                  "twitter:description": "문재인 정부 초대 대통령 비서실장으로 발탁된 임종석 전 의원은 1980년대 ‘운동권 스타’출신이다.\n그의 발탁을 두고 문 대통령은 10일 “젊은 청와대, 역동적이고 군림하지 않은 청와대로의 변화”라며 “참모들끼리 치열하게 토론하고 열정적으로 일하는 청와대로 바뀔 것”이라고 말했다.\n하지만 자유한국당 정준길",
+                  "og:locale": "ko_KR",
+                  "dable:image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201705/10/acd3b5e1-8cfc-4dba-93a8-0772595e846d.jpg",
+                  "og:url": "https://www.joongang.co.kr/article/21560398",
+                  "published_date": "2017-05-10T17:36:18+09:00",
+                  "format-detection": "telephone=no, address=no, email=no"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://img.joongang.co.kr/pubimg/share/ja-opengraph-img.png"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "customsearch#result",
+            "title": "@hyofood_ | 길동우동 봉담점 추운날 집나간 입맛도 돌아오게 할 ...",
+            "htmlTitle": "@hyofood_ | <b>길동</b>우동 봉담점   추운날 집나간 입맛도 돌아오게 할 ...",
+            "link": "https://www.instagram.com/hyofood_/p/DFy4GzCS5-w/",
+            "displayLink": "www.instagram.com",
+            "snippet": "Feb 7, 2025 ... ... 취향껏 고추가루 팍팍 뿌려 먹으면 또 다른 매력으로 즐길 수 있어요 ... 유명한 기네스 나이트로 서지 패키지가 아시아 최초로 국내에서 판매하는 거 알고 ...",
+            "htmlSnippet": "Feb 7, 2025 <b>...</b> ... <b>취향</b>껏 고추가루 팍팍 뿌려 먹으면 또 다른 매력으로 즐길 수 있어요 ... 유명한 기네스 나이트로 서지 패키지가 아시아 최초로 국내에서 판매하는 <b>거</b> 알고&nbsp;...",
+            "formattedUrl": "https://www.instagram.com/hyofood_/p/DFy4GzCS5-w/",
+            "htmlFormattedUrl": "https://www.instagram.com/hyofood_/p/DFy4GzCS5-w/",
+            "pagemap": {
+              "cse_thumbnail": [
+                {
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bZoc5YbM9snsLhFXGRuxGmGVS_XyNk7Ahm3tbyuYci08rpclMAE71GM&s",
+                  "width": "201",
+                  "height": "251"
+                }
+              ],
+              "metatags": [
+                {
+                  "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.75761-15/476879371_18018713765666454_2185715981380284738_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=pr7vq_78afQQ7kNvwGCaQ-L&_nc_oc=AdlK1q9wEI6YySPEitUmRYm1RQJCVDWWs8aOPVmmUmz2WFeGzhYJf6t-SDDiqBSiwLs&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=iTWRiIYormVdESnDx8JpUQ&oh=00_AfHAFZX57oJT00qPC2r6qrOQvPxafB9sDqXT_N0i95ilMg&oe=680F10E1",
+                  "theme-color": "#FFFFFF",
+                  "twitter:card": "summary_large_image",
+                  "og:site_name": "Instagram",
+                  "al:android:package": "com.instagram.android",
+                  "bingbot": "noarchive",
+                  "medium": "image",
+                  "al:ios:url": "instagram://media?id=3563157012924309424",
+                  "og:description": "150 likes, 62 comments - hyofood_ on February 7, 2025: \"💕길동우동 봉담점💕\n\n추운날 집나간 입맛도 돌아오게 할 뜨끈한 우동 맛집👍\n길동우동 봉담점에 다녀왔어요.🥰\n집 근처에 있어서 밥 하기 싫거나 입맛 없을 때 남편과 자주 가는 곳이에요.\n\n주문하는 메뉴가 늘 똑같은데 남편은 왕돈까스, 저는 우동+김밥세트 주문해서 나눠먹어요.\n\n왕돈까스는 진짜 크키가 왕~~👍👍 둘이서도 몇 조각 남길정도로 양이 많은데 바로 튀겨서 주시니 바삭바삭한 맛이 살아있어 더욱더 맛나더라고요.💓💓 찍먹으로 소스를 따로 주셔서 끝까지 바삭함이 유지되니 넘 맛있어요.❤️ \n\n우동은 우동 전문점 답게 깔끔하고 쫄깃한 면발이 아주 매력적이에요. 국물이 딱 깔끔하고 시원한데 취향껏 고추가루 팍팍 뿌려 먹으면 또 다른 매력으로 즐길 수 있어요. 여기에 담백하고 감칠맛 나는 김밥까지 조",
+                  "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.75761-15/476879371_18018713765666454_2185715981380284738_n.jpg?stp=c288.0.864.864a_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=pr7vq_78afQQ7kNvwGCaQ-L&_nc_oc=AdlK1q9wEI6YySPEitUmRYm1RQJCVDWWs8aOPVmmUmz2WFeGzhYJf6t-SDDiqBSiwLs&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=iTWRiIYormVdESnDx8JpUQ&oh=00_AfHAFZX57oJT00qPC2r6qrOQvPxafB9sDqXT_N0i95ilMg&oe=680F10E1",
+                  "al:ios:app_store_id": "389801252",
+                  "twitter:site": "@instagram",
+                  "instapp:owner_user_id": "50010026453",
+                  "og:type": "article",
+                  "twitter:title": "@hyofood_ • Instagram photos and videos",
+                  "al:ios:app_name": "Instagram",
+                  "og:title": "@hyofood_ on Instagram: \"💕길동우동 봉담점💕\n\n추운날 집나간 입맛도 돌아오게 할 뜨끈한 우동 맛집👍\n길동우동 봉담점에 다녀왔어요.🥰\n집 근처에 있어서 밥 하기 싫거나 입맛 없을 때 남편과 자주 가는 곳이에요.\n\n주문하는 메뉴가 늘 똑같은데 남편은 왕돈까스, 저는 우동+김밥세트 주문해서 나눠먹어요.\n\n왕돈까스는 진짜 크키가 왕~~👍👍 둘이서도 몇 조각 남길정도로 양이 많은데 바로 튀겨서 주시니 바삭바삭한 맛이 살아있어 더욱더 맛나더라고요.💓💓 찍먹으로 소스를 따로 주셔서 끝까지 바삭함이 유지되니 넘 맛있어요.❤️ \n\n우동은 우동 전문점 답게 깔끔하고 쫄깃한 면발이 아주 매력적이에요. 국물이 딱 깔끔하고 시원한데 취향껏 고추가루 팍팍 뿌려 먹으면 또 다른 매력으로 즐길 수 있어요. 여기에 담백하고 감칠맛 나는 김밥까지 조합으로 같이 먹어주면  ",
+                  "twitter:maxage": "86400",
+                  "color-scheme": "light",
+                  "al:android:url": "https://www.instagram.com/p/DFy4GzCS5-w/",
+                  "fb:app_id": "124024574287414",
+                  "apple-mobile-web-app-status-bar-style": "default",
+                  "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+                  "mobile-web-app-capable": "yes",
+                  "og:url": "https://www.instagram.com/p/DFy4GzCS5-w/",
+                  "al:android:app_name": "Instagram"
+                }
+              ],
+              "cse_image": [
+                {
+                  "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3563157002119696222"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    },
+    {
+      "id": "tool_execution_3",
+      "type": "tool_execution",
+      "timestamp": "2025-05-11T06:18:03.436312",
+      "content": {
+        "tool_id": "5",
+        "tool_name": "gp_search_text",
+        "inputs": {
+          "text_query": "대전 놀거리 "
+        },
+        "result": [
+          {
+            "id": "ChIJGeYDXX9JZTURsFJQxqnBPws",
+            "types": [
+              "tourist_attraction",
+              "botanical_garden",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "169 Dunsan-daero, Seo-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Hanbat Arboretum",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJXWJF3WFOZTURTmrtYDD54Nk",
+            "types": [
+              "tourist_attraction",
+              "amusement_center",
+              "amusement_park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "70 Sajeonggongwon-ro, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon O-World",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ9aXvG9lIZTURw9DlYapcrb0",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "48-14 Eunhaeng-dong, Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon walking street",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJtSfCqdlIZTURm6bWh6op6fU",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Jungang-ro 164beon-gil, 은행선화동 Jung-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Skyroad",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJOXvOnYhJZTURfBbbv4D8ie8",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "480 Daedeok-daero, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Expo Science Park",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJhyHHqYZJZTUR5lKXtLmRmqo",
+            "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "Doryong-dong, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "Expo Bridge",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJ2e2tumRIZTURjz_4eQ6WH2I",
+            "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "65 Gayang-dong, Dong-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Uam Historical Park",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJw9UVgIFJZTURsapDvh7S8uk",
+            "types": [
+              "tourist_attraction",
+              "park",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "169 Dunsan-daero 117beon-gil, Seo-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Expo Civic Plaza",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJwSPdFdxIZTUR2mKqLneQ8cg",
+            "types": [
+              "market",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "783 Daejeon-ro, Dong-gu, Daejeon, South Korea",
+            "displayName": {
+              "text": "Daejeon Jungang Market",
+              "languageCode": "en"
+            }
+          },
+          {
+            "id": "ChIJdWxbMCxKZTURsiOhn4sam28",
+            "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+            ],
+            "formattedAddress": "481 Daedeok-daero, Yuseong District, Daejeon, South Korea",
+            "displayName": {
+              "text": "National Science Museum",
+              "languageCode": "en"
+            }
+          }
+        ]
+      },
+      "metadata": {}
+    }
+  ]
+}
