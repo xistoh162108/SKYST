@@ -1,42 +1,31 @@
-from db import PeopleRepository, PhotoRepository
+from db.photo_people import PhotoPeopleRepository
+from tools.people_photo import PeoplePhotoService
+    
+    # 레포지토리와 서비스 인스턴스 생성
+photo_people_repo = PhotoPeopleRepository()
+service = PeoplePhotoService(photo_people_repo)
 
-def main():
-    people_repo = PeopleRepository(db_name="skyst")
-    photo_repo = PhotoRepository(db_name="skyst")
+# 테스트용 더미 데이터 생성
+test_photo_id = "65f1234567890abcdef12345"  # 테스트용 photo_id
+test_person_id = "65f0987654321fedcba09876"  # 테스트용 person_id
 
-    print("=== People CRUD Operations ===")
-    # Add person
-    add_result = people_repo.add_person({"name": "Test User", "age": 99})
-    print(f"Added person ID: {add_result.inserted_id}")
+# 더미 데이터 추가
+print("=== 더미 데이터 추가 ===")
+result = service.add_person_to_photo(test_photo_id, test_person_id)
+print(f"추가된 데이터: {result}")
 
-    # Read people
-    people = people_repo.get_person({})
-    print(f"People in DB: {people}")
+# 특정 사람이 포함된 사진 검색
+print("\n=== 특정 사람이 포함된 사진 검색 ===")
+photos = service.get_photos_by_person(test_person_id)
+print(f"검색된 사진 수: {len(photos)}")
+for photo in photos:
+    print(f"사진 ID: {photo.get('photoId')}")
+    print(f"사람 ID: {photo.get('personId')}")
 
-    # Update person
-    update_result = people_repo.update_person({"_id": add_result.inserted_id}, {"$set": {"age": 100}})
-    print(f"People updated count: {update_result.modified_count}")
-
-    # Delete person
-    delete_result = people_repo.delete_person({"_id": add_result.inserted_id})
-    print(f"People deleted count: {delete_result.deleted_count}")
-
-    print("\n=== Photo CRUD Operations ===")
-    # Add photo
-    add_photo_result = photo_repo.add_photo({"url": "http://example.com/photo.jpg", "tags": ["test"]})
-    print(f"Added photo ID: {add_photo_result.inserted_id}")
-
-    # Read photos
-    photos = photo_repo.get_photo({})
-    print(f"Photos in DB: {photos}")
-
-    # Update photo
-    update_photo_result = photo_repo.update_photo({"_id": add_photo_result.inserted_id}, {"$set": {"tags": ["production"]}})
-    print(f"Photos updated count: {update_photo_result.modified_count}")
-
-    # Delete photo
-    delete_photo_result = photo_repo.delete_photo({"_id": add_photo_result.inserted_id})
-    print(f"Photos deleted count: {delete_photo_result.deleted_count}")
-
-if __name__ == "__main__":
-    main()
+# 특정 사진에 포함된 사람 검색
+print("\n=== 특정 사진에 포함된 사람 검색 ===")
+people = service.get_people_in_photo(test_photo_id)
+print(f"검색된 사람 수: {len(people)}")
+for person in people:
+    print(f"사진 ID: {person.get('photoId')}")
+    print(f"사람 ID: {person.get('personId')}")
