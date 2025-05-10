@@ -51,19 +51,19 @@ def add_photo():
     photo_repo.add_photo(photo)
     return
 
-@app.route("/api/photos/<photo_id>", methods=["GET"])
-def get_photo_detail(photo_id):
-    photo = photo_repo.get_photo({"_id": ObjectId(photo_id)})
-    if not photo:
-        return jsonify({"error": "Not found"}), 404
+@app.route("/api/photos/<photoId>", methods=["GET"])
+def get_photo_detail(photoId):
+    photo = photo_repo.get_photo({"_id": ObjectId(photoId)})
     photo = photo[0]
     return jsonify({
+        "url": photo.get("image_url", ""),
         "text": photo.get("description", ""),
-        "personId": [str(p) for p in photo.get("people", [])]
+        "peopleId": [str(p) for p in photo.get("people", [])],
+        "travelId": str(photo.get("travel_id", ""))
     })
 
-@app.route("/api/photos/<photo_id>", methods=["PUT"])
-def update_photo(photo_id):
+@app.route("/api/photos/<photoId>", methods=["PUT"])
+def update_photo(photoId):
     data = request.get_json()
     update = {}
     if "text" in data:
@@ -72,7 +72,7 @@ def update_photo(photo_id):
         update["people"] = [ObjectId(p) for p in data["people"]]
     if "location" in data:
         update["location"] = data["location"]
-    photo_repo.update_photo({"_id": ObjectId(photo_id)}, {"$set": update})
+    photo_repo.update_photo({"_id": ObjectId(photoId)}, {"$set": update})
     return jsonify({"message": "photo updated"})
 
 @app.route("/api/photos/<photo_id>", methods=["DELETE"])
