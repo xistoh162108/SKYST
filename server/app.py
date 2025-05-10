@@ -65,7 +65,7 @@ def add_photo():
     for p in data["peopleId"]:
         photo_people_repo.add_photoPeople({
             "photoId": photo_id,
-            "personId": ObjectId(p) # 안뇽
+            "personId": ObjectId(p)
         })
 
     for t in photo_tags:
