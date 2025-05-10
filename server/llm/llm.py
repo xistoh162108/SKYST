@@ -4,6 +4,32 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from dotenv import load_dotenv
 import os
+from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure
+from langchain.chat_memory import MongoDBChatMessageHistory
+
+def get_database(
+    db_name: str,
+    host: str = "localhost",
+    port: int = 27017,
+    user: str = None,
+    password: str = None
+):
+    """
+    MongoDB에 연결하고, db_name 데이터베이스 객체를 반환합니다.
+    user/password를 넣으면 인증 연결을, 아니면 로컬 연결을 수행합니다.
+    """
+    if user and password:
+        uri = f"mongodb://{user}:{password}@{host}:{port}/"
+    else:
+        uri = f"mongodb://{host}:{port}/"
+
+    client = MongoClient(uri, serverSelectionTimeoutMS=5000)
+    try:
+        client.admin.command("ping")
+    except ConnectionFailure:
+        raise RuntimeError("❌ MongoDB 서버에 연결할 수 없습니다.")
+    return client[db_name]
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
@@ -21,8 +47,13 @@ class GeminiLLM:
             google_api_key=os.getenv('GOOGLE_API_KEY')
         )
         
-        # 대화 메모리 초기화
-        self.memory = ConversationBufferMemory()
+        # Initialize MongoDB-backed message history instead of in-memory buffer
+        db = get_database(os.getenv("MONGODB_DB", "chat_history"))
+        history_collection = db[os.getenv("MONGODB_COLLECTION", "messages")]
+        self.memory = MongoDBChatMessageHistory(
+            database=db,
+            collection_name=os.getenv("MONGODB_COLLECTION", "messages")
+        )
         
         # 대화 체인 초기화
         self.conversation = ConversationChain(
@@ -54,28 +85,13 @@ class GeminiLLM:
 
     def reset_chat(self):
         """채팅 히스토리 초기화"""
-        self.memory = ConversationBufferMemory()
+        db = get_database(os.getenv("MONGODB_DB", "chat_history"))
+        self.memory = MongoDBChatMessageHistory(
+            database=db,
+            collection_name=os.getenv("MONGODB_COLLECTION", "messages")
+        )
         self.conversation = ConversationChain(
             llm=self.llm,
             memory=self.memory,
             verbose=True
         )
-
-def main():
-    # LLM 인스턴스 생성
-    llm = GeminiLLM()
-    
-    # 시스템 프롬프트 설정 (선택사항)
-    system_prompt = "당신은 친절하고 도움이 되는 AI 어시스턴트입니다."
-    
-    # 예시 프롬프트
-    prompt = "인공지능에 대해 간단히 설명해주세요."
-    
-    # 응답 생성
-    response = llm.generate_response(prompt, system_prompt)
-    print(f"시스템 프롬프트: {system_prompt}")
-    print(f"사용자 프롬프트: {prompt}")
-    print(f"응답: {response}")
-
-if __name__ == "__main__":
-    main() 
