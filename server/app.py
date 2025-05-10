@@ -5,7 +5,7 @@ from db.people import PeopleRepository
 from db.photos import PhotoRepository
 from db.photo_people import PhotoPeopleRepository
 from db.photo_tags import PhotoTagsRepository
-from db.gemini_tag.gemini_tagging import get_tags_from_gemini
+from db.huggingface.huggingface_tag import get_tags_from_huggingface
 
 app = Flask(__name__)
 people_repo = PeopleRepository()
@@ -67,7 +67,7 @@ def add_photo():
 
     photo_id = photo_repo.add_photo(photo)
 
-    photo_tags = get_tags_from_gemini(img_file)
+    photo_tags = get_tags_from_huggingface(img_file)
 
     for p in people_ids:
         photo_people_repo.add_photoPeople({
